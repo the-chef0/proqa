@@ -1,0 +1,133 @@
+@use '../app.scss';
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hideScrollbarChrome::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hideScrollbarFirefox {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.sidebar {
+  background-color: app.$headings;
+  height: 100vh !important;
+}
+
+.prodrive-button {
+  background-color: app.$primary;
+  font-family: 'Open Sans Variable', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.section-heading {
+  color: app.$subText;
+  font-family: 'Open Sans Variable', sans-serif;
+  font-weight: 700;
+}
+
+.chat-btn {
+  background: transparent !important;
+  border: none !important;
+  outline: none !important;
+  color: white !important; /* Use the color of the parent element */
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important; /* Slightly gray glaze on hover */
+    // shadow below
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  &:focus {
+    -webkit-tap-highlight-color: transparent !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.user-bottom-pane {
+  background-color: app.$bodyText !important;
+  font-family: 'Open Sans Variable', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.15) !important; /* Slightly gray glaze on hover */
+    // shadow below
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+.prodrive-font {
+  font-family: 'Open Sans Variable', sans-serif;
+  font-style: normal;
+}
+
+.heading-font {
+  font-family: 'Podkova Variable', serif;
+  font-style: normal;
+}
+
+.chat-btn-title {
+  font-family: 'Open Sans Variable', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.tray-btn-text {
+  font-family: 'Open Sans Variable', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+#UserBottomPane {
+  padding-bottom: 20px !important;
+}
+
+.scrollable {
+  overflow-y: auto;
+}
+
+/* Hide the default scrollbar */
+.scrollable::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+.scrollable::-webkit-scrollbar-track {
+  background: app.$secondaryHover;
+}
+
+/* Handle */
+.scrollable::-webkit-scrollbar-thumb {
+  background: app.$primary;
+}
+
+/* Handle on hover */
+.scrollable::-webkit-scrollbar-thumb:hover {
+  background: app.$primaryHover;
+}
+
+.dropdown-menu {
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+  padding: 0;
+}
+
+.three-dot-menu {
+  -webkit-tap-highlight-color: transparent !important;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important; /* Slightly gray glaze on hover */
+  }
+
+  &:focus {
+    -webkit-tap-highlight-color: transparent !important;
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}

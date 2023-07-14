@@ -1,0 +1,6 @@
+.gitlab-ci.yml
+CONTRIBUTING.md
+docker-compose.yml
+Dockerfile
+README.md
+proqa_ai/weights/

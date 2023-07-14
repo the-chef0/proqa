@@ -1,0 +1,93 @@
+# Default values for backend.
+# This is a YAML-formatted file.
+
+replicaCount: 1
+
+# Public URL at which the frontend is available
+frontendURL: "https://proqa.gg.ax"
+# Public URL at which the backend is available
+backendURL: "https://api.proqa.gg.ax"
+# Cluster Internal URL at which the ai-service is available
+aiServiceURL: "http://ai-service:8001/"
+# Cluster Internal UTL at which qdrant is available
+qdrantURL: "http://qdrant-db:6333/"
+# Database settings
+# Provide either database URL in the format of the default value
+# Or provide secretName that had the value DATABASE_URL set to that URL
+# Providing a secretName to the Helm chart will take priority, make sure to set secretName to "" if providing URL
+database:
+  url: "psql://username:password@ip:port/db"
+  secretName: ""
+# PVC Name to be mounted at /documents
+documentsPVCName: ""
+# URL at which a Redis DB is available
+cacheURL: "redis://redis-db-master:6379/0"
+# URL at which another Redis DB is available so celery can communicate
+celeryBrokerURL: "redis://redis-db-master:6379/1"
+# Size of embedding used
+embeddingSize: 384
+# Decay scalar
+decayScalar: 0.7
+
+image:
+  repository: registry.proqa.gg.ax/backend
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: ""
+
+pushpinImage:
+  repository: "fanout/pushpin"
+  pullPolicy: IfNotPresent
+  tag: "1.36.0"
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+serviceAccount:
+  # Specifies whether a service account should be created
+  create: true
+  # Annotations to add to the service account
+  annotations: {}
+  # The name of the service account to use.
+  # If not set and create is true, a name is generated using the fullname template
+  name: ""
+
+podAnnotations: {}
+
+podSecurityContext: {}
+  # fsGroup: 2000
+
+securityContext: {}
+  # capabilities:
+  #   drop:
+  #   - ALL
+  # readOnlyRootFilesystem: true
+  # runAsNonRoot: true
+  # runAsUser: 1000
+
+appService:
+  type: ClusterIP
+  port: 8000
+
+ingress:
+  enabled: true
+  className: ""
+  annotations: {}
+  host: api.proqa.gg.ax
+  tlsSecretName: ""
+
+resources: {}
+
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 100
+  targetCPUUtilizationPercentage: 80
+  # targetMemoryUtilizationPercentage: 80
+
+nodeSelector: {}
+
+tolerations: []
+
+affinity: {}

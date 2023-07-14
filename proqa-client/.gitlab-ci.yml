@@ -1,0 +1,137 @@
+default:
+  image: node:18
+  cache: &global_cache
+    key:
+      files:
+        - package-lock.json
+    paths:
+      - .npm/
+
+# workflow:
+#   rules:
+#     - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+#     - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+
+variables:
+  REGISTRY: registry.proqa.gg.ax # docker registry link
+  BUILD_IMAGE: ${REGISTRY}/client
+
+stages:
+  - pre-test
+  - test
+  # - integration_test
+  - build
+  - tag
+
+linting:
+  stage: pre-test
+  before_script:
+    - npm ci --cache .npm --prefer-offline
+  script:
+    - npm run lint
+  when: always
+
+build app:
+  stage: pre-test
+  before_script:
+    - npm ci --cache .npm --prefer-offline
+  script:
+    - npm run build
+  when: always
+
+unit tests:
+  needs: ["build app"]
+  stage: test
+  before_script:
+    - npm ci --cache .npm --prefer-offline
+  script:
+    - npm run test:unit
+  when: always
+
+# integration tests:
+#   stage: integration_test
+#   image: mcr.microsoft.com/playwright:v1.33.0-jammy
+#   script:
+#     - npm ci
+#     - npm run test -- --reporter=junit
+#     - npx nyc report --report-dir ./coverage --temp-dir .nyc_output --reporter=cobertura --exclude-after-remap false
+#     - npx nyc report --report-dir ./coverage --temp-dir .nyc_output --reporter=text --exclude-after-remap false
+#   coverage: /All files[^|]*\|[^|]*\s+([\d\.]+)/
+#   artifacts:
+#     reports:
+#       junit: results.xml
+#       coverage_report:
+#         coverage_format: cobertura
+#         path: coverage/cobertura-coverage.xml
+#     when: always
+#     paths:
+#       - test-results/
+
+# pages:
+#   stage: deploy
+#   before_script:
+#     - npm ci
+#   script:
+#     - npm run build
+#     - cp -a build/. public/
+#   artifacts:
+#     paths:
+#       - public
+build image:
+  stage: build
+  cache: []
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: [""]
+  script:
+    - /kaniko/executor
+      --context "${CI_PROJECT_DIR}"
+      --dockerfile "${CI_PROJECT_DIR}/prod.Dockerfile"
+      --destination "${BUILD_IMAGE}:${CI_COMMIT_SHORT_SHA}"
+      --label "org.opencontainers.image.title=${CI_PROJECT_TITLE}"
+      --label "org.opencontainers.image.url=${CI_PROJECT_URL}"
+      --label "org.opencontainers.image.created=${CI_JOB_STARTED_AT}"
+      --label "org.opencontainers.image.revision={$CI_COMMIT_SHA}"
+      --label "org.opencontainers.image.version=${CI_COMMIT_REF_NAME}"
+      --cache=true
+
+retag image branch:
+  stage: tag
+  cache: []
+  image:
+    name: gcr.io/go-containerregistry/crane:debug
+    entrypoint: [""]
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - crane cp ${BUILD_IMAGE}:${CI_COMMIT_SHORT_SHA} ${BUILD_IMAGE}:${CI_COMMIT_REF_SLUG}
+
+retag image main:
+  stage: tag
+  cache: []
+  image:
+    name: gcr.io/go-containerregistry/crane:debug
+    entrypoint: [""]
+  variables:
+    GIT_STRATEGY: none
+  only:
+    - main
+  script:
+    - crane cp ${BUILD_IMAGE}:${CI_COMMIT_SHORT_SHA} ${BUILD_IMAGE}:latest
+
+retag image tag:
+  stage: tag
+  cache: []
+  image:
+    name: gcr.io/go-containerregistry/crane:debug
+    entrypoint: [""]
+  variables:
+    GIT_STRATEGY: none
+  only:
+    - tags
+  script:
+    - crane cp ${BUILD_IMAGE}:${CI_COMMIT_SHORT_SHA} ${BUILD_IMAGE}:${CI_COMMIT_REF_NAME}
+  # rules:
+  #   # This ensures that only pushes to the default branch will trigger
+  #   # a pages deploy
+  #   - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH

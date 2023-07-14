@@ -1,0 +1,42 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pytest = "==7.3.1"
+django = "4.2"
+psycopg2 = "*"
+gunicorn = "*"
+djangorestframework = "*"
+requests = "*"
+django-oauth-toolkit = "*"
+social-auth-app-django = "*"
+drf-social-oauth2 = "==2.1.2"
+django-oauth2-provider = "*"
+django-cors-headers = "*"
+qdrant-client = "*"
+langchain = "==0.0.171"
+pypdf = "*"
+filetype = "*"
+docx2txt = "*"
+django-grip = "*"
+django-environ = "*"
+whitenoise = "*"
+django-celery-results = "*"
+celery = {extras = ["redis"], version = "*"}
+numpy = "*"
+
+[dev-packages]
+pipenv = "*"
+pylint = "*"
+pylint-gitlab = "*"
+isort = "*"
+pytest-cov = "*"
+pytest-django = "*"
+pylint-django = "*"
+autopep8 = "*"
+watchfiles = "*"
+
+[requires]
+python_version = "3.10"

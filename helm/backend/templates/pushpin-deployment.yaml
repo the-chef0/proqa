@@ -1,0 +1,54 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "backend.fullname" . }}-pushpin
+  labels:
+    {{- include "backend.labels" . | nindent 4 }}
+    app.kubernetes.io/component: {{ include "backend.fullname" . }}-pushpin
+spec:
+  selector:
+    matchLabels:
+      {{- include "backend.selectorLabels" . | nindent 6 }}
+      app.kubernetes.io/component: {{ include "backend.fullname" . }}-pushpin
+  template:
+    metadata:
+      {{- with .Values.podAnnotations }}
+      annotations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      labels:
+        {{- include "backend.selectorLabels" . | nindent 8 }}
+        app.kubernetes.io/component: {{ include "backend.fullname" . }}-pushpin
+    spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      serviceAccountName: {{ include "backend.serviceAccountName" . }}
+      volumes:
+        - name: config
+          configMap:
+            name: {{ include "backend.fullname" . }}-pushpin-config
+      containers:
+        - name: pushpin
+          image: "{{ .Values.pushpinImage.repository }}:{{ .Values.pushpinImage.tag }}"
+          imagePullPolicy: {{ .Values.pushpinImage.pullPolicy }}
+          ports:
+            - name: in-pull
+              protocol: TCP
+              containerPort: 5560
+            - name: http-ctrl-srv
+              protocol: TCP
+              containerPort: 5561
+            - name: in-sub
+              protocol: TCP
+              containerPort: 5562
+            - name: ctrl-srv
+              protocol: TCP
+              containerPort: 5563
+            - name: condure
+              protocol: TCP
+              containerPort: 7999
+          volumeMounts:
+            - name: config
+              mountPath: /etc/pushpin

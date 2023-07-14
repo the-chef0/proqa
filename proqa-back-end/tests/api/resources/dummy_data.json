@@ -1,0 +1,2638 @@
+[
+    {
+        "model": "admin.logentry",
+        "pk": 1,
+        "fields": {
+            "action_time": "2023-06-07T13:41:01.959Z",
+            "user": 1,
+            "content_type": 8,
+            "object_id": "2",
+            "object_repr": "New Chat Session",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 2,
+        "fields": {
+            "action_time": "2023-06-07T13:41:37.842Z",
+            "user": 1,
+            "content_type": 14,
+            "object_id": "1",
+            "object_repr": "Question 1 content",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 3,
+        "fields": {
+            "action_time": "2023-06-07T13:49:03.590Z",
+            "user": 1,
+            "content_type": 14,
+            "object_id": "2",
+            "object_repr": "Question 2 content",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 4,
+        "fields": {
+            "action_time": "2023-06-07T13:49:22.867Z",
+            "user": 1,
+            "content_type": 10,
+            "object_id": "1",
+            "object_repr": "Base",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 5,
+        "fields": {
+            "action_time": "2023-06-07T14:00:11.780Z",
+            "user": 1,
+            "content_type": 11,
+            "object_id": "1",
+            "object_repr": "vicuna-7b",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 6,
+        "fields": {
+            "action_time": "2023-06-07T14:01:19.699Z",
+            "user": 1,
+            "content_type": 12,
+            "object_id": "1",
+            "object_repr": "basic prompt",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 7,
+        "fields": {
+            "action_time": "2023-06-07T14:06:36.280Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "1",
+            "object_repr": "Answer to Question 1 content",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "admin.logentry",
+        "pk": 8,
+        "fields": {
+            "action_time": "2023-06-07T14:06:54.243Z",
+            "user": 1,
+            "content_type": 7,
+            "object_id": "2",
+            "object_repr": "Answer to Question 2 content",
+            "action_flag": 1,
+            "change_message": "[{\"added\": {}}]"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 1,
+        "fields": {
+            "name": "Can add log entry",
+            "content_type": 1,
+            "codename": "add_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 2,
+        "fields": {
+            "name": "Can change log entry",
+            "content_type": 1,
+            "codename": "change_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 3,
+        "fields": {
+            "name": "Can delete log entry",
+            "content_type": 1,
+            "codename": "delete_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 4,
+        "fields": {
+            "name": "Can view log entry",
+            "content_type": 1,
+            "codename": "view_logentry"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 5,
+        "fields": {
+            "name": "Can add permission",
+            "content_type": 2,
+            "codename": "add_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 6,
+        "fields": {
+            "name": "Can change permission",
+            "content_type": 2,
+            "codename": "change_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 7,
+        "fields": {
+            "name": "Can delete permission",
+            "content_type": 2,
+            "codename": "delete_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 8,
+        "fields": {
+            "name": "Can view permission",
+            "content_type": 2,
+            "codename": "view_permission"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 9,
+        "fields": {
+            "name": "Can add group",
+            "content_type": 3,
+            "codename": "add_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 10,
+        "fields": {
+            "name": "Can change group",
+            "content_type": 3,
+            "codename": "change_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 11,
+        "fields": {
+            "name": "Can delete group",
+            "content_type": 3,
+            "codename": "delete_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 12,
+        "fields": {
+            "name": "Can view group",
+            "content_type": 3,
+            "codename": "view_group"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 13,
+        "fields": {
+            "name": "Can add user",
+            "content_type": 4,
+            "codename": "add_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 14,
+        "fields": {
+            "name": "Can change user",
+            "content_type": 4,
+            "codename": "change_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 15,
+        "fields": {
+            "name": "Can delete user",
+            "content_type": 4,
+            "codename": "delete_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 16,
+        "fields": {
+            "name": "Can view user",
+            "content_type": 4,
+            "codename": "view_user"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 17,
+        "fields": {
+            "name": "Can add content type",
+            "content_type": 5,
+            "codename": "add_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 18,
+        "fields": {
+            "name": "Can change content type",
+            "content_type": 5,
+            "codename": "change_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 19,
+        "fields": {
+            "name": "Can delete content type",
+            "content_type": 5,
+            "codename": "delete_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 20,
+        "fields": {
+            "name": "Can view content type",
+            "content_type": 5,
+            "codename": "view_contenttype"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 21,
+        "fields": {
+            "name": "Can add session",
+            "content_type": 6,
+            "codename": "add_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 22,
+        "fields": {
+            "name": "Can change session",
+            "content_type": 6,
+            "codename": "change_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 23,
+        "fields": {
+            "name": "Can delete session",
+            "content_type": 6,
+            "codename": "delete_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 24,
+        "fields": {
+            "name": "Can view session",
+            "content_type": 6,
+            "codename": "view_session"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 25,
+        "fields": {
+            "name": "Can add answer",
+            "content_type": 7,
+            "codename": "add_answer"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 26,
+        "fields": {
+            "name": "Can change answer",
+            "content_type": 7,
+            "codename": "change_answer"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 27,
+        "fields": {
+            "name": "Can delete answer",
+            "content_type": 7,
+            "codename": "delete_answer"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 28,
+        "fields": {
+            "name": "Can view answer",
+            "content_type": 7,
+            "codename": "view_answer"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 29,
+        "fields": {
+            "name": "Can add chat session",
+            "content_type": 8,
+            "codename": "add_chatsession"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 30,
+        "fields": {
+            "name": "Can change chat session",
+            "content_type": 8,
+            "codename": "change_chatsession"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 31,
+        "fields": {
+            "name": "Can delete chat session",
+            "content_type": 8,
+            "codename": "delete_chatsession"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 32,
+        "fields": {
+            "name": "Can view chat session",
+            "content_type": 8,
+            "codename": "view_chatsession"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 33,
+        "fields": {
+            "name": "Can add chunk",
+            "content_type": 9,
+            "codename": "add_chunk"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 34,
+        "fields": {
+            "name": "Can change chunk",
+            "content_type": 9,
+            "codename": "change_chunk"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 35,
+        "fields": {
+            "name": "Can delete chunk",
+            "content_type": 9,
+            "codename": "delete_chunk"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 36,
+        "fields": {
+            "name": "Can view chunk",
+            "content_type": 9,
+            "codename": "view_chunk"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 37,
+        "fields": {
+            "name": "Can add collection",
+            "content_type": 10,
+            "codename": "add_collection"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 38,
+        "fields": {
+            "name": "Can change collection",
+            "content_type": 10,
+            "codename": "change_collection"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 39,
+        "fields": {
+            "name": "Can delete collection",
+            "content_type": 10,
+            "codename": "delete_collection"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 40,
+        "fields": {
+            "name": "Can view collection",
+            "content_type": 10,
+            "codename": "view_collection"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 41,
+        "fields": {
+            "name": "Can add llm",
+            "content_type": 11,
+            "codename": "add_llm"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 42,
+        "fields": {
+            "name": "Can change llm",
+            "content_type": 11,
+            "codename": "change_llm"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 43,
+        "fields": {
+            "name": "Can delete llm",
+            "content_type": 11,
+            "codename": "delete_llm"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 44,
+        "fields": {
+            "name": "Can view llm",
+            "content_type": 11,
+            "codename": "view_llm"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 45,
+        "fields": {
+            "name": "Can add prompt template",
+            "content_type": 12,
+            "codename": "add_prompttemplate"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 46,
+        "fields": {
+            "name": "Can change prompt template",
+            "content_type": 12,
+            "codename": "change_prompttemplate"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 47,
+        "fields": {
+            "name": "Can delete prompt template",
+            "content_type": 12,
+            "codename": "delete_prompttemplate"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 48,
+        "fields": {
+            "name": "Can view prompt template",
+            "content_type": 12,
+            "codename": "view_prompttemplate"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 49,
+        "fields": {
+            "name": "Can add source",
+            "content_type": 13,
+            "codename": "add_source"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 50,
+        "fields": {
+            "name": "Can change source",
+            "content_type": 13,
+            "codename": "change_source"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 51,
+        "fields": {
+            "name": "Can delete source",
+            "content_type": 13,
+            "codename": "delete_source"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 52,
+        "fields": {
+            "name": "Can view source",
+            "content_type": 13,
+            "codename": "view_source"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 53,
+        "fields": {
+            "name": "Can add question",
+            "content_type": 14,
+            "codename": "add_question"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 54,
+        "fields": {
+            "name": "Can change question",
+            "content_type": 14,
+            "codename": "change_question"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 55,
+        "fields": {
+            "name": "Can delete question",
+            "content_type": 14,
+            "codename": "delete_question"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 56,
+        "fields": {
+            "name": "Can view question",
+            "content_type": 14,
+            "codename": "view_question"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 57,
+        "fields": {
+            "name": "Can add application",
+            "content_type": 15,
+            "codename": "add_application"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 58,
+        "fields": {
+            "name": "Can change application",
+            "content_type": 15,
+            "codename": "change_application"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 59,
+        "fields": {
+            "name": "Can delete application",
+            "content_type": 15,
+            "codename": "delete_application"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 60,
+        "fields": {
+            "name": "Can view application",
+            "content_type": 15,
+            "codename": "view_application"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 61,
+        "fields": {
+            "name": "Can add access token",
+            "content_type": 16,
+            "codename": "add_accesstoken"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 62,
+        "fields": {
+            "name": "Can change access token",
+            "content_type": 16,
+            "codename": "change_accesstoken"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 63,
+        "fields": {
+            "name": "Can delete access token",
+            "content_type": 16,
+            "codename": "delete_accesstoken"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 64,
+        "fields": {
+            "name": "Can view access token",
+            "content_type": 16,
+            "codename": "view_accesstoken"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 65,
+        "fields": {
+            "name": "Can add grant",
+            "content_type": 17,
+            "codename": "add_grant"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 66,
+        "fields": {
+            "name": "Can change grant",
+            "content_type": 17,
+            "codename": "change_grant"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 67,
+        "fields": {
+            "name": "Can delete grant",
+            "content_type": 17,
+            "codename": "delete_grant"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 68,
+        "fields": {
+            "name": "Can view grant",
+            "content_type": 17,
+            "codename": "view_grant"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 69,
+        "fields": {
+            "name": "Can add refresh token",
+            "content_type": 18,
+            "codename": "add_refreshtoken"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 70,
+        "fields": {
+            "name": "Can change refresh token",
+            "content_type": 18,
+            "codename": "change_refreshtoken"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 71,
+        "fields": {
+            "name": "Can delete refresh token",
+            "content_type": 18,
+            "codename": "delete_refreshtoken"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 72,
+        "fields": {
+            "name": "Can view refresh token",
+            "content_type": 18,
+            "codename": "view_refreshtoken"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 73,
+        "fields": {
+            "name": "Can add id token",
+            "content_type": 19,
+            "codename": "add_idtoken"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 74,
+        "fields": {
+            "name": "Can change id token",
+            "content_type": 19,
+            "codename": "change_idtoken"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 75,
+        "fields": {
+            "name": "Can delete id token",
+            "content_type": 19,
+            "codename": "delete_idtoken"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 76,
+        "fields": {
+            "name": "Can view id token",
+            "content_type": 19,
+            "codename": "view_idtoken"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 77,
+        "fields": {
+            "name": "Can add association",
+            "content_type": 20,
+            "codename": "add_association"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 78,
+        "fields": {
+            "name": "Can change association",
+            "content_type": 20,
+            "codename": "change_association"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 79,
+        "fields": {
+            "name": "Can delete association",
+            "content_type": 20,
+            "codename": "delete_association"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 80,
+        "fields": {
+            "name": "Can view association",
+            "content_type": 20,
+            "codename": "view_association"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 81,
+        "fields": {
+            "name": "Can add code",
+            "content_type": 21,
+            "codename": "add_code"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 82,
+        "fields": {
+            "name": "Can change code",
+            "content_type": 21,
+            "codename": "change_code"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 83,
+        "fields": {
+            "name": "Can delete code",
+            "content_type": 21,
+            "codename": "delete_code"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 84,
+        "fields": {
+            "name": "Can view code",
+            "content_type": 21,
+            "codename": "view_code"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 85,
+        "fields": {
+            "name": "Can add nonce",
+            "content_type": 22,
+            "codename": "add_nonce"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 86,
+        "fields": {
+            "name": "Can change nonce",
+            "content_type": 22,
+            "codename": "change_nonce"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 87,
+        "fields": {
+            "name": "Can delete nonce",
+            "content_type": 22,
+            "codename": "delete_nonce"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 88,
+        "fields": {
+            "name": "Can view nonce",
+            "content_type": 22,
+            "codename": "view_nonce"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 89,
+        "fields": {
+            "name": "Can add user social auth",
+            "content_type": 23,
+            "codename": "add_usersocialauth"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 90,
+        "fields": {
+            "name": "Can change user social auth",
+            "content_type": 23,
+            "codename": "change_usersocialauth"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 91,
+        "fields": {
+            "name": "Can delete user social auth",
+            "content_type": 23,
+            "codename": "delete_usersocialauth"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 92,
+        "fields": {
+            "name": "Can view user social auth",
+            "content_type": 23,
+            "codename": "view_usersocialauth"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 93,
+        "fields": {
+            "name": "Can add partial",
+            "content_type": 24,
+            "codename": "add_partial"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 94,
+        "fields": {
+            "name": "Can change partial",
+            "content_type": 24,
+            "codename": "change_partial"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 95,
+        "fields": {
+            "name": "Can delete partial",
+            "content_type": 24,
+            "codename": "delete_partial"
+        }
+    },
+    {
+        "model": "auth.permission",
+        "pk": 96,
+        "fields": {
+            "name": "Can view partial",
+            "content_type": 24,
+            "codename": "view_partial"
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "pbkdf2_sha256$600000$Nx39vvgQx8NU0kWKfO7XJ1$8q9on8Lk+kd1Jgo2ezDTmauLaFns2Bq58dJNC2Cqn5M=",
+            "last_login": "2023-06-07T13:27:25.299Z",
+            "is_superuser": true,
+            "username": "admin",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": true,
+            "is_active": true,
+            "date_joined": "2023-06-07T13:26:12.991Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 1,
+        "fields": {
+            "app_label": "admin",
+            "model": "logentry"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 2,
+        "fields": {
+            "app_label": "auth",
+            "model": "permission"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 3,
+        "fields": {
+            "app_label": "auth",
+            "model": "group"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 4,
+        "fields": {
+            "app_label": "auth",
+            "model": "user"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 5,
+        "fields": {
+            "app_label": "contenttypes",
+            "model": "contenttype"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 6,
+        "fields": {
+            "app_label": "sessions",
+            "model": "session"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 7,
+        "fields": {
+            "app_label": "api",
+            "model": "answer"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 8,
+        "fields": {
+            "app_label": "api",
+            "model": "chatsession"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 9,
+        "fields": {
+            "app_label": "api",
+            "model": "chunk"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 10,
+        "fields": {
+            "app_label": "api",
+            "model": "collection"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 11,
+        "fields": {
+            "app_label": "api",
+            "model": "llm"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 12,
+        "fields": {
+            "app_label": "api",
+            "model": "prompttemplate"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 13,
+        "fields": {
+            "app_label": "api",
+            "model": "source"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 14,
+        "fields": {
+            "app_label": "api",
+            "model": "question"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 15,
+        "fields": {
+            "app_label": "oauth2_provider",
+            "model": "application"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 16,
+        "fields": {
+            "app_label": "oauth2_provider",
+            "model": "accesstoken"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 17,
+        "fields": {
+            "app_label": "oauth2_provider",
+            "model": "grant"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 18,
+        "fields": {
+            "app_label": "oauth2_provider",
+            "model": "refreshtoken"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 19,
+        "fields": {
+            "app_label": "oauth2_provider",
+            "model": "idtoken"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 20,
+        "fields": {
+            "app_label": "social_django",
+            "model": "association"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 21,
+        "fields": {
+            "app_label": "social_django",
+            "model": "code"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 22,
+        "fields": {
+            "app_label": "social_django",
+            "model": "nonce"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 23,
+        "fields": {
+            "app_label": "social_django",
+            "model": "usersocialauth"
+        }
+    },
+    {
+        "model": "contenttypes.contenttype",
+        "pk": 24,
+        "fields": {
+            "app_label": "social_django",
+            "model": "partial"
+        }
+    },
+    {
+        "model": "sessions.session",
+        "pk": "r8xojow6cqmcapxs5dzyjan8bl5qt5he",
+        "fields": {
+            "session_data": ".eJxVjMsOgjAUBf-la0XaewvFncZEjXHnRjekT8BHm0AVo_HfhcSN2zMz5028fUYyJ7PKxum9s62XNzsjExIao8suymgHur2F457lQsKrPcrK0UV_WPf9arM65Rt47Aa_lPdYl-ND2Zghof-bkvpi_QjMWfoqJDr42DYqGZXkR7tkH4y9Ln_u30Etu3qosUgNOIoU0xSRW-GAKUEVRxAFcwoUA8y4NhkthFYsRYOAGhzXIs80J58vwphOFA:1q6tC9:q5CmjtbjJrKRXOSyAur9g_wN5Ojr3znkGDu6PYYq_s4",
+            "expire_date": "2023-06-21T13:27:25.302Z"
+        }
+    },
+    {
+        "model": "api.collection",
+        "pk": 1,
+        "fields": {
+            "name": "Base",
+            "file_path": "tests/api/resources/sources",
+            "created_at": "2023-06-07T13:49:22.864Z",
+            "description": "",
+            "active": true,
+            "chunk_size": 1000,
+            "chunk_overlap": 500
+        }
+    },
+    {
+        "model": "api.source",
+        "pk": 1,
+        "fields": {
+            "collection": 1,
+            "file_name": "A Block-sorting Lossless Data Compression Algorithm - May 10th, 1994 (SRC-RR-124).pdf",
+            "file_type": "pdf",
+            "created_at": "2023-06-07T13:58:40.446Z"
+        }
+    },
+    {
+        "model": "api.source",
+        "pk": 2,
+        "fields": {
+            "collection": 1,
+            "file_name": "Enter the Wu-Tang (36 Chambers).docx",
+            "file_type": "docx",
+            "created_at": "2023-06-07T13:59:00.790Z"
+        }
+    },
+    {
+        "model": "api.source",
+        "pk": 3,
+        "fields": {
+            "collection": 1,
+            "file_name": "Inside The Deal That Made Bill Gates 350,000,000 (1986).pdf",
+            "file_type": "pdf",
+            "created_at": "2023-06-07T13:59:06.423Z"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 1,
+        "fields": {
+            "chunk_id": "0f87f27c-77b4-425d-92b9-83ac09c568ab",
+            "source": 1,
+            "content": "May 10, 1994\nSRCResearch\nReport 124\nA Block-sortingLossless\nDataCompressionAlgorithm\nM. BurrowsandD.J. Wheeler\ndigital\nSystems Research Center\n130LyttonAvenue\nPalo Alto,California94301Systems Research Center\nThe charter of SRC is to advance boththe state of knowledgeand the state of the\nartincomputersystems. Fromourestablishmentin1984,wehaveperformedbasic\nand applied research to support Digital's business objectives. Our current work\nincludesexploringdistributedpersonalcomputingonmultipleplatforms,network-\ning,programmingtechnology,systemmodellingandmanagementtechniques,and\nselected applications.\nOur strategy is to test the technical and practical value of our ideas by building\nhardwareandsoftwareprototypesandusingthemasdailytools. Interestingsystems\nare too complex to be evaluated solely in the abstract; extended use allows us to\ninvestigatetheir propertiesindepth. This experience is usefulin the shortterm in\nre®ning our designs,andinvaluablein thelongterm inadvancingour knowledge."
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 2,
+        "fields": {
+            "chunk_id": "52adda63-613a-464c-bf89-2bb6fd08ef7e",
+            "source": 1,
+            "content": "ing,programmingtechnology,systemmodellingandmanagementtechniques,and\nselected applications.\nOur strategy is to test the technical and practical value of our ideas by building\nhardwareandsoftwareprototypesandusingthemasdailytools. Interestingsystems\nare too complex to be evaluated solely in the abstract; extended use allows us to\ninvestigatetheir propertiesindepth. This experience is usefulin the shortterm in\nre®ning our designs,andinvaluablein thelongterm inadvancingour knowledge.\nMostofthemajoradvancesininformationsystemshavecomethroughthisstrategy,\nincludingpersonalcomputing,distributedsystems,andtheInternet.\nWe also perform complementary work of a more mathematical ¯avor. Some of\nit is in established ®elds of theoretical computer science, such as the analysisof algorithms, computational geometry, and logics of programming. Other work\nexploresnewgroundmotivatedbyproblemsthatariseinoursystemsresearch.\nWe have a strongcommitmenttocommunicatingourresults;exposingandtesting"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 3,
+        "fields": {
+            "chunk_id": "a6088c00-5560-420e-9ded-7ba482eab3e2",
+            "source": 1,
+            "content": "Mostofthemajoradvancesininformationsystemshavecomethroughthisstrategy,\nincludingpersonalcomputing,distributedsystems,andtheInternet.\nWe also perform complementary work of a more mathematical ¯avor. Some of\nit is in established ®elds of theoretical computer science, such as the analysisof algorithms, computational geometry, and logics of programming. Other work\nexploresnewgroundmotivatedbyproblemsthatariseinoursystemsresearch.\nWe have a strongcommitmenttocommunicatingourresults;exposingandtesting\nour ideas in the research and development communities leads to improved un-\nderstanding. Our research report series supplements publication in professional\njournals and conferences. We seek users for our prototype systems among those\nwith whomwe have common interests,and we encourage collaborationwithuni-\nversity researchers.\nRobertW. Taylor,DirectorA Block-sortingLossless\nDataCompressionAlgorithm\nM. BurrowsandD.J. Wheeler"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 4,
+        "fields": {
+            "chunk_id": "c9791c44-3f63-4c2b-a594-bfa531af42d1",
+            "source": 1,
+            "content": "We have a strongcommitmenttocommunicatingourresults;exposingandtesting\nour ideas in the research and development communities leads to improved un-\nderstanding. Our research report series supplements publication in professional\njournals and conferences. We seek users for our prototype systems among those\nwith whomwe have common interests,and we encourage collaborationwithuni-\nversity researchers.\nRobertW. Taylor,DirectorA Block-sortingLossless\nDataCompressionAlgorithm\nM. BurrowsandD.J. Wheeler\nMay 10, 1994DavidWheelerisaProfessorofComputerScienceattheUniversityofCambridge,\nU.K. Hiselectronicmail address is: djw3@cl.cam.ac.uk\nc/CRDigitalEquipmentCorporation1994.\nThisworkmaynotbecopiedorreproducedinwholeorinpartforanycommercial\npurpose. Permissiontocopyinwholeor inpartwithoutpaymentoffee isgranted\nfor nonpro®t educational and research purposes provided that all such whole orpartial copies include the following: a notice that such copying is by permission"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 5,
+        "fields": {
+            "chunk_id": "743f9fcc-7b2c-49e3-9305-963db0d00290",
+            "source": 1,
+            "content": "M. BurrowsandD.J. Wheeler\nMay 10, 1994DavidWheelerisaProfessorofComputerScienceattheUniversityofCambridge,\nU.K. Hiselectronicmail address is: djw3@cl.cam.ac.uk\nc/CRDigitalEquipmentCorporation1994.\nThisworkmaynotbecopiedorreproducedinwholeorinpartforanycommercial\npurpose. Permissiontocopyinwholeor inpartwithoutpaymentoffee isgranted\nfor nonpro®t educational and research purposes provided that all such whole orpartial copies include the following: a notice that such copying is by permission\nof the Systems Research Center of Digital Equipment Corporation in Palo Alto,\nCalifornia; an acknowledgment of the authors and individual contributors to the\nwork; and all applicable portions of the copyright notice. Copying, reproducing,\norrepublishingforanyotherpurposeshallrequirealicensewithpaymentoffeeto\ntheSystems Research Center. All rightsreserved.Authors' abstract\nWe describe a block-sorting,losslessdata compression algorithm,and our imple-"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 6,
+        "fields": {
+            "chunk_id": "b405d853-4b92-4938-91c1-ae9b8b52074c",
+            "source": 1,
+            "content": "of the Systems Research Center of Digital Equipment Corporation in Palo Alto,\nCalifornia; an acknowledgment of the authors and individual contributors to the\nwork; and all applicable portions of the copyright notice. Copying, reproducing,\norrepublishingforanyotherpurposeshallrequirealicensewithpaymentoffeeto\ntheSystems Research Center. All rightsreserved.Authors' abstract\nWe describe a block-sorting,losslessdata compression algorithm,and our imple-\nmentation of that algorithm. We compare the performance of our implementation\nwithwidelyavailabledatacompressorsrunningonthesame hardware.\nThealgorithmworksbyapplyingareversibletransformationtoablockofinput\ntext. The transformationdoesnot itselfcompress thedata, butreorders it to make\niteasytocompresswithsimplealgorithmssuchasmove-to-frontcoding.\nOuralgorithmachievesspeedcomparabletoalgorithmsbasedonthetechniques"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 7,
+        "fields": {
+            "chunk_id": "b2960baa-decb-42a8-acd3-4e3b98e5c91e",
+            "source": 1,
+            "content": "We describe a block-sorting,losslessdata compression algorithm,and our imple-\nmentation of that algorithm. We compare the performance of our implementation\nwithwidelyavailabledatacompressorsrunningonthesame hardware.\nThealgorithmworksbyapplyingareversibletransformationtoablockofinput\ntext. The transformationdoesnot itselfcompress thedata, butreorders it to make\niteasytocompresswithsimplealgorithmssuchasmove-to-frontcoding.\nOuralgorithmachievesspeedcomparabletoalgorithmsbasedonthetechniques\nof Lempel and Ziv,but obtainscompression close tothe best statisticalmodellingtechniques. The size of the inputblock mustbe large (a few kilobytes)to achieve\ngoodcompression.Contents\n1 Introduction 1\n2 The reversibletransformation 23 Why the transformedstring compresses well 54 Anef®cient implementation 8\n4.1 Compression :::::::::::::::::::::::::::: 8\n4.2 Decompression ::::::::::::::::::::::::::: 12\n5 Algorithmvariants 136 Performanceof implementation 157 Conclusions 161 Introduction"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 8,
+        "fields": {
+            "chunk_id": "2879d12f-e740-49c9-9983-82aff15f617f",
+            "source": 1,
+            "content": "of Lempel and Ziv,but obtainscompression close tothe best statisticalmodellingtechniques. The size of the inputblock mustbe large (a few kilobytes)to achieve\ngoodcompression.Contents\n1 Introduction 1\n2 The reversibletransformation 23 Why the transformedstring compresses well 54 Anef®cient implementation 8\n4.1 Compression :::::::::::::::::::::::::::: 8\n4.2 Decompression ::::::::::::::::::::::::::: 12\n5 Algorithmvariants 136 Performanceof implementation 157 Conclusions 161 Introduction\nThe most widely used data compression algorithms are based on the sequential\ndata compressors of Lempel and Ziv [1, 2]. Statisticalmodelling techniquesmay\nproducesuperiorcompression[3],butare signi®cantlyslower.\nInthispaper,wepresentatechniquethatachievescompressionwithinapercent\norsoofthatachievedbystatisticalmodellingtechniques,butatspeedscomparable\ntothoseofalgorithmsbasedonLempelandZiv's.\nOur algorithm does not process its input sequentially,but instead processes a"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 9,
+        "fields": {
+            "chunk_id": "ef7afc1d-d6aa-44eb-a115-b74269c40745",
+            "source": 1,
+            "content": "The most widely used data compression algorithms are based on the sequential\ndata compressors of Lempel and Ziv [1, 2]. Statisticalmodelling techniquesmay\nproducesuperiorcompression[3],butare signi®cantlyslower.\nInthispaper,wepresentatechniquethatachievescompressionwithinapercent\norsoofthatachievedbystatisticalmodellingtechniques,butatspeedscomparable\ntothoseofalgorithmsbasedonLempelandZiv's.\nOur algorithm does not process its input sequentially,but instead processes a\nblock of text as a singleunit. The idea is to applya reversible transformationtoablock of text to form a new block that contains the same characters, but is easier\ntocompressbysimplecompressionalgorithms. Thetransformationtendstogroup\ncharacters together so that the probability of ®nding a character close to another\ninstance of the same character is increased substantially. Text of this kind can\neasily be compressed with fastlocally-adaptivealgorithms,such as move-to-front"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 10,
+        "fields": {
+            "chunk_id": "fc982fd8-ecd4-4c92-877f-39b5ee7891e0",
+            "source": 1,
+            "content": "block of text as a singleunit. The idea is to applya reversible transformationtoablock of text to form a new block that contains the same characters, but is easier\ntocompressbysimplecompressionalgorithms. Thetransformationtendstogroup\ncharacters together so that the probability of ®nding a character close to another\ninstance of the same character is increased substantially. Text of this kind can\neasily be compressed with fastlocally-adaptivealgorithms,such as move-to-front\ncoding[4] incombinationwithHuffmanor arithmeticcoding.\nBrie¯y, our algorithmtransformsa string SofNcharacters by forming the N\nrotations(cyclicshifts)of S,sortingthemlexicographically,andextractingthelast\ncharacterofeachoftherotations. Astring Lisformedfromthesecharacters,where\ntheith character of Lis the last character of the ith sorted rotation. In additionto\nL, the algorithmcomputes the index Iof the originalstring Sin the sortedlist of\nrotations. Surprisingly,thereisanef®cientalgorithmtocomputetheoriginalstring"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 11,
+        "fields": {
+            "chunk_id": "c06c6b57-5989-473f-8f77-78fc5867f66e",
+            "source": 1,
+            "content": "Brie¯y, our algorithmtransformsa string SofNcharacters by forming the N\nrotations(cyclicshifts)of S,sortingthemlexicographically,andextractingthelast\ncharacterofeachoftherotations. Astring Lisformedfromthesecharacters,where\ntheith character of Lis the last character of the ith sorted rotation. In additionto\nL, the algorithmcomputes the index Iof the originalstring Sin the sortedlist of\nrotations. Surprisingly,thereisanef®cientalgorithmtocomputetheoriginalstring\nSgivenonly LandI.\nThesortingoperationbringstogetherrotationswiththesameinitialcharacters.\nSince the initial characters of the rotations are adj acent to the ®nal characters,\nconsecutivecharacters in Lare adjacent to similarstrings in S. If the contextof a\ncharacter is a good predictor for the character, Lwill be easy to compress with a\nsimplelocally-adaptivecompressionalgorithm.\nIn the following sections, we describe the transformation in more detail, and"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 12,
+        "fields": {
+            "chunk_id": "50387603-982c-490c-802a-e8c8248ac38f",
+            "source": 1,
+            "content": "Sgivenonly LandI.\nThesortingoperationbringstogetherrotationswiththesameinitialcharacters.\nSince the initial characters of the rotations are adj acent to the ®nal characters,\nconsecutivecharacters in Lare adjacent to similarstrings in S. If the contextof a\ncharacter is a good predictor for the character, Lwill be easy to compress with a\nsimplelocally-adaptivecompressionalgorithm.\nIn the following sections, we describe the transformation in more detail, and\nshow that it can be inverted. We explain more carefully why this transformation\ntends to group characters to allow a simple compression algorithm to work more\neffectively. We then describe ef®cient techniques for implementing the transfor-mation and its inverse, allowing this algorithm to be competitive in speed with\nLempel-Ziv-basedalgorithms,but achievingbetter compression. Finally,we give\nthe performance of our implementation of this algorithm, and compare it with\nwell-knowncompressionprogrammes."
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 13,
+        "fields": {
+            "chunk_id": "545c5582-108d-4389-8832-792aafa5b421",
+            "source": 1,
+            "content": "tends to group characters to allow a simple compression algorithm to work more\neffectively. We then describe ef®cient techniques for implementing the transfor-mation and its inverse, allowing this algorithm to be competitive in speed with\nLempel-Ziv-basedalgorithms,but achievingbetter compression. Finally,we give\nthe performance of our implementation of this algorithm, and compare it with\nwell-knowncompressionprogrammes.\nThealgorithmdescribedherewasdiscoveredbyoneoftheauthors(Wheeler)in\n1983whilehewasworkingatAT&TBellLaboratories,thoughithasnotpreviously\nbeenpublished.\n12 Thereversibletransformation\nThis section describes two sub-algorithms. Algorithm C performs the reversible\ntransformationthatweapplytoablockoftextbeforecompressingit,andAlgorithm\nDperformstheinverseoperation. Alatersectionsuggestsamethodforcompressing\nthetransformed blockof text.\nIn the description below, we treat strings as vectors whose elements are char-\nacters.\nAlgorithmC:Compression transformation"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 14,
+        "fields": {
+            "chunk_id": "5d5cbe16-0229-4e4c-b6d4-9205361b4d10",
+            "source": 1,
+            "content": "1983whilehewasworkingatAT&TBellLaboratories,thoughithasnotpreviously\nbeenpublished.\n12 Thereversibletransformation\nThis section describes two sub-algorithms. Algorithm C performs the reversible\ntransformationthatweapplytoablockoftextbeforecompressingit,andAlgorithm\nDperformstheinverseoperation. Alatersectionsuggestsamethodforcompressing\nthetransformed blockof text.\nIn the description below, we treat strings as vectors whose elements are char-\nacters.\nAlgorithmC:Compression transformation\nThisalgorithmtakesasinputastring SofNcharacters S[0];:::;S[N/NUL1]selected\nfrom anordered alphabet Xofcharacters. Toillustratethetechnique,wealsogive\na running example, using the string SD`abraca',ND6, and the alphabet\nXDf0a0;0b0;0c0;0r0g.\nC1. [sortrotations]\nForm a conceptual N\u0002NmatrixMwhose elements are characters, and\nwhose rows are the rotations (cyclic shifts) of S, sorted in lexicographical\norder. Atleastone ofthe rowsof Mcontainsthe originalstring S.L e tIbe"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 15,
+        "fields": {
+            "chunk_id": "a584994f-5bcd-49fd-9c4f-a25faac8c72e",
+            "source": 1,
+            "content": "Thisalgorithmtakesasinputastring SofNcharacters S[0];:::;S[N/NUL1]selected\nfrom anordered alphabet Xofcharacters. Toillustratethetechnique,wealsogive\na running example, using the string SD`abraca',ND6, and the alphabet\nXDf0a0;0b0;0c0;0r0g.\nC1. [sortrotations]\nForm a conceptual N\u0002NmatrixMwhose elements are characters, and\nwhose rows are the rotations (cyclic shifts) of S, sorted in lexicographical\norder. Atleastone ofthe rowsof Mcontainsthe originalstring S.L e tIbe\ntheindexof the®rst suchrow, numberingfromzero.\nInourexample,theindex ID1a ndthem a trix Mis\nrow\n0aabrac\n1abraca\n2acaabr\n3bracaa\n4caabra\n5racaab\nC2. [®nd lastcharacters ofrotations]\nLetthestring Lbethelastcolumnof M,withcharacters L[0];:::;L[N/NUL1]\n(equal to M[0;N/NUL1];:::;M[N/NUL1;N/NUL1]). The outputof the transfor-\nmationisthepair .L;I/.\nInourexample, LD`caraab'andID1(from stepC1).\n2AlgorithmD:Decompression transformation\nWeusetheexampleandnotationintroducedinAlgorithmC.AlgorithmDusesthe"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 16,
+        "fields": {
+            "chunk_id": "30a03e20-35ca-4a39-a535-64e3e3be3071",
+            "source": 1,
+            "content": "theindexof the®rst suchrow, numberingfromzero.\nInourexample,theindex ID1a ndthem a trix Mis\nrow\n0aabrac\n1abraca\n2acaabr\n3bracaa\n4caabra\n5racaab\nC2. [®nd lastcharacters ofrotations]\nLetthestring Lbethelastcolumnof M,withcharacters L[0];:::;L[N/NUL1]\n(equal to M[0;N/NUL1];:::;M[N/NUL1;N/NUL1]). The outputof the transfor-\nmationisthepair .L;I/.\nInourexample, LD`caraab'andID1(from stepC1).\n2AlgorithmD:Decompression transformation\nWeusetheexampleandnotationintroducedinAlgorithmC.AlgorithmDusesthe\noutput.L;I/ofAlgorithmCtoreconstructitsinput,thestring Soflength N.\nD1. [®nd®rstcharacters ofrotations]\nThisstepcalculatesthe®rstcolumn Fofthematrix MofAlgorithmC.This\nisdonebysortingthecharactersof LtoformF. Weobservethatanycolumn\nofthematrix Misapermutationof theoriginalstring S. Thus,LandFare\nbothpermutationsof S, and thereforeof one another. Furthermore, because\ntherowsof Maresorted,and Fisthe®rstcolumnof M,thecharacters in F\nare alsosorted.\nInourexample, FD`aaabcr'."
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 17,
+        "fields": {
+            "chunk_id": "edddf577-73ce-4f97-b996-db1949cfd8f3",
+            "source": 1,
+            "content": "output.L;I/ofAlgorithmCtoreconstructitsinput,thestring Soflength N.\nD1. [®nd®rstcharacters ofrotations]\nThisstepcalculatesthe®rstcolumn Fofthematrix MofAlgorithmC.This\nisdonebysortingthecharactersof LtoformF. Weobservethatanycolumn\nofthematrix Misapermutationof theoriginalstring S. Thus,LandFare\nbothpermutationsof S, and thereforeof one another. Furthermore, because\ntherowsof Maresorted,and Fisthe®rstcolumnof M,thecharacters in F\nare alsosorted.\nInourexample, FD`aaabcr'.\nD2. [buildlistofpredecessorcharacters]\nTo assist our explanation, we describe this step in terms of the contents of\nthe matrix M. The reader shouldremember that the complete matrix is not\navailableto the decompressor; only the strings F,L, and the index I(from\ntheinput)areneeded bythisstep.\nConsider the rows of the matrix Mthat start with some given character ch.\nAlgorithmCensuredthattherowsofmatrix Maresortedlexicographically,\nsotherowsthatstartwith chare ordered lexicographically."
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 18,
+        "fields": {
+            "chunk_id": "80f60b76-885e-4e19-a281-b039657dad61",
+            "source": 1,
+            "content": "D2. [buildlistofpredecessorcharacters]\nTo assist our explanation, we describe this step in terms of the contents of\nthe matrix M. The reader shouldremember that the complete matrix is not\navailableto the decompressor; only the strings F,L, and the index I(from\ntheinput)areneeded bythisstep.\nConsider the rows of the matrix Mthat start with some given character ch.\nAlgorithmCensuredthattherowsofmatrix Maresortedlexicographically,\nsotherowsthatstartwith chare ordered lexicographically.\nWe de®nethematrix M0formed by rotatingeach rowof Monecharacter to\ntheright,so foreach iD0;:::;N/NUL1,and each jD0;:::;N/NUL1,\nM0[i;j]DM[i;.j/NUL1/modN]\nInourexample, MandM0are:\nrow MM0\n0aabrac caabra\n1abraca aabrac\n2acaabr racaab\n3bracaa abraca\n4caabra acaabr\n5racaab bracaa\nLikeM, each row of M0is a rotation of S, and for each row of Mthere is\na corresponding row in M0. We constructed M0fromMso that the rows\n3ofM0are sorted lexicographically starting with their secondcharacter. So,"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 19,
+        "fields": {
+            "chunk_id": "be21a078-6bc9-40c0-a377-487c3ec0d1d4",
+            "source": 1,
+            "content": "We de®nethematrix M0formed by rotatingeach rowof Monecharacter to\ntheright,so foreach iD0;:::;N/NUL1,and each jD0;:::;N/NUL1,\nM0[i;j]DM[i;.j/NUL1/modN]\nInourexample, MandM0are:\nrow MM0\n0aabrac caabra\n1abraca aabrac\n2acaabr racaab\n3bracaa abraca\n4caabra acaabr\n5racaab bracaa\nLikeM, each row of M0is a rotation of S, and for each row of Mthere is\na corresponding row in M0. We constructed M0fromMso that the rows\n3ofM0are sorted lexicographically starting with their secondcharacter. So,\nif we consider only those rows in M0that start with a character ch,t h e y\nmustappear inlexicographicalorderrelative tooneanother;theyhave been\nsorted lexicographically starting with their second characters, and their ®rst\ncharacters are all thesame and so donot affect thesort order. Therefore, for\nany givencharacter ch,th er o w sin Mthatbeginwith chappear inthe same\norderas therowsin M0thatbeginwith ch.\nInourexample,thisisdemonstratedbytherowsthatbeginwith` a'. Therows"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 20,
+        "fields": {
+            "chunk_id": "9f18c25b-cfda-44ee-82a2-61d16d4f02e6",
+            "source": 1,
+            "content": "if we consider only those rows in M0that start with a character ch,t h e y\nmustappear inlexicographicalorderrelative tooneanother;theyhave been\nsorted lexicographically starting with their second characters, and their ®rst\ncharacters are all thesame and so donot affect thesort order. Therefore, for\nany givencharacter ch,th er o w sin Mthatbeginwith chappear inthe same\norderas therowsin M0thatbeginwith ch.\nInourexample,thisisdemonstratedbytherowsthatbeginwith` a'. Therows\n`aabrac',`abraca',and` acaabr'arerows0,1,2in Mandcorrespondto\nrows1, 3,4in M0.\nUsingFandL,t h e® r s tc o l u m n so f MandM0respectively, we calculate\na vectorTthat indicates the correspondence between the rows of the two\nmatrices,inthesensethatforeach jD0;:::;N/NUL1,rowjofM0corresponds\ntorowT[j]ofM.\nIfL[j]i st h ekth instance of chinL,t h e nT[j]DiwhereF[i]i st h ekth\ninstance of chinF. Note that Trepresents a one-to-one correspondence\nbetween elementsof Fand elements of L,a n dF[T[j]]DL[j]."
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 21,
+        "fields": {
+            "chunk_id": "fd70e3d1-5700-4813-adde-1797b1fcdea9",
+            "source": 1,
+            "content": "`aabrac',`abraca',and` acaabr'arerows0,1,2in Mandcorrespondto\nrows1, 3,4in M0.\nUsingFandL,t h e® r s tc o l u m n so f MandM0respectively, we calculate\na vectorTthat indicates the correspondence between the rows of the two\nmatrices,inthesensethatforeach jD0;:::;N/NUL1,rowjofM0corresponds\ntorowT[j]ofM.\nIfL[j]i st h ekth instance of chinL,t h e nT[j]DiwhereF[i]i st h ekth\ninstance of chinF. Note that Trepresents a one-to-one correspondence\nbetween elementsof Fand elements of L,a n dF[T[j]]DL[j].\nInourexample, Ti s :( 405123 ) .\nD3. [formoutput S]\nNow, for each iD0;:::;N/NUL1, the characters L[i]a n dF[i]a r et h el a s t\nand ®rst characters of the row iofM. Since each row is a rotation of\nS, the character L[i] cyclicly precedes the character F[i]i nS.F r o m t h e\nconstructionof T,wehave F[T[j]]DL[j]. Substituting iDT[j],wehave\nL[T[j]] cycliclyprecedes L[j]inS.\nTheindex Iisde®ned byAlgorithmCsuchthatrow IofMisS. Thus,the"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 22,
+        "fields": {
+            "chunk_id": "35b5f263-8095-4dc0-8570-461fd8c20d05",
+            "source": 1,
+            "content": "between elementsof Fand elements of L,a n dF[T[j]]DL[j].\nInourexample, Ti s :( 405123 ) .\nD3. [formoutput S]\nNow, for each iD0;:::;N/NUL1, the characters L[i]a n dF[i]a r et h el a s t\nand ®rst characters of the row iofM. Since each row is a rotation of\nS, the character L[i] cyclicly precedes the character F[i]i nS.F r o m t h e\nconstructionof T,wehave F[T[j]]DL[j]. Substituting iDT[j],wehave\nL[T[j]] cycliclyprecedes L[j]inS.\nTheindex Iisde®ned byAlgorithmCsuchthatrow IofMisS. Thus,the\nlast character of SisL[I]. We use the vector Tto give the predecessors of\neach character:\nfor eachiD0;:::;N/NUL1:S[N/NUL1/NULi]DL[Ti[I]].\nwhereT0[x]Dx,andTiC1[x]DT[Ti[x]]. Thisyields S,theoriginalinput\ntothecompressor.\nInourexample, SD`abraca'.\nWecouldhavede®ned Tsothatthestring Swouldbegeneratedfromfronttoback,\nrather thantheotherwayaround. Thedescriptionabove matches thepseudo-code\ngi v e ninS e c tion4. 2.\n4The sequence Ti[I]f o riD0;:::;N/NUL1 is not necessarily a permutation of"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 23,
+        "fields": {
+            "chunk_id": "9b607493-d0f2-4c3a-ba50-1f92d526513d",
+            "source": 1,
+            "content": "last character of SisL[I]. We use the vector Tto give the predecessors of\neach character:\nfor eachiD0;:::;N/NUL1:S[N/NUL1/NULi]DL[Ti[I]].\nwhereT0[x]Dx,andTiC1[x]DT[Ti[x]]. Thisyields S,theoriginalinput\ntothecompressor.\nInourexample, SD`abraca'.\nWecouldhavede®ned Tsothatthestring Swouldbegeneratedfromfronttoback,\nrather thantheotherwayaround. Thedescriptionabove matches thepseudo-code\ngi v e ninS e c tion4. 2.\n4The sequence Ti[I]f o riD0;:::;N/NUL1 is not necessarily a permutation of\nthe numbers 0 ;:::;N/NUL1. If the original string Sis of the form Zpfor some\nsubstring Zand some p>1, then the sequence Ti[I]f o riD0;:::;N/NUL1 will\nalsobe of theform Z0pfor some subsequence Z0. Thatis,therepetitionsin Swill\nbe generated by visitingthe same elements of Trepeatedly. For example, if SD\n`cancan',ZD`can'andpD2,thesequence Ti[I]foriD0;:::;N/NUL1willbe\n[2;4;0;2;4;0].\n3 Whythetransformedstringcompresseswell\nAlgorithm C sorts the rotations of an input string S, and generates the string L"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 24,
+        "fields": {
+            "chunk_id": "21a275b3-c1f4-4987-8130-6c61b22f283a",
+            "source": 1,
+            "content": "substring Zand some p>1, then the sequence Ti[I]f o riD0;:::;N/NUL1 will\nalsobe of theform Z0pfor some subsequence Z0. Thatis,therepetitionsin Swill\nbe generated by visitingthe same elements of Trepeatedly. For example, if SD\n`cancan',ZD`can'andpD2,thesequence Ti[I]foriD0;:::;N/NUL1willbe\n[2;4;0;2;4;0].\n3 Whythetransformedstringcompresseswell\nAlgorithm C sorts the rotations of an input string S, and generates the string L\nconsistingofthelast characterof each rotation.\nTo see why this might lead to effective compression, consider the effect on a\nsingleletterinacommonwordinablockofEnglishtext. Wewillusetheexample\nof the letter ` t'i nt h ew o r d` the', and assume an input string containing many\ninstancesof` the'.\nWhen the list of rotations of the input is sorted, all the rotations starting with\n`he' will sort together; a large proportion of them are likely to end in ` t'. One\nregionofthestring Lwillthereforecontainadisproportionatelylargenumberof` t'"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 25,
+        "fields": {
+            "chunk_id": "96771806-5cf7-4fea-babc-db2a29116664",
+            "source": 1,
+            "content": "To see why this might lead to effective compression, consider the effect on a\nsingleletterinacommonwordinablockofEnglishtext. Wewillusetheexample\nof the letter ` t'i nt h ew o r d` the', and assume an input string containing many\ninstancesof` the'.\nWhen the list of rotations of the input is sorted, all the rotations starting with\n`he' will sort together; a large proportion of them are likely to end in ` t'. One\nregionofthestring Lwillthereforecontainadisproportionatelylargenumberof` t'\ncharacters, intermingled with other characters that can proceed ` he' in English,\nsuch as space, ` s', `T', and ` S'.\nThesameargumentcanbeappliedtoallcharactersinallwords,soanylocalized\nregionofthestring Lislikelytocontainalargenumberofafewdistinctcharacters.\nTheoveralleffectisthattheprobabilitythatgivencharacter chwilloccuratagiven\npoint inLis very high if choccurs near that point in L, and is low otherwise.\nThis property is exactly the one needed for effective compression by a move-to-"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 26,
+        "fields": {
+            "chunk_id": "d9b041ea-2f29-4f82-aabd-fdb111ace9f6",
+            "source": 1,
+            "content": "characters, intermingled with other characters that can proceed ` he' in English,\nsuch as space, ` s', `T', and ` S'.\nThesameargumentcanbeappliedtoallcharactersinallwords,soanylocalized\nregionofthestring Lislikelytocontainalargenumberofafewdistinctcharacters.\nTheoveralleffectisthattheprobabilitythatgivencharacter chwilloccuratagiven\npoint inLis very high if choccurs near that point in L, and is low otherwise.\nThis property is exactly the one needed for effective compression by a move-to-\nfrontcoder [4], whichencodesan instanceofcharacter chby thecountof distinct\ncharacters seen since the next previous occurrence of ch. W h e na p p l i e dt ot h e\nstringL, the output of a move-to-front coder will be dominated by low numbers,\nwhichcanbeef®cientlyencodedwithaHuffman orarithmeticcoder.\nFigure1 showsan example of thealgorithmatwork. Eachlineis the®rst few\ncharacters and ®nal character ofa rotationof a versionof thisdocument. Notethe\ngroupingofsimilarcharactersinthecolumnof ®nalcharacters."
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 27,
+        "fields": {
+            "chunk_id": "4938f848-9419-47b5-8e0f-c9d857c5c214",
+            "source": 1,
+            "content": "characters seen since the next previous occurrence of ch. W h e na p p l i e dt ot h e\nstringL, the output of a move-to-front coder will be dominated by low numbers,\nwhichcanbeef®cientlyencodedwithaHuffman orarithmeticcoder.\nFigure1 showsan example of thealgorithmatwork. Eachlineis the®rst few\ncharacters and ®nal character ofa rotationof a versionof thisdocument. Notethe\ngroupingofsimilarcharactersinthecolumnof ®nalcharacters.\nForcompleteness,wenowgivedetailsofonepossiblewaytoencodetheoutput\nofAlgorithmC,andthecorrespondinginverseoperation. Acompletecompression\nalgorithm is created by combining these encoding and decoding operations with\nAlgorithmsCandD.\n5®nal\nchar sortedrotations\n(L)\nan to decompress. It achieves compression\non to perform only comparisons to a depth\non transformation} This section describes\non transformation} We use the example and\non treats the right-hand side as the most\nan tree for each 16 kbyte input block, enc\nan tree in the output stream, then encodes"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 28,
+        "fields": {
+            "chunk_id": "9ef0d9a6-9d87-4231-a3a9-52f53ede149b",
+            "source": 1,
+            "content": "ofAlgorithmC,andthecorrespondinginverseoperation. Acompletecompression\nalgorithm is created by combining these encoding and decoding operations with\nAlgorithmsCandD.\n5®nal\nchar sortedrotations\n(L)\nan to decompress. It achieves compression\non to perform only comparisons to a depth\non transformation} This section describes\non transformation} We use the example and\non treats the right-hand side as the most\nan tree for each 16 kbyte input block, enc\nan tree in the output stream, then encodes\nin turn, set $L[i]$ to be the\nin turn, set $R[i]$ to the\non unusual data. Like the algorithm of Man\nan use a single set of probabilities table\nen using the positions of the suffixes in\nin value at a given point in the vector $R\nen we present modifications that improve t\nen when the block size is quite large. Ho\nin which codes that have not been seen in\nin with $ch$ appear in the {\\em same order\nin with $ch$. In our exam\non with Huffman or arithmetic coding. Bri"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 29,
+        "fields": {
+            "chunk_id": "3e7a37f1-4ffc-4931-a2e7-4a47852dc471",
+            "source": 1,
+            "content": "in turn, set $L[i]$ to be the\nin turn, set $R[i]$ to the\non unusual data. Like the algorithm of Man\nan use a single set of probabilities table\nen using the positions of the suffixes in\nin value at a given point in the vector $R\nen we present modifications that improve t\nen when the block size is quite large. Ho\nin which codes that have not been seen in\nin with $ch$ appear in the {\\em same order\nin with $ch$. In our exam\non with Huffman or arithmetic coding. Bri\non with figures given by BellÄ\\cite{bell}.\nFigure 1: Example of sorted rotations. Twenty consecutive rotations from the\nsorted listof rotationsof a versionof thispaper are shown,togetherwiththe ®nal\ncharacter ofeach rotation.\n6AlgorithmM:Move-to-frontcoding\nThis algorithm encodes the output .L;I/of Algorithm C, where Lis a string of\nlengthNandIis an index. It encodes Lusing a move-to-front algorithm and a\nHuffmanor arithmeticcoder.\nTherunningexampleofAlgorithmCiscontinuedhere.\nM1. [move-to-frontcoding]"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 30,
+        "fields": {
+            "chunk_id": "e49b34af-29d8-4ce5-a2b2-ac314e6b5300",
+            "source": 1,
+            "content": "Figure 1: Example of sorted rotations. Twenty consecutive rotations from the\nsorted listof rotationsof a versionof thispaper are shown,togetherwiththe ®nal\ncharacter ofeach rotation.\n6AlgorithmM:Move-to-frontcoding\nThis algorithm encodes the output .L;I/of Algorithm C, where Lis a string of\nlengthNandIis an index. It encodes Lusing a move-to-front algorithm and a\nHuffmanor arithmeticcoder.\nTherunningexampleofAlgorithmCiscontinuedhere.\nM1. [move-to-frontcoding]\nThis step encodes each of the characters in Lby applying the move-to-\nfront technique to the individualcharacters. We de®ne a vector of integers\nR[0];:::;R[N/NUL1],whicharethecodesforthecharacters L[0];:::;L[N/NUL\n1].\nInitialize a list Yof characters to contain each character in the alphabet X\nexactly once.\nFor each iD0;:::;N/NUL1 in turn, set R[i] to the number of characters\npreceding character L[i] in the list Y, then move character L[i] to the front\nofY.\nTakingYD[0a0;0b0;0c0;0r0] initially, and LD`caraab', we compute the"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 31,
+        "fields": {
+            "chunk_id": "75f82e2e-7a41-4e27-a0ba-e441836f7c33",
+            "source": 1,
+            "content": "front technique to the individualcharacters. We de®ne a vector of integers\nR[0];:::;R[N/NUL1],whicharethecodesforthecharacters L[0];:::;L[N/NUL\n1].\nInitialize a list Yof characters to contain each character in the alphabet X\nexactly once.\nFor each iD0;:::;N/NUL1 in turn, set R[i] to the number of characters\npreceding character L[i] in the list Y, then move character L[i] to the front\nofY.\nTakingYD[0a0;0b0;0c0;0r0] initially, and LD`caraab', we compute the\nvectorR:( 213103 ) .\nM2. [encode]\nApply Huffman or arithmetic coding to the elements of R, treating each\nelement as a separate token to be coded. Any coding technique can be\nappliedaslongasthedecompressorcan performtheinverseoperation. Call\ntheoutputofthiscodingprocess OUT.TheoutputofAlgorithmCisthepair\n.OUT;I/whereIis thevaluecomputed in stepC1.\nAlgorithmW:Move-to-frontdecoding\nThisalgorithmistheinverseofAlgorithmM.Itcomputesthepair .L;I/from the\npair.OUT;I/.\nWeassumethattheinitialvalueofthelist YusedinstepM1isavailabletothe"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 32,
+        "fields": {
+            "chunk_id": "28cecd25-1d07-4418-b969-ccb629b0fbdf",
+            "source": 1,
+            "content": "Apply Huffman or arithmetic coding to the elements of R, treating each\nelement as a separate token to be coded. Any coding technique can be\nappliedaslongasthedecompressorcan performtheinverseoperation. Call\ntheoutputofthiscodingprocess OUT.TheoutputofAlgorithmCisthepair\n.OUT;I/whereIis thevaluecomputed in stepC1.\nAlgorithmW:Move-to-frontdecoding\nThisalgorithmistheinverseofAlgorithmM.Itcomputesthepair .L;I/from the\npair.OUT;I/.\nWeassumethattheinitialvalueofthelist YusedinstepM1isavailabletothe\ndecompressor,andthatthecodingschemeusedinstepM2hasaninverseoperation.\nW1. [decode]\nDecode thecoded stream OUTusingthe inverse of the codingscheme used\ninstepM2. Theresultisa vector RofNintegers.\nInourexample, Ri s :( 213103 ) .\n7W2. [inversemove-to-frontcoding]\nThe goal of this step is to calculate a string LofNcharacters, given the\nmove-to-frontcodes R[0];:::;R[N/NUL1].\nInitializea list Yofcharacters to contain thecharacters ofthealphabet Xin\nthesameorder as in stepM1."
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 33,
+        "fields": {
+            "chunk_id": "2a5bcd51-54db-4350-a8c5-575a2fdf3d1e",
+            "source": 1,
+            "content": "decompressor,andthatthecodingschemeusedinstepM2hasaninverseoperation.\nW1. [decode]\nDecode thecoded stream OUTusingthe inverse of the codingscheme used\ninstepM2. Theresultisa vector RofNintegers.\nInourexample, Ri s :( 213103 ) .\n7W2. [inversemove-to-frontcoding]\nThe goal of this step is to calculate a string LofNcharacters, given the\nmove-to-frontcodes R[0];:::;R[N/NUL1].\nInitializea list Yofcharacters to contain thecharacters ofthealphabet Xin\nthesameorder as in stepM1.\nFor each iD0;:::;N/NUL1 in turn, set L[i] to be the character at position\nR[i]inlistY(numberingfrom0),thenmovethatcharactertothefrontof Y.\nThe resulting string Lis the last column of matrix Mof AlgorithmC. The\noutputofthisalgorithmisthepair .L;I/,whichistheinputtoAlgorithmD.\nTakingYD[0a0;0b0;0c0;0r0] initially (as in Algorithm M), we compute the\nstringLD`caraab'.\n4 Anef®cientimplementation\nEf®cient implementations of move-to-front, Huffman, and arithmetic coding are"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 34,
+        "fields": {
+            "chunk_id": "5c2a88bd-c029-4eb1-bd28-85d56d65796b",
+            "source": 1,
+            "content": "thesameorder as in stepM1.\nFor each iD0;:::;N/NUL1 in turn, set L[i] to be the character at position\nR[i]inlistY(numberingfrom0),thenmovethatcharactertothefrontof Y.\nThe resulting string Lis the last column of matrix Mof AlgorithmC. The\noutputofthisalgorithmisthepair .L;I/,whichistheinputtoAlgorithmD.\nTakingYD[0a0;0b0;0c0;0r0] initially (as in Algorithm M), we compute the\nstringLD`caraab'.\n4 Anef®cientimplementation\nEf®cient implementations of move-to-front, Huffman, and arithmetic coding are\nwellknown. Here weconcentrateontheunusualstepsinAlgorithmsC andD.\n4.1 Compression\nThemostimportantfactorincompressionspeedisthetimetakentosorttherotationsoftheinputblock. Asimpleapplicationofquicksortrequireslittleadditionalspace\n(one word per character), and works fairly well on most input data. However, its\nworst-caseperformance ispoor.\nAfasterwaytoimplementAlgorithmCistoreducetheproblemofsortingthe\nrotationstotheproblemofsortingthesuf®xesofa relatedstring."
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 35,
+        "fields": {
+            "chunk_id": "1ce0ed5f-d821-491f-98c8-1039350617f6",
+            "source": 1,
+            "content": "wellknown. Here weconcentrateontheunusualstepsinAlgorithmsC andD.\n4.1 Compression\nThemostimportantfactorincompressionspeedisthetimetakentosorttherotationsoftheinputblock. Asimpleapplicationofquicksortrequireslittleadditionalspace\n(one word per character), and works fairly well on most input data. However, its\nworst-caseperformance ispoor.\nAfasterwaytoimplementAlgorithmCistoreducetheproblemofsortingthe\nrotationstotheproblemofsortingthesuf®xesofa relatedstring.\nTocompressastring S,®rstformthestring S\n0,whichistheconcatenationof S\nwithEOF,anewcharacterthatdoesnotappearin S. NowapplyAlgorithmCto S0.\nBecauseEOFisdifferentfromallothercharactersin S0,thesuf®xesof S0sortinthe\nsame orderastherotationsof S0. Hence,tosorttherotations,itsuf®cestosortthe\nsuf®xes of S0. This can be done in linear time and space by buildinga suf®x tree,\nwhich then can be walked in lexicographical order to recover the sorted suf®xes.\nWeusedMcCreight'ssuf®xtreeconstructionalgorithm[5]inanimplementationof"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 36,
+        "fields": {
+            "chunk_id": "1e61f6c0-5e0d-4f17-9aac-826999d001ae",
+            "source": 1,
+            "content": "0,whichistheconcatenationof S\nwithEOF,anewcharacterthatdoesnotappearin S. NowapplyAlgorithmCto S0.\nBecauseEOFisdifferentfromallothercharactersin S0,thesuf®xesof S0sortinthe\nsame orderastherotationsof S0. Hence,tosorttherotations,itsuf®cestosortthe\nsuf®xes of S0. This can be done in linear time and space by buildinga suf®x tree,\nwhich then can be walked in lexicographical order to recover the sorted suf®xes.\nWeusedMcCreight'ssuf®xtreeconstructionalgorithm[5]inanimplementationof\nAlgorithmC.Itsperformanceiswithin40%ofthefastesttechniquewehavefound\nwhen operating on text ®les. Unfortunately,suf®x tree algorithms need space for\nmore thanfourmachinewordsperinputcharacter.\nManber and Myers give a simple algorithmfor sorting the suf®xes of a string\ninO.NlogN/time [6]. Thealgorithmthey describerequiresonlytwowordsper\n8inputcharacter. Thealgorithmworksbysortingsuf®xesontheir®rst icharacters,\nthenusingthepositionsofthesuf®xesinthesortedarrayasthesortkeyforanother"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 37,
+        "fields": {
+            "chunk_id": "afd5524f-5306-4101-a1f2-33fbddc54d45",
+            "source": 1,
+            "content": "AlgorithmC.Itsperformanceiswithin40%ofthefastesttechniquewehavefound\nwhen operating on text ®les. Unfortunately,suf®x tree algorithms need space for\nmore thanfourmachinewordsperinputcharacter.\nManber and Myers give a simple algorithmfor sorting the suf®xes of a string\ninO.NlogN/time [6]. Thealgorithmthey describerequiresonlytwowordsper\n8inputcharacter. Thealgorithmworksbysortingsuf®xesontheir®rst icharacters,\nthenusingthepositionsofthesuf®xesinthesortedarrayasthesortkeyforanother\nsort onthe®rst 2 icharacters. Unfortunately,theperformance oftheiralgorithmis\nsigni®cantlyworsethanthesuf®xtree approach.\nThe fastestscheme we have tried so far usesa variant of quicksortto generate\nthesortedlistofsuf®xes. Itsperformanceissigni®cantlybetterthanthesuf®xtree\nwhen operating on text, and it uses signi®cantly less space. Unlikethe suf®x tree\nhowever,itsperformance candegradeconsiderablywhenoperatingonsome types"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 38,
+        "fields": {
+            "chunk_id": "f6f34691-3006-4e4d-9c4b-11dcd86356e8",
+            "source": 1,
+            "content": "thenusingthepositionsofthesuf®xesinthesortedarrayasthesortkeyforanother\nsort onthe®rst 2 icharacters. Unfortunately,theperformance oftheiralgorithmis\nsigni®cantlyworsethanthesuf®xtree approach.\nThe fastestscheme we have tried so far usesa variant of quicksortto generate\nthesortedlistofsuf®xes. Itsperformanceissigni®cantlybetterthanthesuf®xtree\nwhen operating on text, and it uses signi®cantly less space. Unlikethe suf®x tree\nhowever,itsperformance candegradeconsiderablywhenoperatingonsome types\nof data. Like the algorithm of Manber and Myers, our algorithm uses only twowordsper inputcharacter.\nAlgorithmQ:Fastquicksortingonsuf®xes\nThis algorithm sorts the suf®xes of the string S, which contains Ncharacters\nS[0;:::;N/NUL1]. Thealgorithmworksbyapplyingamodi®edversionofquicksort\ntothesuf®xesof S.\nFirstwe presenta simpleversionof thealgorithm. Thenwe presentmodi®ca-\ntionsthatimprove thespeed and makebad performance less likely.\nQ1. [formextendedstring]"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 39,
+        "fields": {
+            "chunk_id": "39935af4-d393-44ed-a5ce-b7c58a714d1a",
+            "source": 1,
+            "content": "of data. Like the algorithm of Manber and Myers, our algorithm uses only twowordsper inputcharacter.\nAlgorithmQ:Fastquicksortingonsuf®xes\nThis algorithm sorts the suf®xes of the string S, which contains Ncharacters\nS[0;:::;N/NUL1]. Thealgorithmworksbyapplyingamodi®edversionofquicksort\ntothesuf®xesof S.\nFirstwe presenta simpleversionof thealgorithm. Thenwe presentmodi®ca-\ntionsthatimprove thespeed and makebad performance less likely.\nQ1. [formextendedstring]\nLetkbethenumberof charactersthat®tinamachine word.\nForm the string S0fromSby appending kadditional EOFcharacters to S,\nwhereEOFdoesnotappearin S.\nQ2. [form arrayof words]\nInitializeanarray WofNwordsW[0;:::;N/NUL1], suchthat W[i] contains\nthe characters S0[i;:::;iCk/NUL1] arranged so that integer comparisons on\nthewordsagreewithlexicographiccomparisonsonthe k-character strings.\nPacking characters intowordshas twobene®ts: It allowstwopre®xes to be\ncompared kbytes at a time using aligned memory accesses, and it allows"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 40,
+        "fields": {
+            "chunk_id": "5fc4f616-3871-46ba-afd9-f0b08b012d44",
+            "source": 1,
+            "content": "Form the string S0fromSby appending kadditional EOFcharacters to S,\nwhereEOFdoesnotappearin S.\nQ2. [form arrayof words]\nInitializeanarray WofNwordsW[0;:::;N/NUL1], suchthat W[i] contains\nthe characters S0[i;:::;iCk/NUL1] arranged so that integer comparisons on\nthewordsagreewithlexicographiccomparisonsonthe k-character strings.\nPacking characters intowordshas twobene®ts: It allowstwopre®xes to be\ncompared kbytes at a time using aligned memory accesses, and it allows\nmany slowcases tobe eliminated(described instep Q7).\nQ3. [form arrayof suf®xes]\nIn this step we initialize an array VofNintegers. If an element of V\ncontainsj,itrepresentsthesuf®xof S0whose®rstcharacter is S0[j]. When\nthealgorithmiscomplete,suf®x V[i]willbethe ithsuf®xinlexicographical\norder.\nInitializeanarray Vofintegerssothatforeach iD0;:::;N/NUL1:V[i]Di.\n9Q4. [radixsort]\nSort the elements of V, using the ®rst two characters of each suf®x as the\nsortkey. Thiscanbedoneef®cientlyusingradixsort."
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 41,
+        "fields": {
+            "chunk_id": "a8c73ca0-81d3-49ed-9e08-3f783c5afae2",
+            "source": 1,
+            "content": "many slowcases tobe eliminated(described instep Q7).\nQ3. [form arrayof suf®xes]\nIn this step we initialize an array VofNintegers. If an element of V\ncontainsj,itrepresentsthesuf®xof S0whose®rstcharacter is S0[j]. When\nthealgorithmiscomplete,suf®x V[i]willbethe ithsuf®xinlexicographical\norder.\nInitializeanarray Vofintegerssothatforeach iD0;:::;N/NUL1:V[i]Di.\n9Q4. [radixsort]\nSort the elements of V, using the ®rst two characters of each suf®x as the\nsortkey. Thiscanbedoneef®cientlyusingradixsort.\nQ5. [iterateover each character in thealphabet]\nFor each character chinthealphabet,performstepsQ6,Q7.\nOncethisiterationiscomplete, Vrepresentsthesortedsuf®xesof S,andthe\nalgorithmterminates.\nQ6. [quicksortsuf®xesstartingwith ch]\nForeach character ch0inthealphabet: Applyquicksorttotheelementsof V\nstartingwith chfollowedby ch0. Intheimplementationofquicksort,compare\ntheelementsof Vbycomparingthesuf®xestheyrepresentbyindexinginto"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 42,
+        "fields": {
+            "chunk_id": "0110ac86-fc9b-4262-ad35-fd66e17445a9",
+            "source": 1,
+            "content": "sortkey. Thiscanbedoneef®cientlyusingradixsort.\nQ5. [iterateover each character in thealphabet]\nFor each character chinthealphabet,performstepsQ6,Q7.\nOncethisiterationiscomplete, Vrepresentsthesortedsuf®xesof S,andthe\nalgorithmterminates.\nQ6. [quicksortsuf®xesstartingwith ch]\nForeach character ch0inthealphabet: Applyquicksorttotheelementsof V\nstartingwith chfollowedby ch0. Intheimplementationofquicksort,compare\ntheelementsof Vbycomparingthesuf®xestheyrepresentbyindexinginto\nthearray W. At each recursion step, keep track of the numberof characters\nthat have compared equal in the group, so that they need not be compared\nagain.\nAllthesuf®xesstartingwith chhavenowbeensortedintotheir®nalpositions\ninV.\nQ7. [updatesortkeys]\nFor each element V[i] correspondingtoa suf®xstartingwith ch(thatis, for\nwhichS[V[i]]Dch), setW[V[i]] to a value with chin its high-order bits\n(as before) and with iin its low-order bits (which step Q2 set to the k/NUL1"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 43,
+        "fields": {
+            "chunk_id": "6ae4598e-5dec-49d4-85fb-2114283ad744",
+            "source": 1,
+            "content": "thearray W. At each recursion step, keep track of the numberof characters\nthat have compared equal in the group, so that they need not be compared\nagain.\nAllthesuf®xesstartingwith chhavenowbeensortedintotheir®nalpositions\ninV.\nQ7. [updatesortkeys]\nFor each element V[i] correspondingtoa suf®xstartingwith ch(thatis, for\nwhichS[V[i]]Dch), setW[V[i]] to a value with chin its high-order bits\n(as before) and with iin its low-order bits (which step Q2 set to the k/NUL1\ncharactersfollowingtheinitial ch).Thenewvalueof W[V[i]] sortsintothe\nsamepositionastheoldvalue,buthasthedesirablepropertythatitisdistinct\nfrom all other values in W. This speeds up subsequent sorting operations,\nsincecomparisonswiththenewelementscannotcompare equal.\nThisbasicalgorithmcanbere®nedinanumberofways. Anobviousimprove-\nmentistopickthecharacter chinstepQ5startingwiththeleastcommoncharacter\ninS, and proceeding to the most common. This allows the updates of step Q7 to\nhave thegreatesteffect."
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 44,
+        "fields": {
+            "chunk_id": "41138a6b-f7dd-4ffe-9a8a-fb933db23730",
+            "source": 1,
+            "content": "samepositionastheoldvalue,buthasthedesirablepropertythatitisdistinct\nfrom all other values in W. This speeds up subsequent sorting operations,\nsincecomparisonswiththenewelementscannotcompare equal.\nThisbasicalgorithmcanbere®nedinanumberofways. Anobviousimprove-\nmentistopickthecharacter chinstepQ5startingwiththeleastcommoncharacter\ninS, and proceeding to the most common. This allows the updates of step Q7 to\nhave thegreatesteffect.\nAs described, the algorithm performs poorly when Scontains many repeated\nsubstrings. We dealwiththisproblemwithtwomechanisms.\nThe®rstmechanismhandlesstringsofasinglerepeated characterbyreplacing\nstepQ6withthefollowingsteps.\nQ6a. [quicksortsuf®xesstarting ch;ch0wherech6Dch0]\nForeachcharacter ch06Dchinthealphabet: Applyquicksorttotheelements\nofVstarting with chfollowed by ch0. In the implementation of quicksort,\n10compare the elements of Vby comparing the suf®xes they represent by\nindexingintothearray W. At each recursion step,keep track of thenumber"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 45,
+        "fields": {
+            "chunk_id": "1495b34a-04c9-4f4d-9a11-3cc81a60432a",
+            "source": 1,
+            "content": "substrings. We dealwiththisproblemwithtwomechanisms.\nThe®rstmechanismhandlesstringsofasinglerepeated characterbyreplacing\nstepQ6withthefollowingsteps.\nQ6a. [quicksortsuf®xesstarting ch;ch0wherech6Dch0]\nForeachcharacter ch06Dchinthealphabet: Applyquicksorttotheelements\nofVstarting with chfollowed by ch0. In the implementation of quicksort,\n10compare the elements of Vby comparing the suf®xes they represent by\nindexingintothearray W. At each recursion step,keep track of thenumber\nofcharactersthathavecomparedequalinthegroup,sothattheyneednotbe\ncompared again.\nQ6b. [sortlowsuf®xesstarting ch;ch]\nThisstep sortsthe suf®xes startingrunswhich wouldsort before an in®nite\nstringofchcharacters. Weobservethatamongsuchsuf®xes,longinitialruns\nofcharacter chsortafter shorterinitialruns,andrunsofequallengthsortin\nthesame order asthecharacters at theendsofthe run. Thisorderingcan be\nobtainedwithasimpleloopover thesuf®xes,startingwiththeshortest."
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 46,
+        "fields": {
+            "chunk_id": "c60c4615-2fce-4ac6-88f8-5eac361c9dcf",
+            "source": 1,
+            "content": "ofcharactersthathavecomparedequalinthegroup,sothattheyneednotbe\ncompared again.\nQ6b. [sortlowsuf®xesstarting ch;ch]\nThisstep sortsthe suf®xes startingrunswhich wouldsort before an in®nite\nstringofchcharacters. Weobservethatamongsuchsuf®xes,longinitialruns\nofcharacter chsortafter shorterinitialruns,andrunsofequallengthsortin\nthesame order asthecharacters at theendsofthe run. Thisorderingcan be\nobtainedwithasimpleloopover thesuf®xes,startingwiththeshortest.\nLetV[i] represent the lexicographicallyleast suf®x startingwith ch.L e tj\nbethelowestvaluesuch that suf®x V[j] startswith ch;ch.\nwhile not (i = j) do\nif (V[i] > 0) and (S[V[i]-1] = ch) then\nV[j] := V[i]-1;\nj: =j+1\nend;i: =i+1\nend;\nAllthesuf®xesthatstartwith ch;chandthatare lexicographicallylessthan\nanin®nitesequenceof chcharacters are nowsorted.\nQ6c. [sorthigh suf®xes starting ch;ch]\nThis step sorts the suf®xes starting runs which would sort after an in®nite\nstringofchcharacters. ThisstepisverylikestepQ6b,butwiththedirection"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 47,
+        "fields": {
+            "chunk_id": "df4adf34-83cd-4aec-95d2-ab3443686c8c",
+            "source": 1,
+            "content": "bethelowestvaluesuch that suf®x V[j] startswith ch;ch.\nwhile not (i = j) do\nif (V[i] > 0) and (S[V[i]-1] = ch) then\nV[j] := V[i]-1;\nj: =j+1\nend;i: =i+1\nend;\nAllthesuf®xesthatstartwith ch;chandthatare lexicographicallylessthan\nanin®nitesequenceof chcharacters are nowsorted.\nQ6c. [sorthigh suf®xes starting ch;ch]\nThis step sorts the suf®xes starting runs which would sort after an in®nite\nstringofchcharacters. ThisstepisverylikestepQ6b,butwiththedirection\noftheloopreversed.\nLetV[i] representthe lexicographicallygreatestsuf®xstartingwith ch.L e t\njbethehighestvaluesuchthatsuf®x V[j]startswith ch;ch.\nwhile not (i = j) do\nif (V[i] > 0) and (S[V[i]-1] = ch) then\nV[j] := V[i]-1;j: =j-1\nend;\ni: =i-1\nend;\nAll the suf®xes that start with ch;chand that are lexicographically greater\nthanan in®nitesequenceof chcharacters are nowsorted.\n11The second mechanism handles long strings of a repeated substring of more\nthan one character. For such strings, we use a doubling technique similar to that"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 48,
+        "fields": {
+            "chunk_id": "459748da-af5a-4f1a-9475-2b83e5f922c4",
+            "source": 1,
+            "content": "jbethehighestvaluesuchthatsuf®x V[j]startswith ch;ch.\nwhile not (i = j) do\nif (V[i] > 0) and (S[V[i]-1] = ch) then\nV[j] := V[i]-1;j: =j-1\nend;\ni: =i-1\nend;\nAll the suf®xes that start with ch;chand that are lexicographically greater\nthanan in®nitesequenceof chcharacters are nowsorted.\n11The second mechanism handles long strings of a repeated substring of more\nthan one character. For such strings, we use a doubling technique similar to that\nused in Manber and Myers' scheme. We limit our quicksort implementation to\nperform comparisons only to a depth D. We record where suf®xes have been left\nunsortedwitha bitinthecorrespondingelementsof V.\nOncestepsQ1 toQ7 arecomplete,theelementsofthearray Windicatesorted\npositionsupto D\u0002kcharacters,sinceeach comparisoncompares kcharacters. If\nunsortedportionsof Vremain,wesimplysortthemagain,limitingthecomparison\ndepth toDas before. This time, each comparison compares D\u0002kcharacters, to"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 49,
+        "fields": {
+            "chunk_id": "fb1e1786-f150-41ea-a649-070fbacb405c",
+            "source": 1,
+            "content": "used in Manber and Myers' scheme. We limit our quicksort implementation to\nperform comparisons only to a depth D. We record where suf®xes have been left\nunsortedwitha bitinthecorrespondingelementsof V.\nOncestepsQ1 toQ7 arecomplete,theelementsofthearray Windicatesorted\npositionsupto D\u0002kcharacters,sinceeach comparisoncompares kcharacters. If\nunsortedportionsof Vremain,wesimplysortthemagain,limitingthecomparison\ndepth toDas before. This time, each comparison compares D\u0002kcharacters, to\nyieldalistofsuf®xessortedontheir®rst D2\u0002kcharacters. Werepeatthisprocess\nuntiltheentirestringissorted.\nThe combination of radix sort, a careful implementation of quicksort,and the\nmechanisms for dealing with repeated strings produce a sorting algorithm that is\nextremely fast on most inputs,and is quite unlikelyto perform very badly on real\ninputdata.\nWe are currently investigating further variations of quicksort. The following\napproachseems promising. By applyingthe techniqueof Q6a±Q6ctoalloverlap-"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 50,
+        "fields": {
+            "chunk_id": "8cdb180d-e811-4e5a-b04d-64d2f6df095d",
+            "source": 1,
+            "content": "untiltheentirestringissorted.\nThe combination of radix sort, a careful implementation of quicksort,and the\nmechanisms for dealing with repeated strings produce a sorting algorithm that is\nextremely fast on most inputs,and is quite unlikelyto perform very badly on real\ninputdata.\nWe are currently investigating further variations of quicksort. The following\napproachseems promising. By applyingthe techniqueof Q6a±Q6ctoalloverlap-\nping repeated strings, and by caching previously computed sort orders in a hash\ntable, we can produce an algorithm that sorts the suf®xes of a string in approxi-\nmatelythesame timeasthemodi®edalgorithmQ,butusingonly6bytesof spaceper inputcharacter (4 bytes for a pointer, 1 byte for the inputcharacter itself, and\n1 byte amortized space inthe hashtable). Thisapproach has poorperformance in\ntheworstcase, butbad cases seem tobe rare inpractice.\n4.2 Decompression\nSteps D1 and D2 can be accomplished ef®ciently with only two passes over the"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 51,
+        "fields": {
+            "chunk_id": "4cd45aa7-476a-4e57-877f-dc64c1e90d94",
+            "source": 1,
+            "content": "table, we can produce an algorithm that sorts the suf®xes of a string in approxi-\nmatelythesame timeasthemodi®edalgorithmQ,butusingonly6bytesof spaceper inputcharacter (4 bytes for a pointer, 1 byte for the inputcharacter itself, and\n1 byte amortized space inthe hashtable). Thisapproach has poorperformance in\ntheworstcase, butbad cases seem tobe rare inpractice.\n4.2 Decompression\nSteps D1 and D2 can be accomplished ef®ciently with only two passes over the\ndata, and one pass over the alphabet, as shown in the pseudo-code below. In the\n®rstpass,weconstructtwoarrays: C[alphabet]andP[0;:::;N/NUL1].C[ch]isthe\ntotalnumberofinstancesin Lofcharactersprecedingcharacter chinthealphabet.\nP[i] is the number of instances of character L[i] in the pre®x L[0;:::;i/NUL1] of\nL. In practice, this ®rst pass could be combined with the move-to-front decoding\nstep. Given thearrays L,C,P,thearray Tde®ned instepD2isgivenby:\nforeachiD0;:::;N/NUL1:T[i]DP[i]CC[L[i]]"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 52,
+        "fields": {
+            "chunk_id": "41cdf6e8-45f3-4eb6-bf3a-821c51926534",
+            "source": 1,
+            "content": "data, and one pass over the alphabet, as shown in the pseudo-code below. In the\n®rstpass,weconstructtwoarrays: C[alphabet]andP[0;:::;N/NUL1].C[ch]isthe\ntotalnumberofinstancesin Lofcharactersprecedingcharacter chinthealphabet.\nP[i] is the number of instances of character L[i] in the pre®x L[0;:::;i/NUL1] of\nL. In practice, this ®rst pass could be combined with the move-to-front decoding\nstep. Given thearrays L,C,P,thearray Tde®ned instepD2isgivenby:\nforeachiD0;:::;N/NUL1:T[i]DP[i]CC[L[i]]\nInasecondpassoverthedata,weusethestartingposition ItocompleteAlgorithm\nDto generate S.\nInitially,all elements of Care zero, and the last column of matrix Mis the vector\nL[0;:::;N/NUL1].\n12for i := 0 to N-1 do\nP[i] := C[L[i]];C[L[i]] := C[L[i]] + 1\nend;\nNowC[ch] isthe number of instancesin Lof character ch.T h ev a l u e P[i]i st h e\nnumberof instancesofcharacter L[i] inthepre®x L[0;:::;i/NUL1]ofL.\nsum := 0;\nfor ch := FIRST(alphabet) to LAST(alphabet) do\nsum := sum + C[ch];C[ch] := sum - C[ch];\nend;"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 53,
+        "fields": {
+            "chunk_id": "6697405c-0885-43f1-b841-062030c8eecb",
+            "source": 1,
+            "content": "Dto generate S.\nInitially,all elements of Care zero, and the last column of matrix Mis the vector\nL[0;:::;N/NUL1].\n12for i := 0 to N-1 do\nP[i] := C[L[i]];C[L[i]] := C[L[i]] + 1\nend;\nNowC[ch] isthe number of instancesin Lof character ch.T h ev a l u e P[i]i st h e\nnumberof instancesofcharacter L[i] inthepre®x L[0;:::;i/NUL1]ofL.\nsum := 0;\nfor ch := FIRST(alphabet) to LAST(alphabet) do\nsum := sum + C[ch];C[ch] := sum - C[ch];\nend;\nNowC[ch] is thetotalnumber of instancesin Lof characters preceding chinthe\nalphabet.\ni: =I ;\nfor j := N-1 downto 0 do\nS[j] := L[i];i := P[i] + C[L[i]]\nend\nThedecompressed resultis now S[0;:::;N/NUL1].\n5 Algorithmvariants\nIn the example given in step C1, we treated the left-hand side of each rotation as\nthemostsigni®cantwhensorting. Infact,ourimplementationtreatstheright-hand\nside as the most signi®cant, so that the decompressor will generate its output S\nfrom left to right using the code of Section 4.2. This choice has almost no effect\nonthecompressionachieved."
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 54,
+        "fields": {
+            "chunk_id": "61cf88d7-105c-4d37-b6f0-8b219409a2f9",
+            "source": 1,
+            "content": "alphabet.\ni: =I ;\nfor j := N-1 downto 0 do\nS[j] := L[i];i := P[i] + C[L[i]]\nend\nThedecompressed resultis now S[0;:::;N/NUL1].\n5 Algorithmvariants\nIn the example given in step C1, we treated the left-hand side of each rotation as\nthemostsigni®cantwhensorting. Infact,ourimplementationtreatstheright-hand\nside as the most signi®cant, so that the decompressor will generate its output S\nfrom left to right using the code of Section 4.2. This choice has almost no effect\nonthecompressionachieved.\nThe algorithm can be modi®ed to use a different coding scheme instead of\nmove-to-front in step M1. Compression can improve slightly if move-to-front\nis replaced by a scheme in which codes that have not been seen in a very long\ntime are moved only part-way to the front. We have not exploited this in our\nimplementations.\nAlthough simple Huffman and arithmetic coders do well in step M2, a more\ncomplex coding scheme can do slightly better. This is because the probab ilityof"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 55,
+        "fields": {
+            "chunk_id": "75464b9a-1271-4cd3-8c87-34fe2963d6b8",
+            "source": 1,
+            "content": "onthecompressionachieved.\nThe algorithm can be modi®ed to use a different coding scheme instead of\nmove-to-front in step M1. Compression can improve slightly if move-to-front\nis replaced by a scheme in which codes that have not been seen in a very long\ntime are moved only part-way to the front. We have not exploited this in our\nimplementations.\nAlthough simple Huffman and arithmetic coders do well in step M2, a more\ncomplex coding scheme can do slightly better. This is because the probab ilityof\na certain value at a given point in the vector Rdepends to a certain extent on the\nimmediately preceding value. In practice, the most important effect is that zeroes\ntendtooccurinrunsin R. Wecantakeadvantageofthiseffectbyrepresentingeach\nrun of zeroes by a code indicatingthe lengthof the run. A second set of Huffman\ncodescanbe usedforvaluesimmediatelyfollowinga runofzeroes,sincethenext\nvaluecannotbe anotherrunof zeroes.\n13Size CPU time/s Compressed bits/"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 56,
+        "fields": {
+            "chunk_id": "47474122-5f78-4a1e-a5aa-5dda27887dd4",
+            "source": 1,
+            "content": "a certain value at a given point in the vector Rdepends to a certain extent on the\nimmediately preceding value. In practice, the most important effect is that zeroes\ntendtooccurinrunsin R. Wecantakeadvantageofthiseffectbyrepresentingeach\nrun of zeroes by a code indicatingthe lengthof the run. A second set of Huffman\ncodescanbe usedforvaluesimmediatelyfollowinga runofzeroes,sincethenext\nvaluecannotbe anotherrunof zeroes.\n13Size CPU time/s Compressed bits/\nFile (bytes) compress decompress size(bytes) char\nbib 111261 1.6 0.3 287502.07\nbook1 768771 14.4 2.5 238989 2.49\nbook2 610856 10.9 1.8 162612 2.13\ngeo 102400 1.9 0.6 569744.45\nnews 377109 6.5 1.2 122175 2.59\nobj1 21504 0.4 0.1 106943.98\nobj2 246814 4.1 0.8 813372.64\npaper1 53161 0.7 0.1 169652.55\npaper2 82199 1.1 0.2 258322.51\npic 513216 5.4 1.2 535620.83\nprogc 39611 0.6 0.1 127862.58\nprogl 71646 1.1 0.2 161311.80\nprogp 49379 0.8 0.1 110431.79\ntrans 93695 1.6 0.2 183831.57\nTotal 3141622 51.1 9.4 856233 -"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 57,
+        "fields": {
+            "chunk_id": "f583a47b-d338-4bf2-893e-715910d64a1b",
+            "source": 1,
+            "content": "bib 111261 1.6 0.3 287502.07\nbook1 768771 14.4 2.5 238989 2.49\nbook2 610856 10.9 1.8 162612 2.13\ngeo 102400 1.9 0.6 569744.45\nnews 377109 6.5 1.2 122175 2.59\nobj1 21504 0.4 0.1 106943.98\nobj2 246814 4.1 0.8 813372.64\npaper1 53161 0.7 0.1 169652.55\npaper2 82199 1.1 0.2 258322.51\npic 513216 5.4 1.2 535620.83\nprogc 39611 0.6 0.1 127862.58\nprogl 71646 1.1 0.2 161311.80\nprogp 49379 0.8 0.1 110431.79\ntrans 93695 1.6 0.2 183831.57\nTotal 3141622 51.1 9.4 856233 -\nTable1: Resultsofcompressingfourteen®lesoftheCalgaryCompressionCorpus.\nBlock size bits/character\n(bytes) book1 Hectorcorpus\n1k 4.34 4.35\n4k 3.86 3.83\n16k 3.43 3.39\n64k 3.00 2.98\n256k 2.68 2.65\n750k 2.49 -\n1M - 2.43\n4M - 2.26\n16M - 2.13\n64M - 2.04\n103M - 2.01\nTable 2: The effect of varying block size ( N) on compressionof book1from the\nCalgaryCompressionCorpusandoftheentireHectorcorpus.\n146 Performanceofimplementation\nIn Table 1 we give the results of compressing the fourteen commonly used ®les"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 58,
+        "fields": {
+            "chunk_id": "e9418392-0ae4-4010-9633-b73f848b2268",
+            "source": 1,
+            "content": "Table1: Resultsofcompressingfourteen®lesoftheCalgaryCompressionCorpus.\nBlock size bits/character\n(bytes) book1 Hectorcorpus\n1k 4.34 4.35\n4k 3.86 3.83\n16k 3.43 3.39\n64k 3.00 2.98\n256k 2.68 2.65\n750k 2.49 -\n1M - 2.43\n4M - 2.26\n16M - 2.13\n64M - 2.04\n103M - 2.01\nTable 2: The effect of varying block size ( N) on compressionof book1from the\nCalgaryCompressionCorpusandoftheentireHectorcorpus.\n146 Performanceofimplementation\nIn Table 1 we give the results of compressing the fourteen commonly used ®les\nof the Calgary Compression Corpus [7] with our algorithm. Comparison of these\n®gureswiththosegivenbyBell,WittenandCleary [3]indicatethatouralgorithm\ndoeswellonnon-textinputsaswellastextinputs.\nOur implementation of Algorithm C uses the techniques described in Sec-\ntion 4.1, and a simple move-to-front coder. In each case, the block size Nis the\nlengthofthe®le beingcompressed.\nWe compress the outputof the move-to-front coder with a modi®ed Huffman"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 59,
+        "fields": {
+            "chunk_id": "cf691d42-3932-44fd-b089-3198677af80e",
+            "source": 1,
+            "content": "of the Calgary Compression Corpus [7] with our algorithm. Comparison of these\n®gureswiththosegivenbyBell,WittenandCleary [3]indicatethatouralgorithm\ndoeswellonnon-textinputsaswellastextinputs.\nOur implementation of Algorithm C uses the techniques described in Sec-\ntion 4.1, and a simple move-to-front coder. In each case, the block size Nis the\nlengthofthe®le beingcompressed.\nWe compress the outputof the move-to-front coder with a modi®ed Huffman\ncoder that uses the technique described in Section 5. Our coder calculates new\nHuffmantreesforeach16kbyteinputblock,ratherthancomputingonetreeforits\nwholeinput.\nIn Table 1, compression effectiveness is expressed as output bits per input\ncharacter. The CPU time measurements were made on a DECstation 5000/200,\nwhichhasaMIPSR3000processorclockedat25MHzwitha64kbytecache. CPU\ntimeisgivenratherthanelapsedtimesothetimespentperformingI/Oisexcluded.\nInTable2,weshowthevariationofcompressioneffectivenesswithinputblock"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 60,
+        "fields": {
+            "chunk_id": "7d8a4d76-e3d2-4207-b74e-388d23fe4b1f",
+            "source": 1,
+            "content": "Huffmantreesforeach16kbyteinputblock,ratherthancomputingonetreeforits\nwholeinput.\nIn Table 1, compression effectiveness is expressed as output bits per input\ncharacter. The CPU time measurements were made on a DECstation 5000/200,\nwhichhasaMIPSR3000processorclockedat25MHzwitha64kbytecache. CPU\ntimeisgivenratherthanelapsedtimesothetimespentperformingI/Oisexcluded.\nInTable2,weshowthevariationofcompressioneffectivenesswithinputblock\nsizefortwoinputs. The®rstinputisthe®le book1fromtheCalgaryCompression\nCorpus. The second is theentire Hector corpus [8], whichconsistsof a littleover\n100 MBytes of modern Englishtext. The table shows that compression improveswith increasing block size, even when the block size is quite large. However,\nincreasingtheblocksizeaboveafewtensofmillionsofcharactershasonlyasmall\neffect.\nIftheblocksizewereincreasedinde®nitely,weexpectthatthealgorithmwould\nnot approach the theoretical optimum compression because our simple byte-wise"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 61,
+        "fields": {
+            "chunk_id": "29166546-0b58-485e-8f41-083e88c562a0",
+            "source": 1,
+            "content": "Corpus. The second is theentire Hector corpus [8], whichconsistsof a littleover\n100 MBytes of modern Englishtext. The table shows that compression improveswith increasing block size, even when the block size is quite large. However,\nincreasingtheblocksizeaboveafewtensofmillionsofcharactershasonlyasmall\neffect.\nIftheblocksizewereincreasedinde®nitely,weexpectthatthealgorithmwould\nnot approach the theoretical optimum compression because our simple byte-wise\nmove-to-front coder introducessome loss. A better codingscheme might achieve\noptimumcompressionasymptotically,butthisis notlikelyto be of great practical\nimportance.\nComparisonwith other compressionprogrammes\nTable3comparesourimplementationofAlgorithmCwiththreeothercompression\nprogrammes, chosen for their wide availability. The same fourteen ®les were\ncompressed individuallywitheach algorithm,and theresultstotalled. Thebitsper\ncharacter values are the meansof the values for the individual ®les. This metric"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 62,
+        "fields": {
+            "chunk_id": "fb8c77f8-2918-48f7-ac80-aca2a9355753",
+            "source": 1,
+            "content": "optimumcompressionasymptotically,butthisis notlikelyto be of great practical\nimportance.\nComparisonwith other compressionprogrammes\nTable3comparesourimplementationofAlgorithmCwiththreeothercompression\nprogrammes, chosen for their wide availability. The same fourteen ®les were\ncompressed individuallywitheach algorithm,and theresultstotalled. Thebitsper\ncharacter values are the meansof the values for the individual ®les. This metric\nwaschosentoalloweasycomparisonwith®guresgivenbyBell[3].\n15TotalCPU time/s Totalcompressed mean\nProgramme compress decompress size(bytes) bits/char\ncompress 9.6 5.2 1246286 3.63\ngzip 42.6 4.9 1024887 2.71\nAlg-C/D 51.1 9.4 856233 2.43\ncomp-2 603.2 614.1 848885 2.47\ncompressisversion4.2.3 ofthewell-knownLZW-basedtool[9,10].\ngzipisversion1.2.4ofGailly'sLZ77-basedtool[1,11].\nAlg-C/DisAlgorithmsCandD, withourback-endHuffmancoder.\ncomp-2isNelson'scomp-2 coder,limitedtoa fourth-ordermodel[12].\nTable3: Comparisonwithothercompressionprogrammes.\n7 Conclusions"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 63,
+        "fields": {
+            "chunk_id": "893cc158-f1b7-432f-87cc-80276287164e",
+            "source": 1,
+            "content": "15TotalCPU time/s Totalcompressed mean\nProgramme compress decompress size(bytes) bits/char\ncompress 9.6 5.2 1246286 3.63\ngzip 42.6 4.9 1024887 2.71\nAlg-C/D 51.1 9.4 856233 2.43\ncomp-2 603.2 614.1 848885 2.47\ncompressisversion4.2.3 ofthewell-knownLZW-basedtool[9,10].\ngzipisversion1.2.4ofGailly'sLZ77-basedtool[1,11].\nAlg-C/DisAlgorithmsCandD, withourback-endHuffmancoder.\ncomp-2isNelson'scomp-2 coder,limitedtoa fourth-ordermodel[12].\nTable3: Comparisonwithothercompressionprogrammes.\n7 Conclusions\nWe have described a compression technique that works by applying a reversible\ntransformationtoa blockof text tomake redundancy inthe inputmore accessible\ntosimplecodingschemes. Ouralgorithmisgeneral-purpose,inthatitdoeswellon\nbothtext andnon-textinputs. The transformationuses sortingtogroupcharacters\ntogether based on their contexts; this technique makes use of the context on only\nonesideofeach character.\nTo achieve good compression,inputblocksof several thousandcharacters are"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 64,
+        "fields": {
+            "chunk_id": "51cb4658-23cf-4aa8-a78e-1546b65fe099",
+            "source": 1,
+            "content": "7 Conclusions\nWe have described a compression technique that works by applying a reversible\ntransformationtoa blockof text tomake redundancy inthe inputmore accessible\ntosimplecodingschemes. Ouralgorithmisgeneral-purpose,inthatitdoeswellon\nbothtext andnon-textinputs. The transformationuses sortingtogroupcharacters\ntogether based on their contexts; this technique makes use of the context on only\nonesideofeach character.\nTo achieve good compression,inputblocksof several thousandcharacters are\nneeded. The effectiveness of the algorithm continues to improve with increasing\nblocksizeatleastuptoblocksofseveral millioncharacters.\nOur algorithm achieves compression comparable with good statistical mod-\nellers, yet is closer in speed to coders based on the algorithms of Lempel andZiv. Like Lempel and Ziv's algorithms,our algorithm decompresses faster than it\ncompresses.\nAcknowledgements\nWe would like to thank Andrei Broder, Cynthia Hibbard, Greg Nelson, and Jim"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 65,
+        "fields": {
+            "chunk_id": "8acaf50c-0498-459a-a190-221147e9f930",
+            "source": 1,
+            "content": "needed. The effectiveness of the algorithm continues to improve with increasing\nblocksizeatleastuptoblocksofseveral millioncharacters.\nOur algorithm achieves compression comparable with good statistical mod-\nellers, yet is closer in speed to coders based on the algorithms of Lempel andZiv. Like Lempel and Ziv's algorithms,our algorithm decompresses faster than it\ncompresses.\nAcknowledgements\nWe would like to thank Andrei Broder, Cynthia Hibbard, Greg Nelson, and Jim\nSaxe for theirsuggestionsonthealgorithmsandthepaper.\n16References\n[1] J.ZivandA.Lempel.Auniversalalgorithmforsequentialdatacompression.\nIEEE Transactions on Information Theory. Vol. IT-23, No. 3, May 1977,\npp.337±343.\n[2] J. Ziv and A. Lempel. Compression of individual sequences via variable\nrate coding. IEEE Transactions on Information Theory. Vol. IT-24, No. 5,September1978,pp.530±535.\n[3] T. Bell, I. H. Witten, and J.G. Cleary. Modeling for text compression. ACM\nComputingSurveys,Vol.21, No.4,December 1989,pp.557±589."
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 66,
+        "fields": {
+            "chunk_id": "6bdd93b3-62ac-451d-862d-f5fbdaf8b5fb",
+            "source": 1,
+            "content": "16References\n[1] J.ZivandA.Lempel.Auniversalalgorithmforsequentialdatacompression.\nIEEE Transactions on Information Theory. Vol. IT-23, No. 3, May 1977,\npp.337±343.\n[2] J. Ziv and A. Lempel. Compression of individual sequences via variable\nrate coding. IEEE Transactions on Information Theory. Vol. IT-24, No. 5,September1978,pp.530±535.\n[3] T. Bell, I. H. Witten, and J.G. Cleary. Modeling for text compression. ACM\nComputingSurveys,Vol.21, No.4,December 1989,pp.557±589.\n[4] J.L.Bentley,D.D.Sleator, R.E.Tarjan,and V.K.Wei.Alocallyadaptivedata\ncompression algorithm.Communications of the ACM, Vol. 29, No. 4, April1986,pp.320±330.\n[5] E.M.McCreight.Aspaceeconomicalsuf®xtreeconstructionalgorithm.Jour-\nnaloftheACM, Vol.32,No. 2,April1976,pp.262±272.\n[6] U.Manber andE. W.Myers, Suf®x arrays: A new method for on-linestring\nsearches.SIAMJournalonComputing,Volume22,No.5,October1993,pp.935-948.\n[7] I. H. Witten and T. Bell. The Calgary/Canterbury text compression cor-\npus.Anonymousftpfrom"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 67,
+        "fields": {
+            "chunk_id": "3e2c55db-6034-48dd-8166-89e828f0aa5b",
+            "source": 1,
+            "content": "compression algorithm.Communications of the ACM, Vol. 29, No. 4, April1986,pp.320±330.\n[5] E.M.McCreight.Aspaceeconomicalsuf®xtreeconstructionalgorithm.Jour-\nnaloftheACM, Vol.32,No. 2,April1976,pp.262±272.\n[6] U.Manber andE. W.Myers, Suf®x arrays: A new method for on-linestring\nsearches.SIAMJournalonComputing,Volume22,No.5,October1993,pp.935-948.\n[7] I. H. Witten and T. Bell. The Calgary/Canterbury text compression cor-\npus.Anonymousftpfrom\nftp.cpsc.ucalgary.ca: /pub/text.com-\npression.corpus/text.compression.corpus.tar.Z\n[8] L. Glassman, D. Grinberg, C. Hibbard, J. Meehan, L. Guarino Reid, and\nM-C. van Leunen. Hector: Connecting Words with De®nitions.Proceedings\nofthe8thAnnualConference oftheUWCentre fortheNewOxfordEnglish\nDictionary and Text Research, Waterloo, Canada, October, 1992. pp. 37±\n73. Also available as Research Report 92a, Digital Equipment Corporation\nSystemsResearchCenter, 130LyttonAve,PaloAlto,CA.94301.\n[9] T.A.Welch.Atechniqueforhighperformancedatacompression.IEEECom-"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 68,
+        "fields": {
+            "chunk_id": "98d6e455-2caa-4ea6-b1eb-4e94c5c70c93",
+            "source": 1,
+            "content": "[8] L. Glassman, D. Grinberg, C. Hibbard, J. Meehan, L. Guarino Reid, and\nM-C. van Leunen. Hector: Connecting Words with De®nitions.Proceedings\nofthe8thAnnualConference oftheUWCentre fortheNewOxfordEnglish\nDictionary and Text Research, Waterloo, Canada, October, 1992. pp. 37±\n73. Also available as Research Report 92a, Digital Equipment Corporation\nSystemsResearchCenter, 130LyttonAve,PaloAlto,CA.94301.\n[9] T.A.Welch.Atechniqueforhighperformancedatacompression.IEEECom-\nputer,Vol.17,No.6, June1984,pp.8±19.\n[10] Peter Jannesen et al. Compress, Version 4.2.3. Posted to the Internet news-\ngroupcomp.sources.reviewed ,28thAugust,1992.Anonymousftpfrom\ngatekeeper.dec.com: /pub/misc/ncompress-4.2.3\n17[11] J.Gaillyetal.Gzip,Version1.2.4.Anonymousftpfrom prep.ai.mit.edu:\n/pub/gnu/gzip-1.2.4.tar.gz\n[12] MarkNelson.Arithmeticcodingandstatisticalmodeling.Dr.DobbsJournal.\nFebruary, 1991. Anonymous ftp from wuarchive.wustl.edu: /mir-\nrors/msdos/ddjmag/ddj9102.zip\n18"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 69,
+        "fields": {
+            "chunk_id": "9c970b13-3b9d-4194-9e7d-f701c5c5b268",
+            "source": 2,
+            "content": "Enter the Wu-Tang (36 Chambers)\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\t\tArticle \n\n\t\tTalk \n\n\n\n\n\n\n\n\t\tRead \n\n\t\tEdit \n\n\t\tView history \n\n\n\nTools \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\t\t\n\n\n\n\t\t\n\n\n\n\n\n\n\nFrom Wikipedia, the free encyclopedia\n\n\n\n\n\n\n\n\n\n\n\nEnter the Wu-Tang (36 Chambers)\n\n\n\nStudio album by \n\nWu-Tang Clan\n\nReleased\n\nNovember 9, 1993[1]\n\nRecorded\n\n1992–1993\n\nStudio\n\nFirehouse (Brooklyn, New York)\n\nGenre\n\n\t\tHardcore hip hop \n\n\t\tEast Coast hip hop \n\n\t\talternative hip hop[2]\n\nLength\n\n58:26\n\nLabel\n\n\t\tBMG \n\n\t\tRCA \n\n\t\tLoud\n\nProducer\n\nRZA (also exec.)\n\nWu-Tang Clan chronology\n\n\n\nEnter the Wu-Tang (36 Chambers)\n(1993) \n\nWu-Tang Forever\n(1997) \n\n\n\n\n\n\n\nSingles from Enter the Wu-Tang (36 Chambers) \n\n\t\t\"Protect Ya Neck\"\nReleased: December 1992[3] \n\n\t\t\"C.R.E.A.M.\"\nReleased: January 31, 1994 \n\n\t\t\"Can It Be All So Simple\"\nReleased: February 22, 1994"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 70,
+        "fields": {
+            "chunk_id": "ff2aee0b-934f-412a-8146-ac5bb72560ed",
+            "source": 2,
+            "content": "1992–1993\n\nStudio\n\nFirehouse (Brooklyn, New York)\n\nGenre\n\n\t\tHardcore hip hop \n\n\t\tEast Coast hip hop \n\n\t\talternative hip hop[2]\n\nLength\n\n58:26\n\nLabel\n\n\t\tBMG \n\n\t\tRCA \n\n\t\tLoud\n\nProducer\n\nRZA (also exec.)\n\nWu-Tang Clan chronology\n\n\n\nEnter the Wu-Tang (36 Chambers)\n(1993) \n\nWu-Tang Forever\n(1997) \n\n\n\n\n\n\n\nSingles from Enter the Wu-Tang (36 Chambers) \n\n\t\t\"Protect Ya Neck\"\nReleased: December 1992[3] \n\n\t\t\"C.R.E.A.M.\"\nReleased: January 31, 1994 \n\n\t\t\"Can It Be All So Simple\"\nReleased: February 22, 1994\n\nEnter the Wu-Tang (36 Chambers) is the debut studio album by the American hip-hop group Wu-Tang Clan, released on November 9, 1993, by BMG, RCA Records and Loud Records. Recording sessions took place during late 1992 to early 1993 at Firehouse Studio in New York City, and the album was produced by the group's de facto leader RZA. Its title originates from the martial arts films Enter the Dragon (1973) and The 36th Chamber of Shaolin (1978).[4]"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 71,
+        "fields": {
+            "chunk_id": "6764eb9d-b55f-497b-af8c-a963ea92f0e1",
+            "source": 2,
+            "content": "The gritty, distinctive sound of Enter the Wu-Tang (36 Chambers) created a blueprint for hardcore hip-hop during the 1990s, and helped return New York City hip-hop to national prominence. Its sound also became greatly influential in modern hip-hop production, while the group members' explicit, humorous, and free-associative lyrics have served as a template for many subsequent rap records. Serving as a landmark release in the era of hip-hop known as the East Coast Renaissance, its influence helped lead the way for several other East Coast rappers, including Nas, The Notorious B.I.G., Mobb Deep, and Jay-Z."
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 72,
+        "fields": {
+            "chunk_id": "91510170-4c46-4542-afab-8d6144b24e82",
+            "source": 2,
+            "content": "Despite its raw, underground sound, the album had surprising chart success, peaking at number 41 on the US Billboard 200 chart, selling 30,000 copies in its first week on sale. By 1995, it was certified Platinum by the Recording Industry Association of America, and in October 2018 it was certified triple platinum.[1] Initially receiving positive reviews from most music critics, Enter the Wu-Tang (36 Chambers) has since been widely regarded as one of the most significant albums of the 1990s, as well as one of the greatest hip hop albums of all time. In 2020, the album was ranked 27th on Rolling Stone's updated list of the 500 Greatest Albums of All Time. In 2022, the album was selected by the Library of Congress for preservation in the National Recording Registry for being \"culturally, historically, or aesthetically significant\".[5] \n\nBackground"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 73,
+        "fields": {
+            "chunk_id": "7c24eefb-5250-458f-aa07-35efd626d41f",
+            "source": 2,
+            "content": "In the late 1980s, cousins Robert Diggs, Gary Grice, and Russell Jones formed a group named Force of the Imperial Master, also known as the All in Together Now Crew.[6] Each member recorded under an alias: Grice as The Genius, Diggs as Prince Rakeem or The Scientist, and Jones as The Specialist. The group never signed to a major label, but caught the attention of the New York City rap scene and was recognized by rapper Biz Markie.[7] By 1991, The Genius and Prince Rakeem were signed to separate record labels. The Genius released Words from the Genius (1991) on Cold Chillin' Records and Prince Rakeem released Ooh I Love You Rakeem (1991) on Tommy Boy Records. Both were soon dropped by their labels. Embittered but unbowed, they refocused their efforts and on new monikers; The Genius became GZA (pronounced \"jizza\"), while Prince Rakeem became RZA (pronounced \"rizza\"). RZA discussed the matter in the book The Wu-Tang Manual (2005), stating \"[Tommy Boy] made the decision to sign House of Pain over us. When they dropped me, I was thinking, 'Damn, they chose a bunch of whiteboy shit over me.'\"[8]"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 74,
+        "fields": {
+            "chunk_id": "e9d02b3e-5b4a-41df-bba3-2e13bb726726",
+            "source": 2,
+            "content": "RZA began collaborating with Dennis Coles, later known as Ghostface Killah, another rapper from the Stapleton Houses in Staten Island. The duo decided to create a hip hop group whose ethos would be a blend of \"Eastern philosophy picked up from kung fu movies, watered-down Five-Percent Nation preaching picked up on the New York streets, and comic books.\"[8] \n\nRecording and production"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 75,
+        "fields": {
+            "chunk_id": "8d5f50b2-0c18-461e-9efd-e02ef28f7b3b",
+            "source": 2,
+            "content": "Recording and production\n\nEnter the Wu-Tang (36 Chambers) was recorded at Firehouse Studio in New York City. The album was produced, mixed, arranged, and programmed by RZA, and was mastered at The Hit Factory in New York City by Chris Gehringer.[9] Because of an extremely limited budget, the group was only able to record in a small, inexpensive studio; with up to eight of the nine Wu-Tang members in the studio at once, the quarters were frequently crowded.[6] To decide who appeared on each song, RZA forced the Wu-Tang rappers to battle with each other. This competition led to the track \"Meth Vs. Chef\", a battle between Method Man and Raekwon over the rights to rap over RZA's beat; this track was left off the Wu-Tang Clan's debut album but surfaced on Method Man's debut, Tical (1994).[6]"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 76,
+        "fields": {
+            "chunk_id": "7c126357-ce61-4d01-b967-1ba809c310b2",
+            "source": 2,
+            "content": "Group leader RZA produced Enter the Wu-Tang (36 Chambers) by creating sonic collages from classic soul samples and clips from martial arts movies Shaolin and Wu Tang (1983) and Ten Tigers from Kwangtung (1979). He complemented the rappers' performances with \"lean, menacing beats that evoked their gritty, urban surroundings more effectively than their words,\" according to Stephen Thomas Erlewine of Allmusic.[10] The use of soul samples and various esoteric clips, and the technique by which RZA employed them in his beats was unique and largely unprecedented in hip hop.[11] The gritty sound of Enter the Wu-Tang is due, at least in part, to the use of cheap equipment to produce the album.[12] \n\nMusic and lyrics\n\n\n\n\"C.R.E.A.M.\"\n\n0:30\n\n\"C.R.E.A.M.\" features two verses from Raekwon and Inspectah Deck, who discuss their upbringings while living in New York City. It samples the Charmels' 1967 song \"As Long As I've Got You\".\n\n\n\nProblems playing this file? See media help.\n\n\n\n\"Method Man\"\n\n0:52"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 77,
+        "fields": {
+            "chunk_id": "7f8bfe4c-7329-46ee-a8b6-2c7f9e15fcf5",
+            "source": 2,
+            "content": "Music and lyrics\n\n\n\n\"C.R.E.A.M.\"\n\n0:30\n\n\"C.R.E.A.M.\" features two verses from Raekwon and Inspectah Deck, who discuss their upbringings while living in New York City. It samples the Charmels' 1967 song \"As Long As I've Got You\".\n\n\n\nProblems playing this file? See media help.\n\n\n\n\"Method Man\"\n\n0:52\n\nOne of two songs to feature a single member of the group on the verses (Method Man)\n\n\n\nProblems playing this file? See media help."
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 78,
+        "fields": {
+            "chunk_id": "3bd76cc7-7d99-4169-964e-1685fccb08d8",
+            "source": 2,
+            "content": "According to music journalist Ben Yew, the minimalist means of production plays directly into the music's \"street\" aesthetic. \"Because [RZA] didn't have the best mixing or recording equipment, the album is wrought with a 'dirty' quality—the drums have more bass and are more hard-hitting than they are crisp and clean; the samples have an eerie, almost haunting type of echo; and the vocals, because each member's voice is already aggressive and gritty, perfectly match the production.\"[13] Although Ol' Dirty Bastard is given co-production credit on \"Da Mystery of Chessboxin'\" and Method Man is co-credited for \"Wu-Tang Clan Ain't Nuthing ta F' Wit\", critics and admirers universally credit RZA with developing what Pitchfork called a \"dusty yet digital production style [that] helped legitimize the use of more diverse sample sources to the hardcore New York rap massive, breaking away from James Brown based beats and embracing a style that turned the Underdog theme into the menacing coda for a group of underground terrorists.\"[14]"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 79,
+        "fields": {
+            "chunk_id": "a8249db4-3ca4-486e-832c-5f7d84233d38",
+            "source": 2,
+            "content": "Enter the Wu-Tang ushered in a new standard for hip hop at a time when hip hop music was dominated by the jazz-influenced styles of A Tribe Called Quest, the Afrocentric viewpoints of Public Enemy, and the rising popularity of West Coast gangsta rap. The album's explicit, humorous and free-associative lyrics have been credited for serving as a template for many subsequent hip hop records.[15] Rolling Stone described the album as possessing an aesthetic that was \"low on hype and production values [and] high on the idea that indigence is a central part of blackness\".[16] While the lyrical content on Enter the Wu-Tang generally varies from rapper to rapper, the basic themes are the same—urban life, martial arts movies, comic book references, and marijuana—and the setting is invariably the harsh environment of New York City.[citation needed] AllMusic contributor Steve Huey praises the lyricists for their originality and caustic humor, stating \"Some were outsized, theatrical personalities, others were cerebral storytellers and lyrical technicians, but each had his own distinctive style ... Every track on Enter the Wu-Tang is packed with fresh, inventive rhymes, which are filled with martial arts metaphors, pop culture references (everything from Voltron to Lucky Charms cereal commercials to Barbra Streisand's \"The Way We Were\"), bizarre threats of violence, and a truly twisted sense of humor.\"[17]"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 80,
+        "fields": {
+            "chunk_id": "9d86f309-38fd-4596-91f6-2d03dacac0b3",
+            "source": 2,
+            "content": "With the exception of \"Method Man\" and GZA's \"Clan in da Front\", every song features multiple rappers contributing verses of varying lengths.[18] The verses are essentially battle rhymes, mixed with humor and outsized tales of urban violence and drug use. There is some debate about whether the lyrics on 36 Chambers are properly classified as gangsta rap or something else entirely.[13] In a Stylus magazine review, writer Gavin Mueller evokes the bleakness of the Wu-Tang world view: \n\nThe lyrics reach back to New York's own Rakim: dense battle rhymes potent with metaphors. Each Wu MC links his rhymes to crime and violence, allowing his preoccupations to surface subtly and indirectly, rather than spouting off overt gangsta-isms designed to shock ... The hood imagery of the lyrics is utterly pervasive and uncompromising, immersing the listener in a foreign land smack in the middle of New York. There is no celebration here, and little hope.[19]\n\n— Gavin Mueller"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 81,
+        "fields": {
+            "chunk_id": "d2121f04-fabc-49e9-82bd-5ad29c11f09a",
+            "source": 2,
+            "content": "— Gavin Mueller\n\nAll nine original Wu-Tang Clan members contribute vocals on Enter the Wu-Tang. Masta Killa only appears on one track, contributing the last verse of \"Da Mystery of Chessboxin,'\" but all the other rappers appear on at least two songs. Method Man and Raekwon are the most prolific of the group, featured on eight tracks. Though the performers have widely differing techniques, the chemistry between them is a key ingredient of the album's success.[12] Pitchfork asserts that \"Half the charm is in the cast's idiosyncrasies: ODB's hovering sing-song, Raekwon's fake stutter, Ghostface's verbal tics, Method Man's hazy, dusted voice.\"[14] \n\nTitle"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 82,
+        "fields": {
+            "chunk_id": "77bbb913-8734-4c2b-a587-f579965c8867",
+            "source": 2,
+            "content": "Title\n\nPart of the album's title originates from the Five Percent philosophy, known to adherents as the Supreme Mathematics, which attaches the number 9 with the meaning \"to bring into existence\".[20] Because the Wu-Tang Clan was made of nine members, each of whom has four chambers of the heart, the album was subtitled \"36 Chambers\", being the total of the nine hearts of the members.[20]"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 83,
+        "fields": {
+            "chunk_id": "2ac0518a-c135-4b06-ae08-ef292d353fec",
+            "source": 2,
+            "content": "In reference to the 1978 kung fu film The 36th Chamber of Shaolin that the group enjoyed watching, the Clan considered themselves as lyrical masters of the 36 chambers, and arrived onto the rap scene while appearing to be ahead, and more advanced over others, with \"knowledge of 36 chambers of hip hop music when everyone else in hip hop was striving to attain the knowledge of 35 lessons\".[20] Also, while the human body has 108 pressure points (1 + 0 + 8 = 9), only the Wu-Tang martial artists learned and understood that 36 of those pressure points are deadly (9 + 36 = 45) (4 + 5 = 9).[20] The lyrics and rhymes of the 9 members are to be considered as 36 deadly lyrical techniques for pressure points. All of this is the basis for the album title, Enter the Wu-Tang (36 Chambers), being that 9 members x 4 chambers = 36. However, this is just a theory; the true significance of the title is not definitively known.[20] The first part of the title is taken from the 1973 film Enter the Dragon and aforementioned Shaolin and Wu Tang.[4]"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 84,
+        "fields": {
+            "chunk_id": "08a8f1f6-cd53-4608-9fad-deec383f1089",
+            "source": 2,
+            "content": "Singles\n\n\n\n\"Protect Ya Neck\"\n\n0:58\n\nThe debut single is a posse cut produced by RZA, and features eight of the original Wu-Tang members; a sample of first two verses by Raekwon and Inspectah Deck.\n\n\n\nProblems playing this file? See media help."
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 85,
+        "fields": {
+            "chunk_id": "d669d7ed-5ca2-41fe-ace6-315c217b7022",
+            "source": 2,
+            "content": "\"Protect Ya Neck\" and \"Tearz\" were the first tracks recorded by the Wu-Tang Clan, released independently by the group as a 12-inch single in December 1992.[3][21] \"Protect Ya Neck\" is a free-associative and braggadocious battle rap featuring eight of the nine Wu-Tang Clan members. The track was also edited to scratch out all profanity, save for repeated use of the word \"nigga\". An uncensored version known as the \"Bloody Version\" was released on the 2004 compilation album, Legend of the Wu-Tang Clan.[citation needed] \"Tearz\" tells two stories: RZA's little brother getting shot and Ghostface Killah recounting the story of a man who contracts HIV after having unprotected sex.[citation needed] The singles were independently released as, \"Protect Ya Neck\"/\"After the Laughter Comes Tears\", which RZA financed by demanding $100 (USD) from each rapper who wanted a verse on the A-side.[6][8] The single was re-released in a much larger pressing, with \"Method Man\" as the B-side.[22]"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 86,
+        "fields": {
+            "chunk_id": "011dc046-a245-41c6-bf75-0569631a20cf",
+            "source": 2,
+            "content": "\"C.R.E.A.M.\", featuring Raekwon and Inspectah Deck, was the second single from the album, and the first new A-side to be released after the group signed with Loud/RCA.[citation needed] The lyrics deal with the struggle of poverty, and the desire to earn money by any means. It was the Wu-Tang Clan's most successful single, reaching number 60 on the Billboard Hot 100 and number 8 on the Billboard Hot Rap Tracks chart.[citation needed] The single topped the Hot Dance Music/Maxi-Singles Sales chart.[citation needed] Wu-Tang's \"Can It Be All So Simple\", featuring Ghostface Killah and Raekwon, was the album's third single. The single failed to chart on the Billboard Hot 100 but reached number 24 on the Hot Rap Tracks chart in 1994.[citation needed] A remix of the song was included on Raekwon's debut solo album, Only Built 4 Cuban Linx... (1995).[citation needed]"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 87,
+        "fields": {
+            "chunk_id": "5de5d89c-0db2-4091-90de-63a9a0e6d8ec",
+            "source": 2,
+            "content": "Wu-Tang made music videos for the three A-sides and the B-side songs including \"Method Man\", \"Da Mystery of Chessboxin'\", and \"Wu-Tang Clan Ain't Nuthing ta Fuck Wit\".[citation needed] As the group's profile increased, the quality of their videos improved; though the \"Protect Ya Neck\" video resembled a home movie, later videos were directed by rising hip hop music video director Hype Williams.[citation needed] The videos received almost no airplay on MTV but were extremely popular on video-by-request channels such as The Box.[23] Touré wrote in his 1993 Rolling Stone review that, \"in Brooklyn, N.Y., right now and extending back a few months, the reigning fave is the Wu-Tang Clan, who are to the channel what Guns N' Roses are to MTV.\"[18] \n\nCritical reception\n\nContemporary professional reviews\n\nReview scores\n\nSource\n\nRating\n\nChicago Sun-Times\n\n[24]\n\nEntertainment Weekly\n\nA[25]\n\nRolling Stone\n\n[18]\n\nThe Source\n\n4.5/5[26]"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 88,
+        "fields": {
+            "chunk_id": "3f87ce27-2d0a-47a9-be5b-7ae27915f7fc",
+            "source": 2,
+            "content": "Enter the Wu-Tang (36 Chambers) was received positively by contemporary critics. In an article for The Source, The Ghetto Communicator wrote \"This record is harsh, but so is the world that we live in. For B-boys n'girls who come from the core of the hard, this is the hip-hop album you've been waiting for\".[26] Entertainment Weekly said, \"With its rumble jumble of drumbeats, peppered with occasional piano plunking, Enter has a raw, pass-the-mike flavor we haven't heard since rap was pop's best-kept secret.\"[25] Touré was less enthusiastic in Rolling Stone, praising the album's sound, but noting that \"Wu-Tang ... are more ciphers than masterful creations. In refusing to commodify themselves, they leave blank the ultimate canvas—the self.\" He added, \"This is hip-hop you won't find creeping up the Billboard charts but you will hear booming out of Jeep stereos in all the right neighborhoods.\"[18] However, Enter the Wu-Tang had surprising chart success, despite its raw, underground sound. It peaked at number 41 on the Billboard 200 chart and reached number eight on Billboard's Top R&B/Hip-Hop Albums chart.[18][27] The album continued to sell steadily and was eventually certified platinum by the Recording Industry Association of America on May 15, 1995.[28]"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 89,
+        "fields": {
+            "chunk_id": "ca9bb74e-1a2f-459c-85c4-86ca77253774",
+            "source": 2,
+            "content": "Over time, Enter the Wu-Tang became one of the most highly regarded albums in hip hop.[29] The album was originally given a rating of 4.5 mics out of 5 in The Source magazine in 1994;[26] however, it was given a classic 5 mic rating in a later issue of the magazine.[30] Similar to The Source, XXL magazine gave the album a classic rating of \"XXL\" in its retrospective 2007 issue.[31] In the book Spin Alternative Record Guide (1995), Enter the Wu-Tang (36 Chambers) has a critical rating of 8/10 from Spin.[32] In 2003, Rolling Stone named the album among the \"500 Greatest Albums of All Time\", asserting that \"East-coast hip-hop made a return in 1993.\"[33][34] The magazine later listed it as one of the \"Essential Albums of the 90s\" and \"100 Best Debut Albums of All Time.\"[35][36] The Source cited Enter the Wu-Tang as one of the \"100 Best Rap Albums\", while also naming \"Protect Ya Neck/Method Man\" and \"C.R.E.A.M.\" among the \"100 Best Rap Singles\".[37] MTV declared it among \"The Greatest Hip-Hop Albums of All Time\",[38] while Blender named the album among the \"500 CDs You Must Own\".[39] Oliver Wang, author of Classic Material: The Hip-Hop Album Guide described it \"as timeless an album as hip-hop has ever seen.\"[40]"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 90,
+        "fields": {
+            "chunk_id": "6da14022-07c5-416f-8a36-b8df53587c31",
+            "source": 2,
+            "content": "Publications based outside of the United States have acclaimed 36 Chambers as well; Australia's Juice magazine placed it at number 40 on its list of \"100 Greatest Albums of the '90s\",[41] and Les Inrockuptibles ranked it number 59 on a list of \"The 100 Best Albums 1986–1996\".[42] In naming Enter the Wu-Tang one of the 50 best albums of the 1990s, Pitchfork Media staff member Rollie Pemberton summed up the album's critical recognition by writing:"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 91,
+        "fields": {
+            "chunk_id": "d30e68af-c6d7-4f68-8428-474b33cee4ed",
+            "source": 2,
+            "content": "This is the sound of accidental fame. Something as unique and unusual as this record isn't supposed to find itself at the height of commercial viability; it's supposed to smolder underground, hidden from the view of mainstream America, who surely would not be ready for such a challenge. But America was ready, in part because this one challenged convention, not listeners. Sure, its sloppy drum programming, bizarre song structures, and unpolished sound quality disturbed commercial rap purists, but the talent was so inherent and obvious, and the charisma so undeniable, that it propelled the Wu-Tang Clan to the height of the rap game, and today stands not just as the hip-hop classic that introduced the concept of obscure thematic characters (each member's name references old kung-fu movies), but also bridged the gap between traditional old-school sensibilities and the technical lyricism of today.[14]"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 92,
+        "fields": {
+            "chunk_id": "9d5be0e2-c86d-4e49-b9ab-1b14a6d7a807",
+            "source": 2,
+            "content": "In a retrospective review, Robert Christgau found the Wu-Tang Clan \"grander\" and \"goofier\" than their West Coast contemporaries and concluded, \"Expect the masterwork this album's reputation suggests and you'll probably be disappointed—it will speak directly only to indigenous hip hoppers. Expect a glorious human mess, as opposed to the ominous platinum product of their opposite numbers, and you'll realize the dope game isn't everyone's dead-end street\".[43] In 2010, Enter the Wu-Tang (36 Chambers) was included in the book 1001 Albums You Must Hear Before You Die.[44] \n\nLegacy and influence\n\nRetrospective professional reviews\n\nReview scores\n\nSource\n\nRating\n\nAllMusic\n\n[17]\n\nChristgau's Consumer Guide\n\nA−[43]\n\nConsequence of Sound\n\nA+[45]\n\nEncyclopedia of Popular Music\n\n[46]\n\nMusicHound R&B\n\n5/5[47]\n\nPitchfork\n\n10/10[48]\n\nThe Rolling Stone Album Guide\n\n[49]\n\nSpin Alternative Record Guide\n\n8/10[32]\n\nTom Hull – on the Web\n\nA−[50]\n\nXXL\n\n5/5[31]\n\nEast Coast hip hop"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 93,
+        "fields": {
+            "chunk_id": "9764657c-28b4-4137-8691-66d8ebca7342",
+            "source": 2,
+            "content": "Adam Heimlich of the New York Press considers the album a touchstone of hardcore hip hop, a gritty, stripped-down, dark and violent subgenre of hip hop and the signature sound of New York City's rap scene during the mid-1990s. He writes that \"the Wu-Tang Clan ... all but invented 90s New York rap, back when the notion of an East Coast gangsta still meant Schoolly D or Kool G. Rap ... [They] designed the manner and style in which New York artists would address what Snoop and Dre had made rap's hottest topics: drugs and violence.\"[15] As the album helped return New York City hip hop to national prominence, a new generation of New York rappers, many of them inspired by the Wu-Tang Clan's example, released a flurry of classic albums that later became known as the East Coast Renaissance.[17] Enter the Wu-Tang has been recognized by critics as a landmark album in the movement.[13] AllMusic indicates that the success of the album paved the way for Nas, The Notorious B.I.G., Mobb Deep, and Jay-Z.[17]"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 94,
+        "fields": {
+            "chunk_id": "4fbeceed-6f8d-42dd-8dc0-5205265e3e10",
+            "source": 2,
+            "content": "At the time of the album's release, mainstream hip hop was dominated by the West Coast. Enter the Wu-Tang (along with Nas' critically acclaimed Illmatic and the commercial success of The Notorious B.I.G.'s Ready to Die) was able to shift the emphasis away from the melodious, synthesizer-driven G-funk and restore interest into the East Coast hip hop scene.[51] According to one columnist, \"When Enter the Wu-Tang: The 36 Chambers first graced the pages of rap lore in 1993, Dr. Dre's funk-filled, West Coast gangster rap dominated the business. Though this initial dominance was difficult to overcome, Wu-Tang still managed to carve out a piece of rap history.\"[13] \n\nHip hop production"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 95,
+        "fields": {
+            "chunk_id": "05cac457-c11c-411f-a46b-aa5ad90c5370",
+            "source": 2,
+            "content": "RZA's production on Enter the Wu-Tang had a profound and significant influence on subsequent hip hop producers.[52] The distinctive sound of Enter the Wu-Tang has been credited with creating a blueprint for hardcore hip hop in the mid-1990s.[17] Blackfilm.com asserts that Enter the Wu-Tang's production formula \"transformed the sound of underground rap into mainstream formula, and virtually changed the face of contemporary music as popsters once knew it.\"[52] Many successful rap producers have admitted to the influence of RZA's beats on their own production efforts. 9th Wonder, a producer and former member of Little Brother, is one of many whose vocal sampling styles are inspired by RZA.[53] The album's reliance on soul music samples was novel at the time, but 21st-century producers such as The Alchemist, Kanye West, and Just Blaze now rely on this technique.[11] According to Allmusic, the production on two Mobb Deep albums, The Infamous (1995) and Hell on Earth (1996), are \"indebted\" to RZA's early production with Wu-Tang Clan.[54][55] In addition, the soul singer Bilal names it among his 25 favorite albums, citing its creative approach and \"energy\" of the contributors.[56]"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 96,
+        "fields": {
+            "chunk_id": "15babfbf-cf1e-4453-ab49-e93787c96046",
+            "source": 2,
+            "content": "Subsequent Wu-Tang work\n\nFollowing Enter the Wu-Tang's success, the individual members of the group negotiated and signed solo contracts with a variety of different labels: Method Man signed with Def Jam, Ol' Dirty Bastard with Elektra, GZA with Geffen Records, and Ghostface Killah with Epic Records. This expansion across the music industry was an element of RZA's stated plan for industry-wide domination, wherein \"All Wu releases are deemed to be 50 percent partnerships with Wu-Tang Productions and each Wu member with solo deal must contribute 20 percent of their earnings back to Wu-Tang Productions, a fund for all Wu members\".[6]"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 97,
+        "fields": {
+            "chunk_id": "0b4a5771-44a2-4bf9-a22d-b9f01ccdaea5",
+            "source": 2,
+            "content": "On Enter the Wu-Tang's effect on the group and the music industry, the Milwaukee Journal's Aaron Justin-Szopinski wrote \"The Wu showed us that a hip-hop group can control its own destiny in the tangled web of the industry. It owns publishing rights, controls its samples and has 90% influence over its career. And that control, that outlook for the future, is what makes it the best.\"[57] Wu-Tang Clan have released seven subsequent group albums since Enter the Wu-Tang, including Wu-Tang Forever (1997), which is certified as a quadruple platinum record.[58] None of the subsequent Wu-Tang Clan albums have garnered the critical accolades that their debut was accorded.[59]"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 98,
+        "fields": {
+            "chunk_id": "710479c7-917c-4db7-9aa2-74a5c0da5560",
+            "source": 2,
+            "content": "In 2013, the group reunited, at the behest of RZA, for an album and tour celebrating the 20th anniversary of the album's release.[60] The album was titled A Better Tomorrow and the tour included dates throughout the United States, Europe, and Russia.[61][62] All original members of the group who performed on Enter the Wu-Tang participated in both the tour and reunion album, excepting Ol' Dirty Bastard, who died in 2004.[40]"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 99,
+        "fields": {
+            "chunk_id": "7bd1c507-2d8f-4a80-81f9-dbef986888f3",
+            "source": 3,
+            "content": "Inside the deal that made Bill Gates $350,000,000.\nby Bro Uttal\n© COPYRIGHT 1986 Time, Inc.\nGoing public is one of capitalism’s major sacraments, \nconferring instant superwealth on a few talented and lucky entrepreneurs. Of the more than 1,500 companies that have undergone this rite of passage in the past five years, few have enjoyed a more fren-L zied welcome from investors than Microsoft, the Seattle-based maker of software for personal computers. Its shares, offered at $21 on March 13, zoomed to $35.50 on the over-the-counter market before settling back to a recent $31.25. Microsoft and its shareholders raised $61 million. The biggest winner was William H. Gates III, the company’s co-founder and chairman. He got only $1.6 million for the shares he sold, but going public put a market value of $350 million on the 45% stake he retains. A software prodigy who helped start Micro soft while still in his teens, Gates, at 30, is probably one of the 100 richest Americans."
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 100,
+        "fields": {
+            "chunk_id": "f1dea848-8232-487e-9a24-6f1f6de5335d",
+            "source": 3,
+            "content": "Gates thinks other entrepreneurs might learn from \nMicrosoft’s experience in crafting what some analysts called ’’the deal of the year,’’ so he invited FORTUNE along for a rare inside view of the arduous five- month process. Companies hardly ever allow such a close look at an offering because they fear that the Securities and Exchange Commission might charge them with touting their stock. Answers emerged to a host of fascinating questions, from how a company picks investment bankers to how the offering price is set. One surprising fact stands out from Micro soft’s revelations: Instead of deferring to the priesthood of Wall Street underwriters, it took charge of the process from the start.\nTHE WONDER is that Microsoft waited so long. Founded"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 101,
+        "fields": {
+            "chunk_id": "4a372d98-e10d-4131-a8b3-e6f23168848e",
+            "source": 3,
+            "content": "THE WONDER is that Microsoft waited so long. Founded \nin 1975, it is the oldest major producer of software for personal computers and, with $172.5 million in revenues over the last four quarters, the second largest after Lotus Development. Microsoft’s biggest hits are the PC- DOS and MS-DOS operating systems, the basic software that runs millions of IBM personal computers and clones. The company has also struck it rich with myriad versions of computer languages and a slew of fast-sell- ing applications programs such as spread sheets and word-processing packages for IBM, Apple, and other personal computers.\nYet Microsoft stood pat when two of its archcompetitors,"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 102,
+        "fields": {
+            "chunk_id": "714ed124-e129-4c1d-9098-e122c1600959",
+            "source": 3,
+            "content": "Yet Microsoft stood pat when two of its archcompetitors, \nLotus and Ashton-Tate, floated stock worth a total of $74 million in 1983. Nor did it budge in 1984 and 1985, when three other microcomputer software companies managed to sell $54 million of stock. The reasons were simple. Unlike its competitors, Microsoft was not dominated by venture capital investors hungry to har- vest some of their gains. The business gushed cash. With pretax profits \nrunning as high as 34% of revenues, Microsoft needed no outside money to expand. Most important, Gates values control of his time and his company more than personal wealth.\nMoney has never been paramount to this unmarried scion \nof a leading Seattle family, whose father is a partner in a top Seattle law firm and whose mother is a regent of the University of Washington and a director of Pacific Northwest\nBell. Gates, a gawky, washed-out blond, confesses to"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 103,
+        "fields": {
+            "chunk_id": "64703f52-a827-421d-9f0d-606fe2aadcd7",
+            "source": 3,
+            "content": "of a leading Seattle family, whose father is a partner in a top Seattle law firm and whose mother is a regent of the University of Washington and a director of Pacific Northwest\nBell. Gates, a gawky, washed-out blond, confesses to \nbeing a ’’wonk,’’ a bookish nerd, who focuses single mindedly on the computer business though he masters all sorts of knowledge with astounding facility. Oddly, Gates is something of a ladies’ man and a fiendishly fast driver who has racked up speeding tickets even in the sluggish Mercedes diesel he bought to restrain himself. Gates left Harvard after his sophomore year to sell personal computer makers on using a version of the Basic computer language that he had written with Paul Allen, the co-founder of Microsoft. Intensely competitive and often aloof and sarcastic, Gates threw himself into building a company dedicated to technical excellence. ’’All Bill’s ego goes into Microsoft,’’ says a friend. ’’It’s his firstborn child.’’"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 104,
+        "fields": {
+            "chunk_id": "6e1f8d13-fad1-4d93-a7ce-ee10aa59c64d",
+            "source": 3,
+            "content": "Gates feared that a public offering would distract him and \nhis employees. ’’The whole process looked like a pain,’’ he recalls, ’’and an ongoing pain once you’re public. People get confused because the stock price doesn’t reflect your financial performance. And to have a stock trader call up the chief executive and ask him questions is uneconomic -- the ball bearings shouldn’t be asking the driver about the grease.’’\nBut a public offering was just a question of time. To attract"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 105,
+        "fields": {
+            "chunk_id": "f3773998-e6ef-42b1-88ba-685fe58ec17f",
+            "source": 3,
+            "content": "But a public offering was just a question of time. To attract \nmanagers and virtuoso pro- grammers, Gates had been selling them shares and granting stock options. By 1987, Microsoft estimated, over 500 people would own shares, enough to force the company to register with the SEC. Once registered, the stock in effect would have a public market, but one so narrow that trading would be difficult. Since it would have to register anyway, Microsoft might as well sell enough shares to enough investors to create a liquid market, and Gates had said that 1986 might be the year. ’’A projection of stock ownership showed we’d have to make a public offering at some point,’’ says Jon A. Shirley, 48, Mi crosoft’s pipe-smoking president and chief operating officer. ’’We decided to do it when we wanted to, not when we had to.’’\nIn April 1985 Gates, Shirley, and David F. Marquardt, 37, \nFortune July 21, 1986 v14 p23(8) Page 1"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 106,
+        "fields": {
+            "chunk_id": "f01fa6be-91d1-410f-aaed-81afba98c16f",
+            "source": 3,
+            "content": "In April 1985 Gates, Shirley, and David F. Marquardt, 37, \nFortune July 21, 1986 v14 p23(8) Page 1\n- Reprinted with permission. Additional copying is prohibited. - G A L E   G R O U P\nInformation IntegrityInside the deal that made Bill Gates $350,000,000.\nthe sole venture capitalist in Microsoft (he and his firm had \n6.2% of the stock), resolved to look into an offering. But Gates fretted. To forestall sticky questions from potential investors, he first wanted to launch two important products, one of them delayed over a year, and to sign a pending agreement with IBM for developing programs. He also wanted time to sound out key employees who owned stock or options and might leave once their holdings became salable on the public market. ’’I’m reserving the right to say no until October,’’ Gates warned. ’’Don’t be surprised if I call it off.’’\nBY THE board meeting of October 28, held the day after a"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 107,
+        "fields": {
+            "chunk_id": "9510d0f3-50cd-465e-ab7b-3e8d52b8da62",
+            "source": 3,
+            "content": "BY THE board meeting of October 28, held the day after a \nroller-skating party for Gates’s 30th birthday, the chairman had done his soundings and felt more at ease. The board decided it was time to select underwriters and gave the task to Frank Gaudette, 50, the chief financial officer, who had come aboard a year before. Gaudette was just the man to shepherd Mi crosoft through Wall Street. He speaks in the pungent tones of New York City, where his late father was a mailman, and prides himself on street smarts. He had alread helped manage offerings for three companies, all suppliers of computer software and services.\nAspiring underwriters, sniffing millions in fees, had been"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 108,
+        "fields": {
+            "chunk_id": "01e00dbe-884c-404d-a167-0d7f7d0e9ede",
+            "source": 3,
+            "content": "Aspiring underwriters, sniffing millions in fees, had been \nstroking Microsoft for years. They had enticed the company’s officers to so-called technology conferences -- bazaars where entrepreneurs, investors, and bankers look each other over. They had called regularly at Microsoft, trying to get close to Gates and Shirley. Gaudette had been sitting through an average of three sales pitches or get-acquainted dinners a month.\nGaudette proposed that since Microsoft was well \nestablished, it deserved to have a ’’class Wall Street name’’ as the lead underwriter. This investment firm would put together the syndicate of underwriters, which eventually was to number 114. It would also allocate the stock among underwriters and investors and pocket giant fees for its trouble. Gaudette suggested a ’’technology boutique’’ co-manage the offering to enhance Microsoft’s appeal to investors who specialize in technology stocks.\nNarrowing the field of boutiques was easy. Only four firms"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 109,
+        "fields": {
+            "chunk_id": "21df225d-116b-4b9a-938a-df0f149c528e",
+            "source": 3,
+            "content": "Narrowing the field of boutiques was easy. Only four firms \nwere widely known as specialists in financing technology companies: Alex. Brown & Sons of Baltimore, L.F. Rothschild Unterberg Towbin of New York, and two San Francisco outfits, Hambrecht & Quist and Robertson Colman & Stephens. Culling the list of Wall Street names took longer. Microsoft’s managers concluded that some big firms, including Merrill Lynch and Shearson Lehman, had not done enough homework in high tech. The board pared the contenders to Goldman Sachs, Morgan Stanley, and Smith Barney. It also included Cable Howse & Ragen, a Seattle firm that could be a third co-manager if Gates \nand Shirley decided that pleasing local investors was worth the bother. ’’Get on the stick,’’ Shirley told Gaudette. ’’Keep Bill and me out of it -- we can’t spend the time. Give us a recommendation in two or three weeks.’’\nEarly in November, Gaudette called the eight investment"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 110,
+        "fields": {
+            "chunk_id": "3438275a-2dd7-4185-b9b9-82cec16d57de",
+            "source": 3,
+            "content": "and Shirley decided that pleasing local investors was worth the bother. ’’Get on the stick,’’ Shirley told Gaudette. ’’Keep Bill and me out of it -- we can’t spend the time. Give us a recommendation in two or three weeks.’’\nEarly in November, Gaudette called the eight investment \nbankers who had survived the first cut. ’’I need half a day with you,’’ he said. ’’Take your best shot, then wait for me to call back. I’ll have a decision before Thanksgiving. But remember, it’s my decision -- don’t try going around me to Bill or Jon.’’ Gaudette made up a list of questions, ranging from the baldly general -- ’’Why should your firm be on the front cover of a Microsoft prospectus?’’ -- to the probingly particular, such as, ’’How would you distribute the stock, to whom, and why?’’\nAfter a whirlwind tour of New York, Baltimore, and San"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 111,
+        "fields": {
+            "chunk_id": "49c82461-9897-45fc-826c-a79db85de07f",
+            "source": 3,
+            "content": "After a whirlwind tour of New York, Baltimore, and San \nFrancisco, Gaudette made his recommendations to Gates and Shirley on November 21. Then he took off for a ten-day vacation in Hawaii, a belated celebration of his 50th birthday in the 50th state. No decision would be announced until his return. The investment bankers turned frantic. Theirs is a who-do-you-know business, and they mobilized their clients, many of them Microsoft customers or suppliers, to besiege Gates and Shirley.\nGaudette had methodically ranked the investment houses"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 112,
+        "fields": {
+            "chunk_id": "7a62b684-c101-4b8c-8dea-079d3df8f86d",
+            "source": 3,
+            "content": "Gaudette had methodically ranked the investment houses \non a scale of 1 to 5 in 19 different categories. But he also stressed that any candidate could do the deal and that the chemistry between Microsoft and the firms would finally determine the winners. Among the major houses, Gaudette had been most impressed by Goldman Sachs, which tightly links its underwriting group with its stock traders and keeps close tabs on the identity of big institutional buyers. For those reasons, Gaudette thought Goldman would be especially good at maintaining an orderly market as Microsoft employees gradually cashed in their shares.\nON DECEMBER 4, after conferring with Gates and \nShirley, Gaudette phoned Eff W. Martin, 37, a vice president in Goldman’s San Fran cisco office who had been calling on Micro soft for two years. ’’I like you guys,’’ Gaudette said, ’’and Microsoft wants to give you dinner on December 11 in Seattle. Do you think you can find time to come?’’"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 113,
+        "fields": {
+            "chunk_id": "65164bf7-64b7-4558-8eba-f4cd42580351",
+            "source": 3,
+            "content": "ON DECEMBER 4, after conferring with Gates and \nShirley, Gaudette phoned Eff W. Martin, 37, a vice president in Goldman’s San Fran cisco office who had been calling on Micro soft for two years. ’’I like you guys,’’ Gaudette said, ’’and Microsoft wants to give you dinner on December 11 in Seattle. Do you think you can find time to come?’’\nDinner at the stuffy Rainier Club was awkward. The private \nroom was large for the party of eight, and one wall was a sliding partition ideal for eavesdropping. Most of the party were meeting each other for the first time; how well they got along could make or break the deal. Microsoft’s top dogs didn’t make things easy. Gates, who had heard scare stories about investment bankers from friends like Mitchell \nFortune July 21, 1986 v14 p23(8) Page 2\n- Reprinted with permission. Additional copying is prohibited. - G A L E   G R O U P\nInformation IntegrityInside the deal that made Bill Gates $350,000,000.\nKapor, chairman of Lotus Development, was tired and"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 114,
+        "fields": {
+            "chunk_id": "c67b54c5-eccb-42de-b969-833b3e45dc0a",
+            "source": 3,
+            "content": "Fortune July 21, 1986 v14 p23(8) Page 2\n- Reprinted with permission. Additional copying is prohibited. - G A L E   G R O U P\nInformation IntegrityInside the deal that made Bill Gates $350,000,000.\nKapor, chairman of Lotus Development, was tired and \nprepared to be bored. Shirley was caustic, wanting to know exactly what Goldman imagined it could do for Microsoft.\nFor nearly an hour everyone stood in a semicircle as \nMartin and three colleagues explained their efforts to be tops in financing technology companies. An Oklahoman by birth and polite to a fault, Martin labored to kindle some rapport. But it was not until talk turned to pricing the company’s stock that Gates folded his arms across his chest and started rocking to and fro, a sure sign of interest. At the end of dinner, Martin, striving to conclude on a high note, gushed that Mi- crosoft could have the ’’most visible initial public offering of 1986 -- or ever.’’\n’’Well, they didn’t spill their food and they seemed like nice"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 115,
+        "fields": {
+            "chunk_id": "9cad5355-667a-4f19-8ac0-479deba76334",
+            "source": 3,
+            "content": "’’Well, they didn’t spill their food and they seemed like nice \nguys,’’ Gates drawled to his colleagues afterward in the parking lot. ’’I guess we should go with them.’’ He and Shirley drove back to Microsoft headquarters, discussing co-managing underwriters. Gaudette leaned toward Robertson Colman & Stephens. But Alex. Brown had been cultivating Microsoft longer than any other investment banking house. ’’Better the whore you know than the whore you don’t,’’ Shirley concluded. Three days later the board quickly blessed the selection of Goldman Sachs and Alex. Brown.\nThe offering formally lumbered into gear on December 17"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 116,
+        "fields": {
+            "chunk_id": "4113b0a7-e4bc-4971-9c47-b46cb0531708",
+            "source": 3,
+            "content": "The offering formally lumbered into gear on December 17 \nat an ’’all-hands meeting’’ at Microsoft. It was the first gathering of the principal players: the company with its auditors and attorneys as well as both managing underwriters and their attorney. Some confusion crept in at first. Heavy fog, a Seattle specialty, delayed the arrival of several key people until early afternoon. One of Micro soft’s high priorities was making its prospectus ’’jury proof’’ -- so carefully phrased that no stockholder could hope to win a lawsuit by claiming he had been misled. The company had insisted that the underwriters’ counsel be Sullivan & Cromwell, a hidebound Wall Street firm. Gaudette was miffed to see that the law firm had sent only an associate, not a partner.\nThe 27-point agenda covered every phase of the offering."
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 117,
+        "fields": {
+            "chunk_id": "e27cafed-c59a-4a92-8531-3122d62996c6",
+            "source": 3,
+            "content": "The 27-point agenda covered every phase of the offering. \nGates said the company was contemplating a $40-million deal. Microsoft would raise $30 million by selling two million shares at an assumed price of around $15. Existing shareholders, bound by Gates’s informal rule that nobody should unload more than 10% of his holdings, would collect the other $10 million for 600,000 or so shares. The underwriters, as is customary in initial public offerings, would be granted the option to sell more shares. If they exercised an option for 300,000 additional shares of stock held by the company, almost 12% of Micro soft’s stock would end up in public hands, enough to create the liquid market the company wanted.\nGates had thought longest about the price. Guided by"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 118,
+        "fields": {
+            "chunk_id": "43fdf3e1-4ee6-4169-a797-ff4de8a4f697",
+            "source": 3,
+            "content": "Gates had thought longest about the price. Guided by \nGoldman, he felt the market would accord a higher price-earnings multiple to Microsoft than to other personal computer software companies like Lotus and Ashton-Tate, which have narrower product lines. On the other hand, he figured the mar- ket ould give Microsoft a lower multiple than companies that create software for mainframe computers because they generally have longer track records and more predictable revenues. A price of roughly $15, more than ten times estimated earnings for fiscal 1986, would put Microsoft’s multiple right between those of personal software companies and mainframers.\nA host of questions came up at the all- hands meeting."
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 119,
+        "fields": {
+            "chunk_id": "c09ac9de-7b37-44eb-b31d-15a8d48d77f2",
+            "source": 3,
+            "content": "A host of questions came up at the all- hands meeting. \nBoth Shirley and Gates were concerned that going public would interfere with Microsoft’s ability to conduct business. Shirley wondered whether all three of Micro soft’s top officers would be needed for the ’’road show,’’ meetings at which company representatives would explain the offering to stockbrokers and institutional investors. Gates tried to escape the tour by saying, facetiously, ’’Hey, make the stock cheap enough and you won’t need us to sell it!’’\nMicrosoft’s attorney, William H. Neukom, 44, a partner at"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 120,
+        "fields": {
+            "chunk_id": "7796c1c4-5284-456b-9313-1b4b3f0d74d2",
+            "source": 3,
+            "content": "Microsoft’s attorney, William H. Neukom, 44, a partner at \nShidler McBroom Gates & Lucas -- the Gates in the title being Bill’s father, William H. Gates -- raised another matter. The company would have to tone down its public utterances, he said, lest it appear to be ’’gun jumping,’’ or touting the stock. Press releases could no longer refer to certain Microsoft programs as ’’industry standards,’’ no matter how true the phrase. Neukom would review all the company’s official statements, which came to include even a preface Gates was writing for a book on new computer technologies.\nThe most tedious part of taking the company public was"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 121,
+        "fields": {
+            "chunk_id": "745a825a-0e96-4b61-bf94-6c49cfe8b7b1",
+            "source": 3,
+            "content": "The most tedious part of taking the company public was \nwriting a prospectus. It was a task rife with contradictions. By law Micro soft’s stock could be sold only on the basis of information in this document. If the SEC raised big objections to the preliminary version, Microsoft would have to circulate a heavily amended one, inviting rumors that the deal was fishy. However cheerful or gloomy the prospectus, many investors would fail to read it before buying. Then if the market price promptly fell, they would comb the text for the least hint of misrepresentation in order to sue. Still, the prospectus could not be too conservative. Like all such documents, it had to be a discreet sales tool, soft-pedaling weaknesses and stressing strengths, all the while concealing as much as possible from competitors.\nEVEN BEFORE Microsoft had picked its underwriters, \nRobert A. Eshelman, 32, an attorney at Shidler McBroom, \nFortune July 21, 1986 v14 p23(8) Page 3"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 122,
+        "fields": {
+            "chunk_id": "2ca2dd61-310e-45db-9b96-d6a7ccd67a90",
+            "source": 3,
+            "content": "EVEN BEFORE Microsoft had picked its underwriters, \nRobert A. Eshelman, 32, an attorney at Shidler McBroom, \nFortune July 21, 1986 v14 p23(8) Page 3\n- Reprinted with permission. Additional copying is prohibited. - G A L E   G R O U P\nInformation IntegrityInside the deal that made Bill Gates $350,000,000.\nhad started drafting the prospectus. That task took all of \nJanuary. ’’As usual,’’ says one of the investment bankers, ’’it was like the Bataan death march.’’ Neukom, who had just left Shidler McBroom to join Micro soft, spent the first week of 1986 with Eshel man, sketching in ideas about the company’s products and business. Two days a week for the next three weeks, many of the people who had been at the all-hands meeting reconvened at Microsoft’s sleek headquarters in a Seattle suburb to edit the prospectus.\nAt the first sessions, on January 8 and 9, the underwriters"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 123,
+        "fields": {
+            "chunk_id": "8602111c-8595-436f-baf8-89b65e2a9028",
+            "source": 3,
+            "content": "At the first sessions, on January 8 and 9, the underwriters \nbrought along their security analysts to help conduct a ’’due diligence’’ examination, grilling the company’s managers to uncover skeletons. Gaudette was mollified that Sullivan & Cromwell had now furnished a partner from its Los Angeles office, Charles F. Rechlin, 39. Gaudette had met him years before in New York but was bowled over by how much he had changed. Rechlin was 40 pounds lighter and sported shoulder-length hair and a fierce sunburn.\nFor ten hours Gates, Shirley, and other managers \nexhaustively described their parts of the business and fielded questions. Surprisingly, the Microsoft crew tended to be more conservative and pessimistic than the interrogators. Steven A. Ballmer, 30, a vice president sometimes described as Gates’s alter ego, came up with so many scenarios for Microsoft’s demise that one banker cracked: ’’I’d hate to hear you on a bad day.’’\nBy late January only one major item remained undecided"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 124,
+        "fields": {
+            "chunk_id": "92368ecc-2794-4a02-a4d7-46b243b86e22",
+            "source": 3,
+            "content": "By late January only one major item remained undecided \n-- a price range for the stock. The bull market that began in September had kept roaring ahead, pushing up P/E multiples for other software companies. The underwriters suggested a price range of $17 to $20 a share. Gates insisted on, and got, $16 to $19. His argument was ultraconservative: $16 would guarantee that the underwriters would not have to go even lower to sell the shares, while a price of $20 would push Microsoft’s market value above half-a- billion dollars, which he thought uncomfortably high. ’’That was unusual,’’ says Christopher P. Forester, head of Goldman Sach’s high-technology finance group. ’’Few companies fight for a lower range than the underwriter recommends.’’\nOn February 1 a courier rushed the final proof of the"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 125,
+        "fields": {
+            "chunk_id": "f33de8dc-68b5-4dad-8dac-a67e25bcb253",
+            "source": 3,
+            "content": "On February 1 a courier rushed the final proof of the \nprospectus to Los Angeles for Sullivan & Cromwell’s approval and continued on to Washington, D.C., with 13 copies. Two days later Microsoft registered with the SEC, the underwriters sent out 38,000 copies of the prospectus, and the lawyers began waiting anxiously for comments from the regulators.\nGates coped with concerns of a different sort. Relatives, \nfriends, and acquaintances of Microsoft’s managers -- from Gates’s doctor to a high school chum of Gaudette’s -- \ncalled begging to buy stock at the offering price. Except for about a dozen people, including Gates’s grandmother and his former housekeeper, who wanted small lots for sentimental reasons, Gates turned most of them down. ’’I won’t grant any of these goofy requests,’’ he said. ’’I hate the whole thing. All I’m thinking and dreaming about is selling software, not stock.’’\nREHEARSALS FOR the road show dramatized how"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 126,
+        "fields": {
+            "chunk_id": "b6e9f068-7c72-439d-bd92-2509bf1c5083",
+            "source": 3,
+            "content": "REHEARSALS FOR the road show dramatized how \ndifferently Gates and Gaudette approached the pro- cess of going public. Neukom, Mi crosoft’s in-house attorney, had admonished Gates to say nothing to anybody that deviated from the prospectus or added new information. At Goldman Sachs’s New York offices for a February 7 rehearsal, Gates wondered to himself, ’’With my mouth taped, what’s the point of giving a speech?’’ Addressing about 30 investment bankers and salesmen, he assumed an uncharacteristic, robotic monotone while covering Micro soft’s key strengths. He became annoyed when one critic commented, ’’It’s a great first effort, but you can put more into it.’’ Snapped Gates: ’’You mean I’m supposed to say boring things in an exciting way?’’\nGaudette, however, was in his element. He praised and"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 127,
+        "fields": {
+            "chunk_id": "cf0a0dd3-6ed0-42cb-9d3b-ac7266cea741",
+            "source": 3,
+            "content": "Gaudette, however, was in his element. He praised and \nrepraised the company’s record, studding his talk with cliches and corny jokes. ’’When it comes to earnings,’’ he exclaimed, showing a graph of quarterly changes, ’’the pavement is bumpy, but the road goes only one way -- up!’’ Describing Microsoft’s $72 million in stockholders’ equity and its lack of long-term debt, Gaudette teased Goldman Sachs with a competing investment house’s slogan: ’’We made our money the old-fashioned way: We earned it!’’\nThe road show previewed in Phoenix on February 18, and"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 128,
+        "fields": {
+            "chunk_id": "ac345aff-9425-4aeb-935d-2abbe0017ea4",
+            "source": 3,
+            "content": "The road show previewed in Phoenix on February 18, and \nover the next ten days played eight cities, including engagements in London and Edinburgh. Halfway through, the pageant took on an almost festive air. Gates relaxed a bit, having been able to push his products as well as his stock at various ports of call. In London, Eff Martin of Goldman escorted the party to the Royal Observatory at Greenwich, found tickets for the smash musical Les Miserables, and arranged admittance to Annabel’s, a popular club. Gates danced the night away with Ruthann Quindlen, a se- curity analyst for Alex. Brown.\nFestivity was appropriate. Every road show"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 129,
+        "fields": {
+            "chunk_id": "0820e254-d7bc-4309-bf4d-ddbe6ee15524",
+            "source": 3,
+            "content": "Festivity was appropriate. Every road show \nmeetingattracted a full house, and many big institutional investors indicated they would take as much stock as they could get. By the end of February the Dow Jones industrial average had passed 1700. In London, Martin told Gaudette that Goldman’s marketing group considered the Microsoft issue very hot. The $16 to $19 price range would have to be raised, he said, and so would the number of \nFortune July 21, 1986 v14 p23(8) Page 4\n- Reprinted with permission. Additional copying is prohibited. - G A L E   G R O U P\nInformation IntegrityInside the deal that made Bill Gates $350,000,000.\nshares to be sold.\nThe underwriters had wanted to come to market while"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 130,
+        "fields": {
+            "chunk_id": "3601eaac-e3e1-46c0-9cbe-b7d278463c88",
+            "source": 3,
+            "content": "Fortune July 21, 1986 v14 p23(8) Page 4\n- Reprinted with permission. Additional copying is prohibited. - G A L E   G R O U P\nInformation IntegrityInside the deal that made Bill Gates $350,000,000.\nshares to be sold.\nThe underwriters had wanted to come to market while \neuphoria from the road show ran high. But the SEC held the starting flag. On March 4 and 5 an SEC reviewer phoned in the commission’s comments on the preliminary prospectus to Eshelman. The SEC had picked all sorts of nits, from how Micro soft accounted for returned merchandise to whether Gates had an employment contract (he does not). Its major concern appeared to be that the underwriters allocate shares widely enough to make the offering truly public and not just a bonanza for a handful of privileged investors. Eshelman was relieved. ’’It was a thorough review,’’ he says, ’’but it was nothing to make my stomach drop.’’\nOn March 6 Microsoft’s lawyers and auditors called the"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 131,
+        "fields": {
+            "chunk_id": "07b3cbc8-865a-4a9e-a5a0-0bfef98bf948",
+            "source": 3,
+            "content": "On March 6 Microsoft’s lawyers and auditors called the \nSEC to negotiate changes. Meanwhile, the company persuaded two stockholders to sell an additional 295,000 shares. The next day, as the lawyers pored over proofs of a revised prospectus at the San Francisco office of Bowne & Co., the financial printers, Gaudette zestfully battled to raise the price. Eff Martin of Goldman, who had flown up to Seattle that morning, had good news. The ’’book’’ on Microsoft -- the list of buy orders from institutional investors -- was among the best Goldman had ever seen. The underwriters expected the stock to trade at $25 a share, give or take a dollar, several weeks after opening. A sounding of big potential buyers showed that an offering price of $20 to $21 would get the deal done.\nGates asked Martin to leave while he conferred with"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 132,
+        "fields": {
+            "chunk_id": "e60bd40d-98a8-4480-a92f-2ef6eb282df6",
+            "source": 3,
+            "content": "Gates asked Martin to leave while he conferred with \nShirley and Gaudette. This was a different Gates from the one who two months before thought $20 too high. ’’These guys who happen to be in good with Gold man and get some stock will make an instant profit of $4,’’ he said. ’’Why are we handing millions of the company’s money to Gold man’s favorite clients?’’ Gaudette stressed that unless Microsoft left some money on the table the institutional investors would stay away. The three decided on a range of $21 to $22 a share, and Gaudette put in a conference call to Goldman and Alex. Brown.\nEric Dobkin, 43, the partner in charge of common stock"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 133,
+        "fields": {
+            "chunk_id": "6e94e3ae-4196-475d-ad5a-5b88c077e0cf",
+            "source": 3,
+            "content": "Eric Dobkin, 43, the partner in charge of common stock \nofferings at Goldman Sachs, felt queasy about Microsoft’s counterproposal. For an hour he tussled with Gaudette, using every argument he could muster. Coming out $1 too high would drive off some high-quality investors. Just a few significant defections could lead other investors to think the offering was losing its luster. Dobkin raised the specter of Sun Microsystems, a maker of high-powered microcomputers for engineers that had gone public three days earlier in a deal co-managed by Alex. Brown. Because of overpricing and bad luck -- competitors had recently announced new products -- Sun’s shares had dropped from $16 at the offering to $14.50 on the market. \nDobkin warned that the market for software stocks was turning iffy.\nGaudette loved it. ’’They’re in pain!’’ he crowed to Shirley."
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 134,
+        "fields": {
+            "chunk_id": "e2d23694-ce30-4754-81b7-f712de61a51c",
+            "source": 3,
+            "content": "Dobkin warned that the market for software stocks was turning iffy.\nGaudette loved it. ’’They’re in pain!’’ he crowed to Shirley. \n’’They’re used to dictating, but they’re not running the show now and they can’t stand it.’’ Getting back on the phone, Gaudette crooned: ’’Eric, I don’t mean to upset you, but I can’t deny what’s in my head. I keep thinking of all that pent-up demand from individual investors, which you haven’t factored in. And I keep thinking we may never see you again, but you go back to the institutional investors all the time. They’re your customers. I don’t know whose interests you’re trying to serve, but if you’re playing both sides of the street, then we’ve just become adversaries.’’\nAs negotiations dragged on, Shirley became impatient."
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 135,
+        "fields": {
+            "chunk_id": "2824e410-d188-480b-9694-98313ab6c0a5",
+            "source": 3,
+            "content": "As negotiations dragged on, Shirley became impatient. \nEshelman, the securities lawyer from Shidler McBroom, was waiting in San Francisco to get a price range so he could send an amended prospectus off to the SEC. Finally Gaudette told Dobkin, ’’I’ve listened to your prayers. Now you’re repeating yourself, and it’s bullshit.’’ The two compromised on a range of $20 to $22, with two provisos: Goldman would tell investors that the target price was $21 and nothing less, and Dobkin would report Monday on which investors had dropped out.\nMONDAY’S NEWS was mixed. Six big investors in Boston"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 136,
+        "fields": {
+            "chunk_id": "1ebcc823-e730-4cb8-804b-6b517116e541",
+            "source": 3,
+            "content": "MONDAY’S NEWS was mixed. Six big investors in Boston \nwere threatening to ’’uncircle’’ -- to re- move their names from Goldman Sachs’s list. Chicago and Baltimore were fraying at the edges -- T. Rowe Price, for instance, said it might drop out above $20 -- while the West Coast stood firm. The market had closed flat, worrying Goldman’s salesmen. But their spirits revived the next day as the Dow surged 43 points. Gaudette, now confident that he and Dobkin could agree on a final offering price, flew with Neukom to San Francisco to pick up Martin, and the three boarded a red-eye flight for New York.\nSleepless but freshly showered and shaved, Gaudette \nreached Goldman Sachs’s offices at 11 o’clock on Wednesday, March 12. Neukom walked over from Sullivan & Cromwell, where the other lawyers were preparing the last revision of the prospectus. After lunch the two Microsoft officers went to Dobkin’s office and patched Shirley and Marquardt into a speakerphone."
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 137,
+        "fields": {
+            "chunk_id": "68f48945-3490-4827-9f99-a3a0a12921ec",
+            "source": 3,
+            "content": "Sleepless but freshly showered and shaved, Gaudette \nreached Goldman Sachs’s offices at 11 o’clock on Wednesday, March 12. Neukom walked over from Sullivan & Cromwell, where the other lawyers were preparing the last revision of the prospectus. After lunch the two Microsoft officers went to Dobkin’s office and patched Shirley and Marquardt into a speakerphone.\nThe conferees had no trouble agreeing on a final price of \n$21. The market had risen another 14 points by noon. The reception for a $15 offering that morning by Oracle Systems, another software company, seemed a favorable omen: The stock had opened at $19.25. About half the potential dropouts, including T. Rowe Price, had decided to stay in.\nFortune July 21, 1986 v14 p23(8) Page 5\n- Reprinted with permission. Additional copying is prohibited. - G A L E   G R O U P\nInformation IntegrityInside the deal that made Bill Gates $350,000,000.\nThe only remaining issue was the underwriting discount, or"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 138,
+        "fields": {
+            "chunk_id": "c60dd305-d25b-4c02-b81a-47b8ce660209",
+            "source": 3,
+            "content": "Fortune July 21, 1986 v14 p23(8) Page 5\n- Reprinted with permission. Additional copying is prohibited. - G A L E   G R O U P\nInformation IntegrityInside the deal that made Bill Gates $350,000,000.\nThe only remaining issue was the underwriting discount, or \n’’spread’’ -- the portion of the price that would go to the underwriters to cover salesmen’s commissions, underwriting expenses, and management fees. Having agreed fairly easily over dollars, the two sides bogged down over pennies.\nMicrosoft had always had a low spread in mind, no more \nthan 6.5% of the selling price. That was before negotiators at Sun Micro systems, where Marquardt is a director, wangled 6.13% on a $64-million offering. Gates wanted Microsoft to get at least as good a deal on its offering. But he had gone to Australia, where he was difficult to reach. In theory Gaudette lacked authority to go above 6.13%, or just under $1.29 a share.\nDobkin opened with an oration. He touched on what other"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 139,
+        "fields": {
+            "chunk_id": "ca03d0bd-422e-46fc-b0ba-dd705e51555f",
+            "source": 3,
+            "content": "than 6.5% of the selling price. That was before negotiators at Sun Micro systems, where Marquardt is a director, wangled 6.13% on a $64-million offering. Gates wanted Microsoft to get at least as good a deal on its offering. But he had gone to Australia, where he was difficult to reach. In theory Gaudette lacked authority to go above 6.13%, or just under $1.29 a share.\nDobkin opened with an oration. He touched on what other \nGoldman clients had paid, noting that Sun’s spread was off the bottom of the charts. He suggested that the managing underwriters deserved healthy compensation; after all, their marketing efforts had raised Microsoft’s offering price 20%. Goldman’s best offer, Dobkin said, was 6.5%, or $1.36 a share. But if pushed very hard and given no alternative, it might, just to keep things amicable, go as low as $1.34. Having given away $62,000 -- each penny of the spread was worth $31,000 -- Dobkin and his contingent left the room to let Micro soft’s side confer."
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 140,
+        "fields": {
+            "chunk_id": "e1232906-bb39-493c-b082-0279263c102b",
+            "source": 3,
+            "content": "When they returned, Gaudette declared that Bill Gates had \ngiven definite orders: no more than $1.28. Besides, he argued, Micro soft was a much easier deal to handle than Sun. As to the underwriters’ marketing efforts, selling more shares at a higher price was its own reward since it automatically increased the mony in their pockets.\nAt 3:30 the two sides were stalemated, Goldman Sachs \nnow at $1.33 and Microsoft at $1.30. They were arguing over all of $93,000 in a total fee of more than $4 million, and pressure was building. The market was turning flat and would close in minutes. Members of the syndicate were clamoring to know whether the deal was done. Dobkin kept reiterating his arguments. ’’Eric, you’re wasting my time,’’ Gaudette sighed wearily, donning his coat. ’’I’m going to visit me sainted mother in Astoria. When you’ve got something to say, send a limo to pick me up.’’ With that, the Goldman team left the room.\nDobkin returned alone and closed the door. ’’Sometimes"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 141,
+        "fields": {
+            "chunk_id": "27ff6ad6-dcde-4cfc-84c8-0d19b02ce164",
+            "source": 3,
+            "content": "Dobkin returned alone and closed the door. ’’Sometimes \nthese things go better with fewer people,’’ he observed. Gaudette insisted he lacked authority to go higher. ’’All I can do is try to get another penny from Jon,’’ he said. ’’But I’m calling him just one more time, so don’t screw up.’’ ’’Make the call,’’ Dobkin said.\nGaudette caught Shirley as he was leaving a Bellevue, Washington, restaurant to buy a car for his daughter as a \n16th birthday gift. The lowest spread they could get, Gaudette said, was $1.31. Though it was above Sun’s spread, it was way below what any other personal computer software company had achieved. Shirley approved. Neukom beckoned Dobkin back into the room, and Gau dette uttered one phrase that betokened his assent to $1.31: ’’It’s a go!’’ Dobkin hugged Gaudette. David Miller, a beefy ex-football player who was Goldman’s syndicate manager for the offering, thundered down the stairs to his office bellowing to his assistant, ’’Doreen, we have a deal!’’"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 142,
+        "fields": {
+            "chunk_id": "8e81c605-75a0-418a-beaf-4f745e9522da",
+            "source": 3,
+            "content": "GAUDETTE SAVED his cheers for the next morning. At 8 \nA.M. a courier had delivered Microsoft’s ’’filing package’’ to the SEC -- three copies of the final prospectus and a bundle of exhibits, including the underwriters’ agreement to buy the shares, which had been signed only hours earlier. The commission declared at 9:15 that Microsoft’s registration was effec tive. On the trading floor at Goldman Sachs, Gaudette heard a trader say, ’’We’re going to shoot the moon and open at 25!’’\nAt 9:35 Microsoft’s stock traded publicly on the \nover-the-counter market for the first time at $25.75. Within minutes Goldman Sachs and Alex. Brown exercised their option to take an extra 300,000 shares between them. Gaudette could hardly believe the tumult. Calling Shirley from the floor, he shouted into the phone, ’’It’s wild! I’ve never seen anything like it -- every last person here is trading Microsoft and nothing else.’’\nThe strength of retail demand caught everyone by"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 143,
+        "fields": {
+            "chunk_id": "ebc3fabf-aab6-40a2-8466-677ca2bcf866",
+            "source": 3,
+            "content": "At 9:35 Microsoft’s stock traded publicly on the \nover-the-counter market for the first time at $25.75. Within minutes Goldman Sachs and Alex. Brown exercised their option to take an extra 300,000 shares between them. Gaudette could hardly believe the tumult. Calling Shirley from the floor, he shouted into the phone, ’’It’s wild! I’ve never seen anything like it -- every last person here is trading Microsoft and nothing else.’’\nThe strength of retail demand caught everyone by \nsurprise. By the end of the first day of trading, some 2.5 million shares had changed hands, and the price of Microsoft’s stock stood at $27.75. The opportunity to take a quick profit was too great for many institutional investors to resist. Over the next few weeks they sold off roughly half their shares. An estimated one-third of the shares in Microsoft’s offering has wound up in the hands of individuals.\nIn the wake of Microsoft’s triumph, Gates still fears that"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 144,
+        "fields": {
+            "chunk_id": "a8eaa81d-b40c-45e7-8ac8-6b8669df08e7",
+            "source": 3,
+            "content": "In the wake of Microsoft’s triumph, Gates still fears that \nbeing public will hurt the company. No longer able to offer stock at bargain prices, he finds it harder to lure talented programmers and managers aboard. On the other hand, his greatly enriched executives have kept cool heads. Shirley, who cleared over $1 million on the shares he sold, has been the most lavish. He bought a 45-foot cabin cruiser, traded in two cars for fancier models, and may give in to his daughter’s pleas for an exotic horse. Gates used part of the $1.6 million he got to pay off a $150,000 mortgage and may buy a $5,000 ski boat -- if he finds time. One vice president who raked in more than $500,000 can think of nothing to buy except a $1,000 custom-made \nFortune July 21, 1986 v14 p23(8) Page 6\n- Reprinted with permission. Additional copying is prohibited. - G A L E   G R O U P\nInformation IntegrityInside the deal that made Bill Gates $350,000,000.\nbicycle frame; a programmer who received nearly"
+        }
+    },
+    {
+        "model": "api.chunk",
+        "pk": 145,
+        "fields": {
+            "chunk_id": "bd27eafd-f81f-4e77-b8fa-295f9195502f",
+            "source": 3,
+            "content": "Fortune July 21, 1986 v14 p23(8) Page 6\n- Reprinted with permission. Additional copying is prohibited. - G A L E   G R O U P\nInformation IntegrityInside the deal that made Bill Gates $350,000,000.\nbicycle frame; a programmer who received nearly \n$200,000 plans to use it to expand his working hours by hiring a housekeeper.\nThat’s just the kind of attitude Gates prizes. Constantly \nurging people to ignore the price of Microsoft’s stock, he warns that it may become highly volatile. A few weeks after the offering, strolling through the software development area, he noticed a chart of Microsoft’s stock price posted on the door to a programmer’s office. Gates was bothered. ’’Is this a distraction?’’ he asked.Fortune July 21, 1986 v14 p23(8) Page 7\n- Reprinted with permission. Additional copying is prohibited. - G A L E   G R O U P\nInformation Integrity"
+        }
+    },
+    {
+        "model": "api.prompttemplate",
+        "pk": 1,
+        "fields": {
+            "name": "airoboros prompt",
+            "instruction": "This is a chat between a curious user and an artifical intelligence agent. The assistant provides polite, detailed and helpful answers to the user's question.",
+            "question_format": "USER: BEGININPUT\nBEGINCONTEXT\nENDCONTEXT\n{context}\nENDINPUT\nBEGININSTRUCTION\n{question}\nENDINSTRUCTION",
+            "answer_format": "ASSISTANT: {answer}",
+            "active": true
+        }
+    },
+    {
+        "model": "api.chatsession",
+        "pk": 2,
+        "fields": {
+            "session_id": "0ff8ee49-e1ac-4b70-a36c-996b40753751",
+            "title": "New Chat Session",
+            "author": 1,
+            "created_at": "2023-06-07T13:41:01.903Z",
+            "hidden": false,
+            "pinned": false,
+            "color": "rgb(1,103,177)"
+        }
+    },
+    {
+        "model": "api.llm",
+        "pk": 1,
+        "fields": {
+            "name": "vicuna-7b",
+            "context_size": 2048,
+            "description": "vicuna",
+            "active": true
+        }
+    },
+    {
+        "model": "api.question",
+        "pk": 1,
+        "fields": {
+            "question_id": "cb5f479c-fa87-49c3-b556-8a5254f9a44d",
+            "summary": "Question one",
+            "session": 2,
+            "content": "Question 1 content",
+            "created_at": "2023-06-07T13:41:37.831Z"
+        }
+    },
+    {
+        "model": "api.question",
+        "pk": 2,
+        "fields": {
+            "question_id": "0f6f0318-3216-483d-94dc-ae88e4750b0f",
+            "summary": "Question two",
+            "session": 2,
+            "content": "Question 2 content",
+            "created_at": "2023-06-07T13:49:03.588Z"
+        }
+    },
+    {
+        "model": "api.answer",
+        "pk": 1,
+        "fields": {
+            "answer_id": "9e005b2a-bb67-48f8-ac27-cc25fbcafcd1",
+            "question": 1,
+            "session": 2,
+            "context": 1,
+            "model": 1,
+            "template": 1,
+            "content": "Answer to question 1",
+            "created_at": "2023-06-07T14:06:36.272Z",
+            "rating": 0,
+            "is_flagged": false,
+            "moderation_notes": ""
+        }
+    },
+    {
+        "model": "api.answer",
+        "pk": 2,
+        "fields": {
+            "answer_id": "76cc888e-90a7-499f-bc70-0a166cd83bd8",
+            "question": 2,
+            "session": 2,
+            "context": 5,
+            "model": 1,
+            "template": 1,
+            "content": "Answer to question 2",
+            "created_at": "2023-06-07T14:06:54.241Z",
+            "rating": 0,
+            "is_flagged": false,
+            "moderation_notes": ""
+        }
+    },
+    {
+        "model": "social_django.association",
+        "pk": 1,
+        "fields": {
+            "server_url": "https://oauth.proqa.gg.ax/.well-known/openid-configuration/authorize",
+            "handle": "LzU7C0IysKLN2hbgJYrmTWxffeSfnqKbFNlHoI8ScHuSa6AZQpTn7eDnn0JVZKE1",
+            "secret": "",
+            "issued": 0,
+            "lifetime": 0,
+            "assoc_type": "ImoYM278a3zrYagf1AwTGwwDHDZ7H3vK"
+        }
+    }
+]

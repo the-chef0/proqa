@@ -1,0 +1,95 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "ai-service.fullname" . }}
+  labels:
+    {{- include "ai-service.labels" . | nindent 4 }}
+spec:
+  {{- if not .Values.autoscaling.enabled }}
+  replicas: {{ .Values.replicaCount }}
+  {{- end }}
+  selector:
+    matchLabels:
+      {{- include "ai-service.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      {{- with .Values.podAnnotations }}
+      annotations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      labels:
+        {{- include "ai-service.selectorLabels" . | nindent 8 }}
+    spec:
+      {{- with .Values.imagePullSecrets }}
+      imagePullSecrets:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      serviceAccountName: {{ include "ai-service.serviceAccountName" . }}
+      securityContext:
+        {{- toYaml .Values.podSecurityContext | nindent 8 }}
+      volumes:
+        - name: "weights"
+      {{- if .Values.weightsPVC }}
+          persistentVolumeClaim:
+            claimName: {{ .Values.weightsPVC | quote }}
+      {{- else }}
+          emptyDir: {}
+      initContainers:
+        - name: copy-weights
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "minio/mc"
+          envFrom:
+            - secretRef:
+                {{- if .Values.weightsS3.secretName }}
+                name: {{ .Values.weightsS3.secretName | quote }}
+                {{- else }}
+                name: {{ include "ai-service.fullname" . }}-models
+                {{- end }}
+                optional: false
+          volumeMounts:
+            - name: "weights"
+              mountPath: "/weights"
+          command: ["/bin/sh"]
+          args: ["-c", "mc alias set storage $SERVER_ENDPOINT $ACCESS_KEY $SECRET_KEY && mc cp -r storage/$BUCKET_NAME/ /weights"]
+      {{- end }}
+      containers:
+        - name: {{ .Chart.Name }}
+          securityContext:
+            {{- toYaml .Values.securityContext | nindent 12 }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag | default .Chart.AppVersion }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          envFrom:
+            - configMapRef:
+                name: {{ include "ai-service.fullname" . }}-config
+                optional: false
+          volumeMounts:
+            - name: "weights"
+              mountPath: "/weights"
+              readOnly: true
+          ports:
+            - name: http
+              containerPort: 8001
+              protocol: TCP
+          livenessProbe:
+            httpGet:
+              path: /
+              port: http
+          readinessProbe:
+            httpGet:
+              path: /
+              port: http
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}
+      {{- with .Values.nodeSelector }}
+      nodeSelector:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.affinity }}
+      affinity:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}
+      {{- with .Values.tolerations }}
+      tolerations:
+        {{- toYaml . | nindent 8 }}
+      {{- end }}

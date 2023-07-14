@@ -1,0 +1,294 @@
+@use '../app.scss';
+
+$chat-bubble-padding: 12px; // padding for chat bubbles
+$max-bubble-size: 60%;
+$padding: 24px; // determines padding for page content
+
+.spinner-grow {
+  background-color: app.$primary !important;
+}
+
+#container-page {
+  padding: $padding;
+}
+
+#question-box {
+  width: calc(100% - 280px - 2 * $padding);
+  font-family: 'Open Sans Variable', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  position: relative;
+
+  $btn-width: 50px;
+
+  .form-control {
+    padding: 10px $btn-width 20px 10px;
+    font-size: 0.85rem;
+    border-radius: 5px;
+  }
+
+  .character-count {
+    position: absolute;
+    z-index: 3;
+    bottom: 2px;
+    font-size: 11px;
+    margin-left: 10px;
+    color: app.$subText;
+  }
+
+  .btn {
+    position: absolute;
+    z-index: 3;
+    right: 0;
+    height: 100%;
+    width: $btn-width;
+  }
+}
+
+.chat-window {
+  height: 100%;
+
+  // wrapping
+  -ms-word-break: break-all;
+  word-break: break-all;
+  /* Non standard for WebKit */
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+.chat-question {
+  background-color: #0167b1;
+  color: white;
+  padding: $chat-bubble-padding;
+  text-align: start;
+  width: fit-content;
+  max-width: $max-bubble-size;
+  font-family: 'Montserrat Variable';
+  font-style: normal;
+  font-weight: 400;
+}
+
+.chat-answer {
+  white-space: pre-line;
+  background-color: #eceeef;
+  padding: $chat-bubble-padding;
+  overflow-wrap: break-word;
+  width: fit-content;
+  max-width: $max-bubble-size;
+  font-family: 'Montserrat Variable';
+  font-style: normal;
+  font-weight: 400;
+  color: app.$bodyText;
+}
+
+.input-send {
+  background-color: white !important;
+}
+
+.disclaimer {
+  font-family: 'Open Sans Variable', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  color: app.$subText;
+}
+
+.source-unavailable {
+  background-color: #ffdd92 !important;
+}
+
+.source-unavailable-title {
+  font-style: italic !important;
+}
+
+.source-button:hover {
+  // shadow below
+  box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.075);
+}
+
+.source {
+  font-family: 'Podkova Variable', serif;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.faq-title {
+  font-family: 'Podkova Variable', serif;
+  font-style: normal;
+  font-weight: 800;
+  margin-top: 10%;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+  justify-content: center;
+  align-items: center;
+  margin: 0px 20px;
+}
+
+.faq-entry {
+  border: 0;
+  background-color: app.$background;
+  text-align: center;
+  word-break: break-word;
+  height: 6em;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 10px;
+  font-family: 'Open Sans Variable', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+
+  &:hover {
+    // shadow below
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+.upvote {
+  color: rgb(0, 202, 0) !important;
+
+  &:hover {
+    color: darken(rgb(0, 202, 0), 5%) !important;
+  }
+}
+
+.downvote {
+  color: rgb(255, 0, 0) !important;
+
+  &:hover {
+    color: darken(rgb(255, 0, 0), 10%) !important;
+  }
+}
+
+.vote:hover {
+  color: #606060 !important;
+}
+
+.deletion-confirmation-container {
+  z-index: 100000;
+}
+
+.deletion-confirmation {
+  background-color: app.$background;
+  color: app.$headings;
+  max-width: 400px;
+}
+
+.deletion-confirmation-title {
+  font-family: 'Podkova Variable', serif;
+  font-weight: 700;
+}
+
+.deletion-confirmation-subtext {
+  font-weight: 400;
+  color: app.$subText;
+}
+
+.deletion-confirmation-delete {
+  background-color: app.$dangerDisabled;
+  color: app.$background;
+
+  &:hover {
+    background-color: darken(app.$dangerDisabled, 10%);
+    color: app.$background;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+.deletion-confirmation-cancel {
+  background-color: app.$accent;
+  color: app.$headings;
+
+  &:hover {
+    background-color: darken(app.$accent, 10%);
+    color: app.$headings;
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+  }
+}
+
+#error-message {
+  background-color: app.$dangerDisabled;
+  color: app.$background;
+  font-family: 'Podkova Variable', serif;
+  font-weight: 500;
+  z-index: 1000000;
+}
+
+.pin-active {
+  color: app.$primary !important;
+
+  :hover {
+    color: app.$primaryActive !important;
+  }
+
+  :active {
+    color: app.$primaryActive !important;
+  }
+}
+
+.pin-inactive {
+  :hover {
+    color: app.$secondaryHover !important;
+  }
+
+  :active {
+    color: app.$secondaryActive !important;
+  }
+}
+
+.archive-active {
+  color: app.$warning !important;
+
+  :hover {
+    color: app.$warningHover !important;
+  }
+
+  :active {
+    color: app.$warningActive !important;
+  }
+}
+
+.archive-inactive {
+  :hover {
+    color: app.$secondaryHover !important;
+  }
+
+  :active {
+    color: app.$secondaryActive !important;
+  }
+}
+
+.trash-inactive {
+  :hover {
+    color: app.$danger !important;
+  }
+
+  :active {
+    color: app.$dangerActive !important;
+  }
+}
+
+.question-box-style {
+  margin-bottom: 20px;
+}
+
+.question-box-style::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-image: linear-gradient(to bottom, transparent 35%, #f8f9fc),
+    linear-gradient(to top, #f8f9fc 25%, transparent),
+    linear-gradient(to right, transparent, transparent),
+    linear-gradient(to left, transparent, transparent);
+  background-clip: content-box;
+  z-index: -1;
+  border-radius: 1px;
+}

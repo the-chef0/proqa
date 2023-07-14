@@ -1,0 +1,41 @@
+# Ignore development and editor files
+.venv
+.vscode/
+.chatbox/
+.pytest_cache/
+
+# Ignore Python cache and compiled files
+*.pyc
+__pycache__/
+
+# Ignore Git-related files
+.git/
+.gitattributes
+.*ignore
+
+# Ignore CI/CD configuration file
+.gitlab-ci.yml
+
+# Ignore documentation
+*.md
+
+# Ignore environment variable file
+.env
+
+# Ignore Docker-specific files
+docker-compose*.yml
+Dockerfile*
+
+# Ignore unnecessary files in "proqa_back_end" directory
+proqa_back_end/migrations/
+proqa_back_end/static/
+proqa_back_end/media/
+proqa_back_end/*.log
+proqa_back_end/*.sqlite3
+
+# Ignore build and configuration files
+pyproject.toml
+pytest.ini
+
+# Ignore data
+.data

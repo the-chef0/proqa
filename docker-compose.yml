@@ -1,0 +1,45 @@
+services:
+  pushpin:
+    image: fanout/pushpin
+    ports:
+      - "7999:7999"
+      - "5560-5563:5560-5563"
+    volumes:
+      - ./pushpin:/etc/pushpin
+
+  postgres:
+    extends:
+      file: proqa-back-end/docker-compose.yml
+      service: postgres
+
+  redis:
+    extends:
+      file: proqa-back-end/docker-compose.yml
+      service: redis
+
+  vector-db:
+    extends:
+      file: proqa-back-end/docker-compose.yml
+      service: vector-db
+
+  django:
+    extends:
+      file: proqa-back-end/docker-compose.yml
+      service: django
+
+  celery_worker:
+    extends:
+      file: proqa-back-end/docker-compose.yml
+      service: celery_worker
+
+  frontend:
+    extends:
+      file: proqa-client/docker-compose.yml
+      service: frontend
+    depends_on:
+      - django
+
+  text-generation:
+    extends:
+      file: proqa-ai-service/docker-compose.yml
+      service: text-generation

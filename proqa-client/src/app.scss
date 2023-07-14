@@ -1,0 +1,63 @@
+// Prodrive Colors
+// Primary Colors
+$primaryDisabled: #67a4d0;
+$primary: #0167b1;
+$primaryHover: #015d9f;
+$primaryActive: #01528e;
+
+// Secondary Colors
+$secondaryDisabled: #919191;
+$secondary: #555555;
+$secondaryHover: #484848;
+$secondaryActive: #444444;
+
+// Success Colors
+$successDisabled: #75ae80;
+$success: #29823b;
+$successHover: #236f32;
+$successActive: #21682f;
+
+// Danger Colors
+$dangerDisabled: #e86f6f;
+$danger: #dc2020;
+$dangerHover: #bb1b1b;
+$dangerActive: #b01a1a;
+
+// Warning Colors
+$warningDisabled: #f1c25a;
+$warning: #e9a100;
+$warningHover: #ecaf26;
+$warningActive: #edb433;
+
+// Misc colors
+$headings: #212529;
+$bodyText: #495057;
+$subText: #8c969f;
+$accent: #dddddd;
+$background: #eceeef;
+
+.chat-title-bg {
+  background-color: $background;
+}
+
+.chat-title {
+  font-family: 'Podkova Variable', serif;
+  font-weight: 400 !important;
+  font-style: normal;
+  color: $headings;
+}
+
+.heading-icon {
+  color: $subText;
+}
+
+#main-container {
+  background-color: $headings;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+}
+
+#chat-page {
+  max-height: calc(100vh - 40px);
+}

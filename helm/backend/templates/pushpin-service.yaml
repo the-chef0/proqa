@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "backend.fullname" . }}-pushpin
+  labels:
+    {{- include "backend.labels" . | nindent 4 }}
+    app.kubernetes.io/component: {{ include "backend.fullname" . }}-pushpin
+spec:
+  type: {{ .Values.appService.type }}
+  ports:
+    - name: in-pull
+      protocol: TCP
+      port: 5560
+      targetPort: 5560
+    - name: http-control-server
+      protocol: TCP
+      port: 5561
+      targetPort: 5561
+    - name: in-sub
+      protocol: TCP
+      port: 5562
+      targetPort: 5562
+    - name: control-server
+      protocol: TCP
+      port: 5563
+      targetPort: 5563
+    - name: condure
+      protocol: TCP
+      port: 7999
+      targetPort: 7999
+  selector:
+    {{- include "backend.selectorLabels" . | nindent 4 }}
+    app.kubernetes.io/component: {{ include "backend.fullname" . }}-pushpin

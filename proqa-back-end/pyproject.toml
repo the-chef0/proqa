@@ -1,0 +1,9 @@
+[tool.pylint.main]
+load-plugins = "pylint_django"
+ignore-paths=".*/migrations"
+
+[tool.pylint."django foreign keys referenced by strings"]
+django-settings-module = "proqa_back_end.settings"
+
+[tool.pylint."messages control"]
+disable = ["raw-checker-failed", "bad-inline-option", "locally-disabled", "file-ignored", "suppressed-message", "useless-suppression", "deprecated-pragma", "use-symbolic-message-instead", "missing-module-docstring", "imported-auth-user"]

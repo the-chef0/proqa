@@ -1,0 +1,139 @@
+variables:
+  REGISTRY: registry.proqa.gg.ax # docker registry link
+  BUILD_IMAGE: ${REGISTRY}/ai-service
+  BUILD_IMAGE_TAG: ${BUILD_IMAGE}:${CI_COMMIT_SHORT_SHA}
+
+stages:
+  - build
+  - test
+  - linting
+  - deploy
+  - tag
+  - cleanup
+
+build:
+  stage: build
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: [""]
+  script:
+    - /kaniko/executor
+      --context "${CI_PROJECT_DIR}"
+      --dockerfile "${CI_PROJECT_DIR}/Dockerfile"
+      --destination "${BUILD_IMAGE_TAG}"
+      --label "org.opencontainers.image.title=${CI_PROJECT_TITLE}"
+      --label "org.opencontainers.image.url=${CI_PROJECT_URL}"
+      --label "org.opencontainers.image.created=${CI_JOB_STARTED_AT}"
+      --label "org.opencontainers.image.revision=${CI_COMMIT_SHA}"
+      --label "org.opencontainers.image.version=${CI_COMMIT_REF_NAME}"
+      --cache=true
+      --compressed-caching=false
+
+pytest:
+  stage: test
+  needs: ["build"]
+  image: ${BUILD_IMAGE_TAG}
+  script:
+    - pytest -v
+    - pytest --cov --cov-report term --cov-report xml:coverage.xml --junitxml=junit.xml
+  coverage: '/(?i)total.*? (100(?:\.0+)?\%|[1-9]?\d(?:\.\d+)?\%)$/'
+  artifacts:
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage.xml
+      junit: junit.xml
+    when: always
+
+pylint:
+  stage: linting
+  needs: ["build"]
+  image: ${BUILD_IMAGE_TAG}
+  before_script:
+    - mkdir -p public/badges public/lint
+    - echo undefined > public/badges/$CI_JOB_NAME.score
+  script:
+    - pylint --exit-zero --output-format=text $(find -type f -name "*.py" ! -path "**/.venv/**") | tee /tmp/pylint.txt
+    - sed -n 's/^Your code has been rated at \([-0-9.]*\)\/.*/\1/p' /tmp/pylint.txt > public/badges/$CI_JOB_NAME.score
+    - pylint --exit-zero --output-format=pylint_gitlab.GitlabCodeClimateReporter $(find -type f -name "*.py" ! -path "**/.venv/**") > codeclimate.json
+    - pylint --exit-zero --output-format=pylint_gitlab.GitlabPagesHtmlReporter $(find -type f -name "*.py" ! -path "**/.venv/**") > public/lint/index.html
+    - anybadge --overwrite --label $CI_JOB_NAME --value=$(cat public/badges/$CI_JOB_NAME.score) --file=public/badges/$CI_JOB_NAME.svg 4=red 6=orange 8=yellow 10=green
+    - anybadge --overwrite --label $CI_JOB_NAME --value=$(cat public/badges/$CI_JOB_NAME.score) --file=$CI_JOB_NAME.svg 4=red 6=orange 8=yellow 10=green
+  after_script:
+    - |
+      echo "Your score is: $(cat public/badges/$CI_JOB_NAME.score)"
+  artifacts:
+    paths:
+      - public
+    reports:
+      codequality: codeclimate.json
+    when: always
+
+isort:
+  stage: linting
+  needs: ["build"]
+  image: ${BUILD_IMAGE_TAG}
+  script:
+    - isort . --verbose
+
+pages:
+  stage: deploy
+  needs: ["pylint"]
+  image: alpine:latest
+  script:
+    - echo
+  artifacts:
+    paths:
+      - public
+
+retag image branch:
+  stage: tag
+  cache: []
+  image:
+    name: gcr.io/go-containerregistry/crane:debug
+    entrypoint: [""]
+  services: []
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - crane cp ${BUILD_IMAGE_TAG} ${BUILD_IMAGE}:${CI_COMMIT_REF_SLUG}
+
+retag image main:
+  stage: tag
+  cache: []
+  image:
+    name: gcr.io/go-containerregistry/crane:debug
+    entrypoint: [""]
+  services: []
+  variables:
+    GIT_STRATEGY: none
+  only:
+    - main
+  script:
+    - crane cp ${BUILD_IMAGE_TAG} ${BUILD_IMAGE}:latest
+
+retag image tag:
+  stage: tag
+  cache: []
+  image:
+    name: gcr.io/go-containerregistry/crane:debug
+    entrypoint: [""]
+  services: []
+  variables:
+    GIT_STRATEGY: none
+  only:
+    - tags
+  script:
+    - crane cp ${BUILD_IMAGE_TAG} ${BUILD_IMAGE}:${CI_COMMIT_REF_NAME}
+
+delete sha tag:
+  stage: cleanup
+  cache: []
+  image:
+    name: ghcr.io/regclient/regctl:alpine
+    entrypoint: [""]
+  services: []
+  variables:
+    GIT_STRATEGY: none
+  script:
+    - regctl tag delete ${BUILD_IMAGE_TAG}

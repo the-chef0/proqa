@@ -1,0 +1,5 @@
+{
+    "preferred_username": { "type": "string" },
+    "email": { "type": "string", "format": "email" }
+}
+  

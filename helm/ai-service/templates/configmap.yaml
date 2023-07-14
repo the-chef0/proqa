@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "ai-service.fullname" . }}-config
+  labels:
+    {{- include "ai-service.labels" . | nindent 4 }}
+data:
+  MODEL_PATH: "/weights"
+  BACKEND_HTTP_URL: {{ .Values.backendHTTPURL | quote }}
+  PUSHPIN_HTTP_URL: {{ .Values.pushpinHTTPURL | quote }}
+  THREAD_COUNT: {{ .Values.threadCount | quote }}

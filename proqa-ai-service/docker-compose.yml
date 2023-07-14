@@ -1,0 +1,9 @@
+services:
+  text-generation:
+    build: 
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ./proqa_ai/:/app/proqa_ai
+    environment:
+      - DEV=1

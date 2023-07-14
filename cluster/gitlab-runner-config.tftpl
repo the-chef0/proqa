@@ -1,0 +1,14 @@
+[[runners]]
+  name = "sep-group4-k8s-runner"
+  [runners.kubernetes]
+    service_account = "gitlab-ci-kubernetes-executor"
+  [runners.cache]
+        Type = "s3"
+        Shared = true
+        [runners.cache.s3]
+          ServerAddress = "${s3_url}"
+          BucketName = "${bucket_name}"
+          Insecure = true
+          AuthenticationType = "access-key"
+          AccessKey = "${accesskey}"
+          SecretKey = "${secretkey}"
